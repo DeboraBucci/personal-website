@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.module.css";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   //// CONTENT ////
@@ -13,10 +13,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <ul>
+      <ul className={styles["navbar__ul"]}>
         {linksList.map(({ text, icon, href, key }) => {
           return (
-            <li key={key}>
+            <li className={styles["navbar__li"]} key={key}>
               <i className={`fas fa-${icon}`}></i>
               <a href={href}>{text}</a>
             </li>

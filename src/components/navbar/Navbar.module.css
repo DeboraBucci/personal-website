@@ -1,0 +1,34 @@
+.navbar {
+  background: transparent;
+}
+
+.navbar__ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__li {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  color: white;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar__li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__li:hover {
+  color: #f59f00;
+  border-bottom: 2px solid #f59f00;
+}
+
+@media (max-width: 500px) {
+  .navbar__li {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
