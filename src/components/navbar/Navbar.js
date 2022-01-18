@@ -12,16 +12,18 @@ const Navbar = () => {
   // -------------------------------------------------- //
 
   return (
-    <ul>
-      {linksList.map(({ text, icon, href, key }) => {
-        return (
-          <li key={key}>
-            <i className={`fas fa-${icon}`}></i>
-            <a href={href}>{text}</a>
-          </li>
-        );
-      })}
-    </ul>
+    <nav>
+      <ul>
+        {linksList.map(({ text, icon, href, key }) => {
+          return (
+            <li key={key}>
+              <i className={`fas fa-${icon}`}></i>
+              <a href={href}>{text}</a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 };
 
