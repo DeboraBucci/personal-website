@@ -12,11 +12,11 @@ const Navbar = () => {
   // -------------------------------------------------- //
 
   return (
-    <nav>
-      <ul className={styles["navbar__ul"]}>
+    <nav className={styles.navbar}>
+      <ul className={styles["list"]}>
         {linksList.map(({ text, icon, href, key }) => {
           return (
-            <li className={styles["navbar__li"]} key={key}>
+            <li className={styles["link"]} key={key}>
               <i className={`fas fa-${icon}`}></i>
               <a href={href}>{text}</a>
             </li>

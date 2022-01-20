@@ -1,13 +1,15 @@
 .navbar {
   background: transparent;
+  margin: 10px auto;
+  max-width: 1000px;
 }
 
-.navbar__ul {
+.list {
   display: flex;
   justify-content: space-around;
 }
 
-.navbar__li {
+.link {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -17,18 +19,18 @@
   cursor: pointer;
 }
 
-.navbar__li a {
+.link a {
   text-decoration: none;
   color: white;
 }
 
-.navbar__li:hover {
+.link:hover {
   color: #f59f00;
   border-bottom: 2px solid #f59f00;
 }
 
 @media (max-width: 500px) {
-  .navbar__li {
+  .link {
     flex-direction: column;
     gap: 5px;
   }
