@@ -69,7 +69,7 @@ const Projects = () => {
   };
 
   return (
-    <main className="projects__container flex centered">
+    <main className="projects__container flex centered wrap">
       {projects.map(({ title, link, image, key }) => {
         return (
           <div
@@ -83,11 +83,11 @@ const Projects = () => {
               target={"_blank"}
               rel="noopener"
             >
-              <div className="project__img overflow-hdn">
-                <img src={image} />
+              <div className="overflow-hdn">
+                <img className="project__img" src={image} />
               </div>
 
-              <h3 className="project__title flex v-centered">
+              <h3 className="project__title flex v-centered c-white">
                 <span className="span-title">&lt;</span>
                 {title}
                 <span className="span-title">/&gt;</span>
