@@ -6,9 +6,9 @@ const Navbar = () => {
   //// CONTENT ////
   const linksList = [
     { text: "Home", icon: "home", href: "#home", key: "l1" },
-    { text: "Certifications", icon: "address-card", href: "#", key: "l2" },
+    { text: "Certifications", icon: "award", href: "#", key: "l2" },
     { text: "Portfolio", icon: "briefcase", href: "#", key: "l3" },
-    { text: "Contact", icon: "address-book", href: "#", key: "l4" },
+    { text: "Contact", icon: "paper-plane", href: "#", key: "l4" },
   ];
   // -------------------------------------------------- //
 
