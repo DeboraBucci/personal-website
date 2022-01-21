@@ -1,4 +1,5 @@
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 import "./Hero.css";
 import "../../general-styles.css";
 
@@ -17,7 +18,18 @@ const Hero = () => {
           </div>
         </h1>
         <div className={"profession flex h-centered g-10px"}>
-          a Web Developer
+          a{" "}
+          <span className={"typing inline-blk"}>
+            <Typewriter
+              words={["Frontend Developer", "Forever Student", "Cat Mom"]}
+              loop={false}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={2000}
+            />
+          </span>
         </div>
       </div>
     </section>
