@@ -1,0 +1,26 @@
+section div p::before {
+  content: "";
+  width: 2rem;
+  height: 2px;
+  background-color: #ff53a9;
+}
+
+.typing {
+  width: 300px;
+  color: #ff53a9;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.title span {
+  font-size: 2rem;
+  top: -5px;
+  left: -50px;
+}
+
+.profession {
+  font-size: 1.7rem;
+  padding: 10px 0 0 60px;
+}

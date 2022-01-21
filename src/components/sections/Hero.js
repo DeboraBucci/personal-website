@@ -1,16 +1,24 @@
 import React from "react";
-import styles from "./Hero.module.css";
+import "./Hero.css";
+import "../../general-styles.css";
 
 const Hero = () => {
   return (
-    <section>
+    <section className={"flex h-centered v-centered "}>
       <div>
-        <p>HELLO !</p>
-        <h1>
-          I'm
-          <span>Débora Bucci</span>
+        <p className={" flex h-centered g-10px"}>HELLO !</p>
+        <h1 className={"title relative"}>
+          <span className="absolute">I'm</span>
+          <div
+            className={"underline--magical flex v-centered"}
+            style={{ width: "320px" }}
+          >
+            <div>Débora Bucci</div>
+          </div>
         </h1>
-        <p>a web developer</p>
+        <div className={"profession flex h-centered g-10px"}>
+          a Web Developer
+        </div>
       </div>
     </section>
   );
