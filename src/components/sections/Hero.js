@@ -21,7 +21,12 @@ const Hero = () => {
           a{" "}
           <span className={"typing inline-blk"}>
             <Typewriter
-              words={["Frontend Developer", "Forever Student", "Cat Mom"]}
+              words={[
+                "Frontend Developer",
+                "Forever Student",
+                "Devote Christian",
+                "Cat Mom",
+              ]}
               loop={false}
               cursor
               cursorStyle="|"
