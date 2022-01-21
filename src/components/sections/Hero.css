@@ -6,7 +6,6 @@ section div p::before {
 }
 
 .typing {
-  width: 300px;
   color: #ff53a9;
 }
 
@@ -22,5 +21,5 @@ section div p::before {
 
 .profession {
   font-size: 1.7rem;
-  padding: 10px 0 0 60px;
+  padding-left: 20px;
 }
