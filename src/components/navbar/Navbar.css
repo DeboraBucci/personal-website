@@ -1,27 +1,26 @@
 .navbar {
-  background: transparent;
-  margin: 10px auto;
-  max-width: 1000px;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 50px;
+  background: rgba(46, 46, 46, 0.8);
 }
 
 .list {
-  display: flex;
   justify-content: space-around;
+  gap: 100px;
 }
 
 .link {
-  display: flex;
-  gap: 20px;
   list-style: none;
-  color: white;
   padding: 5px;
   border-bottom: 2px solid transparent;
-  cursor: pointer;
 }
 
-.link a {
-  text-decoration: none;
+.link a:link,
+.link a:visited {
   color: white;
+  text-decoration: none;
 }
 
 .link:hover {
