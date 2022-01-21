@@ -1,0 +1,50 @@
+.projects__container {
+  max-width: 1700px;
+  margin: 2rem auto;
+  padding-top: 5rem;
+  gap: 3rem;
+  border-top: 1px solid #ff53a9;
+}
+
+.project__container {
+  border-radius: 10px;
+  background: #3c3c41;
+}
+
+.project__img {
+  object-fit: cover;
+  max-width: 400px;
+}
+
+.project__img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.project__title {
+  gap: 15px;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+h3 span {
+  color: transparent;
+  transition: all 1s;
+}
+
+.all-projects-btn:link,
+.all-projects-btn:visited {
+  background: linear-gradient(150deg, #f08c00, #f59f00);
+  padding: 1.6rem 2.4rem;
+  margin: 2.4rem 0 4.8rem 0;
+  border-radius: 9px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.4s;
+}
+
+.all-projects-btn:hover,
+.all-projects-btn:focus {
+  background: transparent;
+  box-shadow: inset 0 0 0 3px#f59f00;
+}
