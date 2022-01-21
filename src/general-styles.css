@@ -1,0 +1,44 @@
+section {
+  color: white;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-centered {
+  align-items: center;
+}
+
+.v-centered {
+  justify-content: center;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #ff53a9 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 120% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
+}
+
+.inline-blk {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.g-10px {
+  gap: 10px;
+}
