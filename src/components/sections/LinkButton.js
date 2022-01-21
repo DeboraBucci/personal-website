@@ -7,7 +7,7 @@ const LinkButton = ({
   classes = "",
 }) => {
   return (
-    <div className="btn-container">
+    <div className="flex v-centered">
       <a href={href} className={classes} target="_blank" rel="noopener">
         {text}
         {icon}
