@@ -5,7 +5,7 @@ import "../../general-styles.css";
 
 const Hero = () => {
   return (
-    <section className={"flex h-centered v-centered "}>
+    <section id={"home"} className={"flex h-centered v-centered "}>
       <div>
         <p className={" flex h-centered g-10px"}>HELLO !</p>
         <h1 className={"title relative"}>

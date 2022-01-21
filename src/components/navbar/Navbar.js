@@ -5,7 +5,7 @@ import "../../general-styles.css";
 const Navbar = () => {
   //// CONTENT ////
   const linksList = [
-    { text: "Home", icon: "home", href: "#", key: "l1" },
+    { text: "Home", icon: "home", href: "#home", key: "l1" },
     { text: "Certifications", icon: "address-card", href: "#", key: "l2" },
     { text: "Portfolio", icon: "briefcase", href: "#", key: "l3" },
     { text: "Contact", icon: "address-book", href: "#", key: "l4" },
