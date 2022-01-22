@@ -9,7 +9,7 @@ const Navbar = () => {
     {
       text: "Certifications",
       icon: "award",
-      href: "#cetifications",
+      href: "#certifications",
       key: "l2",
     },
     { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l3" },
