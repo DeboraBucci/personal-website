@@ -1,8 +1,8 @@
 import React from "react";
-import Typing from "./Typing";
+import Typing from "../../Typing/Typing";
 import Introduction from "./Introduction";
 import "./Hero.css";
-import "../../general-styles.css";
+import "../../../general-styles.css";
 
 const Hero = () => {
   return (

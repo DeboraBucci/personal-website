@@ -1,6 +1,6 @@
 import React from "react";
 import Courses from "./Courses";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
 import Portfolio from "./Portfolio";
 
 const Sections = () => {

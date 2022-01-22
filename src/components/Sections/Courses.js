@@ -1,6 +1,6 @@
 import React from "react";
-import CoursesCarousel from "../carousel/CoursesCarousel";
-import Header from "./Header";
+import CoursesCarousel from "../CoursesCarousel/CoursesCarousel";
+import Header from "../Header/Header";
 import "./Courses.css";
 import "../../general-styles.css";
 

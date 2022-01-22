@@ -1,7 +1,7 @@
 import React from "react";
 import Projects from "./Projects";
-import Header from "./Header";
-import LinkButton from "./LinkButton";
+import Header from "../Header/Header";
+import LinkButton from "../LinkButton/LinkButton";
 import "./Portfolio.css";
 import "../../general-styles.css";
 
