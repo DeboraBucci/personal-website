@@ -1,5 +1,6 @@
 import React from "react";
 import Typing from "./Typing";
+import Introduction from "./Introduction";
 import "./Hero.css";
 import "../../general-styles.css";
 
@@ -7,16 +8,7 @@ const Hero = () => {
   return (
     <section id={"home"} className={"flex h-centered v-centered "}>
       <div>
-        <p className={" flex h-centered g-10px"}>HELLO !</p>
-        <h1 className={"title relative"}>
-          <span className="absolute">I'm</span>
-          <div
-            className={"underline--magical flex v-centered"}
-            style={{ width: "320px" }}
-          >
-            <div>Débora Bucci</div>
-          </div>
-        </h1>
+        <Introduction fullName="Débora Bucci" />
         <div className={"profession flex h-centered g-10px"}>
           <span>a</span>
           <span className={"typing inline-blk"}>

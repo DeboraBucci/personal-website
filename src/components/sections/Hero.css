@@ -9,11 +9,13 @@ section div p::before {
   color: #ff53a9;
 }
 
-.title {
+h1 {
   font-size: 3rem;
+  position: relative;
 }
 
-.title span {
+h1 span {
+  position: absolute;
   font-size: 2rem;
   top: -5px;
   left: -50px;
@@ -22,4 +24,8 @@ section div p::before {
 .profession {
   font-size: 1.7rem;
   padding-left: 20px;
+}
+
+.introduction--container {
+  width: 300px;
 }
