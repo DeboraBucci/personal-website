@@ -1,18 +1,19 @@
 import React from "react";
+import "./LinkButton.css";
 
 const LinkButton = ({
   href = "#",
   text = "Button",
   icon = "",
-  classes = "",
+  classes = "default",
 }) => {
   return (
-    <div className="flex v-centered">
-      <a href={href} className={classes} target="_blank" rel="noopener">
+    <a href={href} target="_blank" rel="noopener">
+      <button className={classes}>
         {text}
         {icon}
-      </a>
-    </div>
+      </button>
+    </a>
   );
 };
 
