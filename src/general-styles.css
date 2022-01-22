@@ -1,6 +1,29 @@
 section {
+  width: 100vw;
+  overflow: hidden;
   color: white;
   min-height: 100vh;
+  background-color: #2e2e2e;
+  padding-bottom: 10rem;
+}
+
+header {
+  padding: 0 0 2rem 10rem;
+  border-bottom: 1px solid #ff53a9;
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+
+.sub-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #ff53a9;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /* FLEXBOX
@@ -15,6 +38,15 @@ section {
 
 .v-centered {
   justify-content: center;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 /* ======================== */
 
@@ -56,4 +88,12 @@ section {
 
 .no-txt-line {
   text-decoration: none;
+}
+
+.overflow-hdn {
+  overflow: hidden;
+}
+
+.mrg-auto {
+  margin: 0 auto;
 }
