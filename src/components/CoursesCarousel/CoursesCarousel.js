@@ -36,9 +36,9 @@ const CoursesCarousel = () => {
   return (
     <div className="carousel-container mrg-auto">
       <Carousel touch={true}>
-        {coursesImages.map(({ image, alt }) => {
+        {coursesImages.map(({ image, alt }, i) => {
           return (
-            <Carousel.Item interval={3000}>
+            <Carousel.Item key={`carousel${i}`} interval={3000}>
               <div className="img-container mrg-auto overflow-hdn">
                 <img
                   className="d-block w-100"
