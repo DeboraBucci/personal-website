@@ -48,6 +48,10 @@ a {
 .wrap {
   flex-wrap: wrap;
 }
+
+.column {
+  flex-direction: column;
+}
 /* ======================== */
 
 .underline--magical {
