@@ -18,7 +18,7 @@ const Hero = () => {
           </div>
         </h1>
         <div className={"profession flex h-centered g-10px"}>
-          a{" "}
+          <span>a</span>
           <span className={"typing inline-blk"}>
             <Typing
               words={[
