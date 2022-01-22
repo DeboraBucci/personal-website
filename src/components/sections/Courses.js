@@ -6,7 +6,7 @@ import "../../general-styles.css";
 
 const Courses = () => {
   return (
-    <section>
+    <section id={"certifications"}>
       <Header title="My badges of Honor!" subtitle="courses" />
       <main className="courses-container">
         <CoursesCarousel />

@@ -7,7 +7,7 @@ import "../../general-styles.css";
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id="portfolio">
       <Header title="Here are my projects" subtitle="projects" />
       <Projects />
       <LinkButton
