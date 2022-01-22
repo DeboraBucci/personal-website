@@ -4,7 +4,7 @@ section {
   color: white;
   min-height: 100vh;
   background-color: #2e2e2e;
-  padding-bottom: 10rem;
+  padding: 50px 0 10rem 0;
 }
 
 header {
