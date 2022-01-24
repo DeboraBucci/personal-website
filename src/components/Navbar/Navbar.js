@@ -23,7 +23,7 @@ const Navbar = () => {
         {linksList.map(({ text, icon, href, key }) => {
           return (
             <li className=" pointer" key={key}>
-              <a className="link flex h-centered c-white g-10px" href={href}>
+              <a className="link flex h-centered g-10px" href={href}>
                 <i className={`fas fa-${icon} inline-blk `}></i>
                 {text}
               </a>
