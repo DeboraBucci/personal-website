@@ -26,8 +26,10 @@ const Navbar = () => {
               className="link flex h-centered c-white g-10px pointer"
               key={key}
             >
-              <i className={`fas fa-${icon} inline-blk `}></i>
-              <a href={href}>{text}</a>
+              <a href={href}>
+                <i className={`fas fa-${icon} inline-blk `}></i>
+                {text}
+              </a>
             </li>
           );
         })}
