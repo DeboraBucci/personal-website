@@ -22,11 +22,8 @@ const Navbar = () => {
       <ul className="list flex">
         {linksList.map(({ text, icon, href, key }) => {
           return (
-            <li
-              className="link flex h-centered c-white g-10px pointer"
-              key={key}
-            >
-              <a href={href}>
+            <li className=" pointer" key={key}>
+              <a className="link flex h-centered c-white g-10px" href={href}>
                 <i className={`fas fa-${icon} inline-blk `}></i>
                 {text}
               </a>
