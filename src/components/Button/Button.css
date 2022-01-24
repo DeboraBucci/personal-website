@@ -1,4 +1,4 @@
-button {
+.btn--component {
   min-width: 160px;
   border: none;
   display: flex;
@@ -11,8 +11,8 @@ button {
   transition: all 0.4s;
 }
 
-button:hover,
-button:focus {
+.btn--component:hover,
+.btn--component:focus {
   background: transparent;
 }
 
