@@ -17,8 +17,8 @@
   border-bottom: 2px solid transparent;
 }
 
-.link a:link,
-.link a:visited {
+.link:link,
+.link:visited {
   color: white;
   text-decoration: none;
 }
