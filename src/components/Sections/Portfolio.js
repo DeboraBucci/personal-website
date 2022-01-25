@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Projects from "./Projects";
 import Header from "../Header/Header";
 import Button from "../Button/Button";
@@ -6,7 +6,7 @@ import "./Portfolio.css";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
+    <Fragment>
       <Header title="Here are my projects" subtitle="projects" />
       <Projects />
       <a
@@ -19,7 +19,7 @@ const Portfolio = () => {
           <i className="fas fa-angle-right"></i>
         </Button>
       </a>
-    </section>
+    </Fragment>
   );
 };
 
