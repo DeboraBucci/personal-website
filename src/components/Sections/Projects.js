@@ -48,10 +48,6 @@ const Projects = () => {
     },
   ];
 
-  const selectChildrenOfClosestEl = (e, closest, children) => {
-    return e.target.closest(closest).querySelectorAll(children);
-  };
-
   const changeElementsColor = (arr, color) => {
     for (let i = 0; i < arr.length; i++) {
       arr[i].style.color = color;
@@ -59,7 +55,9 @@ const Projects = () => {
   };
 
   const selectSpanTitle = (e) => {
-    return selectChildrenOfClosestEl(e, ".project__container", ".span-title");
+    return e.target
+      .closest(".project__container")
+      .querySelectorAll(".span-title");
   };
 
   const showColorHandler = (e) => {
