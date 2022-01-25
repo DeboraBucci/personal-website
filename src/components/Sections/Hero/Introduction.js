@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Typing from "../../Typing/Typing";
 import classes from "./Introduction.module.css";
 
 const Introduction = () => {
   return (
-    <div className="container flex column centered">
+    <Fragment>
       <div>
         <p className={classes.greeting}>Hello!</p>
 
@@ -28,7 +28,7 @@ const Introduction = () => {
           />
         </span>
       </p>
-    </div>
+    </Fragment>
   );
 };
 
