@@ -2,7 +2,6 @@ import React from "react";
 import CoursesCarousel from "../CoursesCarousel/CoursesCarousel";
 import Header from "../Header/Header";
 import "./Courses.css";
-import "../../general-styles.css";
 
 const Courses = () => {
   return (
