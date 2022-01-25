@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Courses from "./Courses";
 import Hero from "./Hero/Hero";
 import Portfolio from "./Portfolio";
 
 const Sections = () => {
   return (
-    <div>
+    <Fragment>
       <Hero />
       <Courses />
       <Portfolio />
-    </div>
+    </Fragment>
   );
 };
 
