@@ -33,3 +33,7 @@ h1 span {
 .introduction--container {
   width: 300px;
 }
+
+.actions {
+  padding-top: 3rem;
+}
