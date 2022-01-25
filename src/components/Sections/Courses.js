@@ -1,14 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import CoursesCarousel from "../CoursesCarousel/CoursesCarousel";
 import Header from "../Header/Header";
 import "./Courses.css";
 
 const Courses = () => {
   return (
-    <section id={"certifications"}>
+    <Fragment>
       <Header title="My badges of Honor!" subtitle="courses" />
       <CoursesCarousel />
-    </section>
+    </Fragment>
   );
 };
 
