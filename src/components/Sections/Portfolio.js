@@ -1,7 +1,7 @@
 import React from "react";
 import Projects from "./Projects";
 import Header from "../Header/Header";
-import LinkButton from "../LinkButton/LinkButton";
+import Button from "../Button/Button";
 import "./Portfolio.css";
 import "../../general-styles.css";
 
@@ -10,12 +10,16 @@ const Portfolio = () => {
     <section id="portfolio">
       <Header title="Here are my projects" subtitle="projects" />
       <Projects />
-      <LinkButton
+      <a
+        target="_blank"
+        rel="noopener"
         href="https://github.com/DeboraBucci?tab=repositories"
-        text="See all my projects"
-        icon={<i className="fas fa-angle-right"></i>}
-        classes="all-projects-btn flex centered g-10px c-white"
-      />
+      >
+        <Button>
+          See all my projects
+          <i className="fas fa-angle-right"></i>
+        </Button>
+      </a>
     </section>
   );
 };
