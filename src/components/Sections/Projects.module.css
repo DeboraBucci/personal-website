@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1700px;
+  margin: 2rem auto;
+  padding-top: 5rem;
+}
+
+.project {
+  border-radius: 10px;
+  background: #3c3c41;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  color: white;
+  gap: 10px;
+  font-size: 1.3rem;
+}
+
+.title span {
+  color: transparent;
+  transition: all 1s;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  max-width: 400px;
+}
+
+.img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.project__title {
+  gap: 15px;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.visible {
+  color: #ff7300 !important;
+}

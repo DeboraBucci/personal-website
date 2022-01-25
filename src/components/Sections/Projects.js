@@ -6,6 +6,8 @@ import surveyForm from "../../imgs/projects/survey-form-project.png";
 import technicalDocumentation from "../../imgs/projects/technical-documentation-project.png";
 import productLanding from "../../imgs/projects/product-landing-project.png";
 
+import classes from "./Projects.module.css";
+
 const Projects = () => {
   const projects = [
     {
@@ -69,31 +71,33 @@ const Projects = () => {
   };
 
   return (
-    <main className="projects__container flex centered wrap">
-      {projects.map(({ title, link, image, key }) => (
-        <div
-          key={key}
-          className="project__container overflow-hdn"
-          onMouseEnter={showColorHandler}
-          onMouseLeave={hideColorHandler}
-        >
-          <a
-            href={`https://deborabucci.github.io/${link}/`}
-            target={"_blank"}
-            rel="noopener"
+    <main className={classes.main}>
+      {projects.map(({ title, link, image, key }) => {
+        return (
+          <div
+            key={key}
+            className={`project__container ${classes.project}`}
+            onMouseEnter={showColorHandler}
+            onMouseLeave={hideColorHandler}
           >
-            <div className="overflow-hdn">
-              <img className="project__img" src={image} />
-            </div>
+            <a
+              href={`https://deborabucci.github.io/${link}/`}
+              target={"_blank"}
+              rel="noopener"
+            >
+              <div className={classes["img-container"]}>
+                <img className={classes.img} src={image} />
+              </div>
 
-            <h3 className="project__title flex v-centered c-white">
-              <span className="span-title">&lt;</span>
-              {title}
-              <span className="span-title">/&gt;</span>
-            </h3>
-          </a>
-        </div>
-      ))}
+              <h3 className={classes.title}>
+                <span className="span-title">&lt;</span>
+                {title}
+                <span className="span-title">/&gt;</span>
+              </h3>
+            </a>
+          </div>
+        );
+      })}
     </main>
   );
 };
