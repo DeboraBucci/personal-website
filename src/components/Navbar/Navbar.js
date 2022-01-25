@@ -26,7 +26,7 @@ const Navbar = () => {
             <li className=" pointer" key={key}>
               <a className="link flex h-centered g-10px" href={href}>
                 <Icon icon={icon} />
-                {text}
+                <span>{text}</span>
               </a>
             </li>
           );
