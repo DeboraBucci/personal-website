@@ -6,7 +6,7 @@ import "../../../general-styles.css";
 
 const Hero = () => {
   return (
-    <section id={"home"} className={"flex column centered "}>
+    <div className={classes.content}>
       <Introduction />
       <div className={classes.actions}>
         <Button classes="cv-btn">
@@ -18,7 +18,7 @@ const Hero = () => {
           <i className="fas fa-angle-down"></i>
         </Button>
       </div>
-    </section>
+    </div>
   );
 };
 
