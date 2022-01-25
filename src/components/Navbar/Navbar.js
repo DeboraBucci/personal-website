@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import "../../general-styles.css";
+import Icon from "../UI/Icon";
 
 const Navbar = () => {
   //// CONTENT ////
@@ -24,7 +25,7 @@ const Navbar = () => {
           return (
             <li className=" pointer" key={key}>
               <a className="link flex h-centered g-10px" href={href}>
-                <i className={`fas fa-${icon} inline-blk `}></i>
+                <Icon icon={icon} />
                 {text}
               </a>
             </li>
