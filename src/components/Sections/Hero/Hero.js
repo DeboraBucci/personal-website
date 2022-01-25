@@ -15,9 +15,9 @@ const Hero = () => {
             <Typing
               words={[
                 "Frontend Developer",
+                "Web Designer",
                 "Forever Student",
                 "Devote Christian",
-                "Cat Mom",
               ]}
               cursorType={"|"}
             />
