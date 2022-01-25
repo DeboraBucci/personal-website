@@ -8,9 +8,7 @@ const Courses = () => {
   return (
     <section id={"certifications"}>
       <Header title="My badges of Honor!" subtitle="courses" />
-      <main className="courses-container">
-        <CoursesCarousel />
-      </main>
+      <CoursesCarousel />
     </section>
   );
 };
