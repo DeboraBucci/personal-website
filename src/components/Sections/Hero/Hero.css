@@ -5,6 +5,10 @@ section div p::before {
   background-color: #ff53a9;
 }
 
+.introduction-box {
+  margin-left: 20px;
+}
+
 .typing {
   color: #ff53a9;
 }
