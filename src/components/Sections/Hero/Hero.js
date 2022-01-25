@@ -1,6 +1,6 @@
 import React from "react";
 import Introduction from "./Introduction";
-import Button from "../../Button/Button";
+import Button from "../../UI/Button";
 import classes from "./Hero.module.css";
 import "../../../general-styles.css";
 
