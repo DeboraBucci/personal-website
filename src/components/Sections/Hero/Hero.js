@@ -9,7 +9,7 @@ const Hero = () => {
     <div className={classes.content}>
       <Introduction />
       <div className={classes.actions}>
-        <Button classes="cv-btn">
+        <Button classes={classes["cv-btn"]}>
           Download CV
           <i className="fas fa-file-download"></i>
         </Button>
