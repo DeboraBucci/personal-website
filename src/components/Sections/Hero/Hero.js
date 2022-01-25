@@ -1,6 +1,7 @@
 import React from "react";
 import Typing from "../../Typing/Typing";
 import Introduction from "./Introduction";
+import Button from "../../Button/Button";
 import "./Hero.css";
 import "../../../general-styles.css";
 
@@ -23,6 +24,14 @@ const Hero = () => {
             />
           </span>
         </div>
+      </div>
+      <div className="actions flex centered">
+        <Button classes="cv-btn">
+          Download CV <i className="fas fa-file-download"></i>
+        </Button>
+        <Button>
+          Contact Me <i className="fas fa-angle-down"></i>
+        </Button>
       </div>
     </section>
   );
