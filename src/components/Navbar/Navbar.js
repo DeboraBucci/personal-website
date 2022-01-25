@@ -4,7 +4,6 @@ import "../../general-styles.css";
 import Icon from "../UI/Icon";
 
 const Navbar = () => {
-  //// CONTENT ////
   const linksList = [
     { text: "Home", icon: "home", href: "#home", key: "l1" },
     {
@@ -16,7 +15,6 @@ const Navbar = () => {
     { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l3" },
     { text: "Contact", icon: "paper-plane", href: "#contact", key: "l4" },
   ];
-  // -------------------------------------------------- //
 
   return (
     <nav className="navbar flex h-centered v-centered">
