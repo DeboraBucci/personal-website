@@ -3,7 +3,6 @@ import Projects from "./Projects";
 import Header from "../Header/Header";
 import Button from "../Button/Button";
 import "./Portfolio.css";
-import "../../general-styles.css";
 
 const Portfolio = () => {
   return (
