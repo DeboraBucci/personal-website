@@ -70,32 +70,30 @@ const Projects = () => {
 
   return (
     <main className="projects__container flex centered wrap">
-      {projects.map(({ title, link, image, key }) => {
-        return (
-          <div
-            key={key}
-            className="project__container overflow-hdn"
-            onMouseEnter={showColorHandler}
-            onMouseLeave={hideColorHandler}
+      {projects.map(({ title, link, image, key }) => (
+        <div
+          key={key}
+          className="project__container overflow-hdn"
+          onMouseEnter={showColorHandler}
+          onMouseLeave={hideColorHandler}
+        >
+          <a
+            href={`https://deborabucci.github.io/${link}/`}
+            target={"_blank"}
+            rel="noopener"
           >
-            <a
-              href={`https://deborabucci.github.io/${link}/`}
-              target={"_blank"}
-              rel="noopener"
-            >
-              <div className="overflow-hdn">
-                <img className="project__img" src={image} />
-              </div>
+            <div className="overflow-hdn">
+              <img className="project__img" src={image} />
+            </div>
 
-              <h3 className="project__title flex v-centered c-white">
-                <span className="span-title">&lt;</span>
-                {title}
-                <span className="span-title">/&gt;</span>
-              </h3>
-            </a>
-          </div>
-        );
-      })}
+            <h3 className="project__title flex v-centered c-white">
+              <span className="span-title">&lt;</span>
+              {title}
+              <span className="span-title">/&gt;</span>
+            </h3>
+          </a>
+        </div>
+      ))}
     </main>
   );
 };
