@@ -22,6 +22,10 @@
   color: #f59f00;
 }
 
+span {
+  color: white;
+}
+
 @media (max-width: 500px) {
   .link {
     flex-direction: column;
