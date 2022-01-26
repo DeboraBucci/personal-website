@@ -112,4 +112,26 @@ const sections = [
   },
 ];
 
-export { linksList, projects, sections, coursesImages };
+const traits = [
+  {
+    title: "Coding Enthusiast",
+    content: "Ever since I started to code I couldn't stop!",
+  },
+  {
+    title: "Drawing Artist",
+    content:
+      "I love drawing and styling, and I'm always looking foward to apply that part of me in everything I do.",
+  },
+  {
+    title: "Book Lover",
+    content:
+      "I like spending some of my time nurturing my knowledge and vocabulary by reading books.",
+  },
+  {
+    title: "Perfectionist",
+    content:
+      "I'm someone that just loves to give her all in everything that she does, and refuses to leave anything uncovered. Of course, this doesn't mean I don't make mistakes, I do tons of them! But I love to correct them.",
+  },
+];
+
+export { linksList, projects, sections, coursesImages, traits };
