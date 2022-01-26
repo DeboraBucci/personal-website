@@ -7,6 +7,11 @@ import productLanding from "./imgs/projects/product-landing-project.png";
 import Courses from "./components/Sections/Courses";
 import Hero from "./components/Sections/Hero/Hero";
 import Portfolio from "./components/Sections/Portfolio";
+import Course01 from "./imgs/certifications/course-01.jpg";
+import Course02 from "./imgs/certifications/course-02.jpg";
+import Course03 from "./imgs/certifications/course-03.jpg";
+import Course04 from "./imgs/certifications/course-04.jpg";
+import Course05 from "./imgs/certifications/course-05.png";
 
 const linksList = [
   { text: "Home", icon: "home", href: "#home", key: "l1" },
@@ -18,6 +23,30 @@ const linksList = [
   },
   { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l3" },
   { text: "Contact", icon: "paper-plane", href: "#contact", key: "l4" },
+];
+
+const coursesImages = [
+  {
+    image: Course01,
+    alt: "First",
+    interval: 1000,
+  },
+  {
+    image: Course02,
+    alt: "Second",
+  },
+  {
+    image: Course03,
+    alt: "Third",
+  },
+  {
+    image: Course04,
+    alt: "Fourth",
+  },
+  {
+    image: Course05,
+    alt: "Fifth",
+  },
 ];
 
 const projects = [
@@ -74,4 +103,4 @@ const sections = [
   },
 ];
 
-export { linksList, projects, sections };
+export { linksList, projects, sections, coursesImages };
