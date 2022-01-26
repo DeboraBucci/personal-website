@@ -1,9 +1,19 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { technologies, traits } from "../../../Data";
 import Header from "../../UI/Header";
 import classes from "./About.module.css";
 
 const About = () => {
+  const [isOver, setIsOver] = useState(false);
+
+  const enableGreyscale = (e) => {
+    setIsOver(true);
+  };
+
+  const disableGreyscale = (e) => {
+    setIsOver(false);
+  };
+
   return (
     <Fragment>
       <Header title="Get to know me more" subtitle="about me" />
@@ -31,11 +41,18 @@ const About = () => {
         </h3>
         <ul>
           <h4>I'm Comfortable With:</h4>
-          {technologies.map((technology) => (
-            <li>
-              <img src={technology} style={{ width: "50px" }} />
-            </li>
-          ))}
+          <div className={classes["icon-container"]}>
+            {technologies.map((technology) => (
+              <li
+                key={Math.random().toString()}
+                className={-isOver ? classes.grey : ""}
+                onMouseEnter={enableGreyscale}
+                onMouseLeave={disableGreyscale}
+              >
+                <img src={technology} style={{ width: "50px" }} />
+              </li>
+            ))}
+          </div>
         </ul>
       </main>
     </Fragment>

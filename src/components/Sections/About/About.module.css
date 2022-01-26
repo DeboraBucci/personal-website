@@ -43,3 +43,25 @@
   font-size: 1.1rem;
   font-weight: 500;
 }
+
+.grey {
+  filter: grayscale(100%);
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-container li {
+  background: #2e2e2e;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  transition: all 0.5s;
+}
+
+.icon-container li:hover {
+  transform: scale(1.1);
+  filter: none;
+}
