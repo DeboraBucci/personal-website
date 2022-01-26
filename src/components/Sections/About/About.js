@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { traits } from "../../../Data";
 import Header from "../../UI/Header";
+import classes from "./About.module.css";
 
 const About = () => {
   return (
-    <Fragment>
+    <div>
       <Header title="Get to know me more" subtitle="about me" />
       <div>
         <p>
@@ -26,7 +27,7 @@ const About = () => {
           ))}
         </ul>
       </div>
-    </Fragment>
+    </div>
   );
 };
 
