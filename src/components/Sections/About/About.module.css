@@ -10,7 +10,7 @@
   width: 800px;
 }
 
-.traits {
+.list {
   padding: 0%;
   width: 900px;
   display: flex;
@@ -18,7 +18,7 @@
   gap: 10px;
 }
 
-.traits h3 {
+.title {
   width: 100%;
   display: flex;
   align-items: center;
@@ -26,8 +26,8 @@
   font-size: 1.5rem;
 }
 
-.traits h3::before,
-.traits h3::after {
+.title::before,
+.title::after {
   content: "";
   width: 33%;
   height: 2px;

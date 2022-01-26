@@ -24,8 +24,8 @@ const About = () => {
           of 2021, I absolutely fell in love with it.
         </p>
 
-        <ul className={classes.traits}>
-          <h3>
+        <ul className={classes.list}>
+          <h3 className={classes.title}>
             <span className={classes.text}>SOME OF MY TRAITS</span>
           </h3>
           {traits.map(({ title, content }) => (
@@ -36,11 +36,10 @@ const About = () => {
           ))}
         </ul>
 
-        <h3>
-          <span className={classes.text}>Technologies</span>
-        </h3>
-        <ul>
-          <h4>I'm Comfortable With:</h4>
+        <ul className={classes.list}>
+          <h3 className={classes.title}>
+            <span className={classes.text}>Technologies I Use</span>
+          </h3>
           <div className={classes["icon-container"]}>
             {technologies.map((technology) => (
               <li
