@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Projects from "./Projects";
-import Header from "../Header/Header";
-import Button from "../UI/Button";
+import Header from "../../UI/Header";
+import Button from "../../UI/Button";
 import classes from "./Portfolio.module.css";
 
 const Portfolio = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { coursesImages } from "../../Data";
+import { coursesImages } from "../../../Data";
 
 import "./CoursesCarousel.css";
 

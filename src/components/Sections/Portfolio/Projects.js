@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Projects.module.css";
-import { projects } from "../../Data";
+import { projects } from "../../../Data";
 
 const Projects = () => {
   const changeElementsColor = (arr, color) => {
