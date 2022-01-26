@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Navbar.module.css";
-import "../../general-styles.css";
 import Icon from "../UI/Icon";
 
 const Navbar = () => {
