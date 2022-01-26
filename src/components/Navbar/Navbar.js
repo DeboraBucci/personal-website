@@ -21,8 +21,8 @@ const Navbar = () => {
       <ul className="list flex">
         {linksList.map(({ text, icon, href, key }) => {
           return (
-            <li className=" pointer" key={key}>
-              <a className="link flex h-centered g-10px" href={href}>
+            <li className="pointer link-container" key={key}>
+              <a className="link flex h-centered g-10px hover" href={href}>
                 <Icon icon={icon} />
                 <span>{text}</span>
               </a>
