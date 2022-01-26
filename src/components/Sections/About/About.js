@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { Container } from "react-bootstrap";
 import { traits } from "../../../Data";
 import Header from "../../UI/Header";
 import classes from "./About.module.css";
