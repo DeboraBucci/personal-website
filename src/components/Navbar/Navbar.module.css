@@ -13,6 +13,7 @@
 
 .link:link,
 .link:visited {
+  gap: 10px;
   width: 110%;
   color: white;
   text-decoration: none;

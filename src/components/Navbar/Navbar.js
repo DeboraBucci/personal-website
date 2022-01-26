@@ -20,10 +20,7 @@ const Navbar = () => {
       <ul className={`${classes.list} flex`}>
         {linksList.map(({ text, icon, href, key }) => (
           <li className="pointer link-container" key={key}>
-            <a
-              className={`${classes.link} flex h-centered g-10px hover`}
-              href={href}
-            >
+            <a className={`${classes.link} flex h-centered hover`} href={href}>
               <Icon icon={icon} />
               <span className={classes.span}>{text}</span>
             </a>
