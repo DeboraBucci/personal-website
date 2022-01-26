@@ -22,7 +22,8 @@ const linksList = [
     key: "l2",
   },
   { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l3" },
-  { text: "Contact", icon: "paper-plane", href: "#contact", key: "l4" },
+  { text: "About", icon: "address-card", href: "#about", key: "l4" },
+  { text: "Contact", icon: "paper-plane", href: "#contact", key: "l5" },
 ];
 
 const coursesImages = [
