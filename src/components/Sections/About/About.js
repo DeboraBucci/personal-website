@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Fragment>
       <Header title="Get to know me more" subtitle="about me" />
-      <div>
+      <main>
         <p>
           I'm a 21 years-old web-developer who lives in Argentina, in the city
           of Rosario.
@@ -26,7 +26,7 @@ const About = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </main>
     </Fragment>
   );
 };
