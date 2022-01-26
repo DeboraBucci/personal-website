@@ -15,6 +15,24 @@ import Course03 from "./imgs/certifications/course-03.jpg";
 import Course04 from "./imgs/certifications/course-04.jpg";
 import Course05 from "./imgs/certifications/course-05.png";
 
+import Technology01 from "./imgs/technologies-icons/react.svg";
+import Technology02 from "./imgs/technologies-icons/javascript.svg";
+import Technology03 from "./imgs/technologies-icons/html5.svg";
+import Technology04 from "./imgs/technologies-icons/css3.svg";
+import Technology05 from "./imgs/technologies-icons/git.svg";
+import Technology06 from "./imgs/technologies-icons/github.svg";
+import Technology07 from "./imgs/technologies-icons/bootstrap.svg";
+
+const technologies = [
+  Technology01,
+  Technology02,
+  Technology03,
+  Technology04,
+  Technology05,
+  Technology06,
+  Technology07,
+];
+
 const linksList = [
   { text: "Home", icon: "home", href: "#home", key: "l1" },
   { text: "About", icon: "address-card", href: "#about", key: "l2" },
@@ -134,4 +152,4 @@ const traits = [
   },
 ];
 
-export { linksList, projects, sections, coursesImages, traits };
+export { linksList, projects, sections, coursesImages, traits, technologies };
