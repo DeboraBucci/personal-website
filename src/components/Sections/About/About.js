@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import { traits } from "../../../Data";
 import Header from "../../UI/Header";
 import classes from "./About.module.css";
@@ -18,9 +19,9 @@ const About = () => {
         </p>
 
         <ul>
-          <lh>SOME OF MY TRAITS</lh>
+          <h3>SOME OF MY TRAITS</h3>
           {traits.map(({ title, content }) => (
-            <li>
+            <li key={Math.random()}>
               <span>{title}</span>
               <span> — {content}</span>
             </li>
