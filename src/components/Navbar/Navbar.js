@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import classes from "./Navbar.module.css";
 import "../../general-styles.css";
 import Icon from "../UI/Icon";
 
@@ -17,13 +17,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar flex h-centered v-centered">
-      <ul className="list flex">
+    <nav className={`${classes.navbar} flex centered`}>
+      <ul className={`${classes.list} flex`}>
         {linksList.map(({ text, icon, href, key }) => (
           <li className="pointer link-container" key={key}>
-            <a className="link flex h-centered g-10px hover" href={href}>
+            <a
+              className={`${classes.link} flex h-centered g-10px hover`}
+              href={href}
+            >
               <Icon icon={icon} />
-              <span>{text}</span>
+              <span className={classes.span}>{text}</span>
             </a>
           </li>
         ))}
