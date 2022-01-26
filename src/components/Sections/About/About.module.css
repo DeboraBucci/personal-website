@@ -1,0 +1,45 @@
+.container {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container p {
+  width: 800px;
+}
+
+.traits {
+  padding: 0%;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.traits h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.traits h3::before,
+.traits h3::after {
+  content: "";
+  width: 33%;
+  height: 2px;
+  background-color: #ff53a9;
+}
+
+.text {
+  width: 34%;
+  text-align: center;
+}
+
+.list-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}

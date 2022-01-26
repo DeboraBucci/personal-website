@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Fragment>
       <Header title="Get to know me more" subtitle="about me" />
-      <main>
+      <main className={classes.container}>
         <p>
           I'm a 21 years-old web-developer who lives in Argentina, in the city
           of Rosario.
@@ -17,11 +17,13 @@ const About = () => {
           absolutely fell in love with it.
         </p>
 
-        <ul>
-          <h3>SOME OF MY TRAITS</h3>
+        <ul className={classes.traits}>
+          <h3>
+            <span className={classes.text}>SOME OF MY TRAITS</span>
+          </h3>
           {traits.map(({ title, content }) => (
             <li key={Math.random()}>
-              <span>{title}</span>
+              <span className={classes["list-title"]}>{title}</span>
               <span> — {content}</span>
             </li>
           ))}
