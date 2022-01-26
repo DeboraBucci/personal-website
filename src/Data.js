@@ -4,6 +4,9 @@ import tributePage from "./imgs/projects/tribute-page-project.png";
 import surveyForm from "./imgs/projects/survey-form-project.png";
 import technicalDocumentation from "./imgs/projects/technical-documentation-project.png";
 import productLanding from "./imgs/projects/product-landing-project.png";
+import Courses from "./components/Sections/Courses";
+import Hero from "./components/Sections/Hero/Hero";
+import Portfolio from "./components/Sections/Portfolio";
 
 const linksList = [
   { text: "Home", icon: "home", href: "#home", key: "l1" },
@@ -56,4 +59,19 @@ const projects = [
   },
 ];
 
-export { linksList, projects };
+const sections = [
+  {
+    content: <Hero />,
+    id: "home",
+  },
+  {
+    content: <Courses />,
+    id: "certifications",
+  },
+  {
+    content: <Portfolio />,
+    id: "portfolio",
+  },
+];
+
+export { linksList, projects, sections };
