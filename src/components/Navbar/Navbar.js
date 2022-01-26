@@ -19,16 +19,14 @@ const Navbar = () => {
   return (
     <nav className="navbar flex h-centered v-centered">
       <ul className="list flex">
-        {linksList.map(({ text, icon, href, key }) => {
-          return (
-            <li className="pointer link-container" key={key}>
-              <a className="link flex h-centered g-10px hover" href={href}>
-                <Icon icon={icon} />
-                <span>{text}</span>
-              </a>
-            </li>
-          );
-        })}
+        {linksList.map(({ text, icon, href, key }) => (
+          <li className="pointer link-container" key={key}>
+            <a className="link flex h-centered g-10px hover" href={href}>
+              <Icon icon={icon} />
+              <span>{text}</span>
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
