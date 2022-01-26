@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Typing from "../../Typing/Typing";
+import Typing from "../../UI/Typing";
 import classes from "./Introduction.module.css";
 
 const Introduction = () => {
