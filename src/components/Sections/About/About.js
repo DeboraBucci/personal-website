@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import {} from "../../../Data";
+import { traits } from "../../../Data";
 import Header from "../../UI/Header";
 
 const About = () => {
@@ -18,23 +18,12 @@ const About = () => {
 
         <ul>
           <lh>SOME OF MY TRAITS</lh>
-          <li>
-            Coding Enthusiast — Ever since I started to code I couldn't stop!
-          </li>
-          <li>
-            Drawing Artist — I love to draw and style things, and I'm always
-            looking forward to apply that part of me in everything I do.
-          </li>
-          <li>
-            Book Lover — I like spending some of my time nurturing my knowledge
-            and vocabulary by reading books.
-          </li>
-          <li>
-            Perfectionist — I'm someone that just loves to give her all in
-            everything that she does, and refuses to leave anything uncovered.
-            Of course, this doesn't mean I don't make mistakes, I do tons of
-            them! But I love to correct them.
-          </li>
+          {traits.map(({ title, content }) => (
+            <li>
+              <span>{title}</span>
+              <span> — {content}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </Fragment>
