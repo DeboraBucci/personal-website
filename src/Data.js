@@ -6,6 +6,8 @@ import technicalDocumentation from "./imgs/projects/technical-documentation-proj
 import productLanding from "./imgs/projects/product-landing-project.png";
 import Courses from "./components/Sections/Courses/Courses";
 import Hero from "./components/Sections/Hero/Hero";
+import About from "./components/Sections/About/About";
+
 import Portfolio from "./components/Sections/Portfolio/Portfolio";
 import Course01 from "./imgs/certifications/course-01.jpg";
 import Course02 from "./imgs/certifications/course-02.jpg";
@@ -15,14 +17,15 @@ import Course05 from "./imgs/certifications/course-05.png";
 
 const linksList = [
   { text: "Home", icon: "home", href: "#home", key: "l1" },
+  { text: "About", icon: "address-card", href: "#about", key: "l2" },
   {
     text: "Certifications",
     icon: "award",
     href: "#certifications",
-    key: "l2",
+    key: "l3",
   },
-  { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l3" },
-  { text: "About", icon: "address-card", href: "#about", key: "l4" },
+  { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l4" },
+
   { text: "Contact", icon: "paper-plane", href: "#contact", key: "l5" },
 ];
 
@@ -95,9 +98,14 @@ const sections = [
     id: "home",
   },
   {
+    content: <About />,
+    id: "about",
+  },
+  {
     content: <Courses />,
     id: "certifications",
   },
+
   {
     content: <Portfolio />,
     id: "portfolio",
