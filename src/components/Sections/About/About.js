@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Container } from "react-bootstrap";
 import { traits } from "../../../Data";
 import Header from "../../UI/Header";
@@ -6,7 +6,7 @@ import classes from "./About.module.css";
 
 const About = () => {
   return (
-    <div>
+    <Fragment>
       <Header title="Get to know me more" subtitle="about me" />
       <div>
         <p>
@@ -28,7 +28,7 @@ const About = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
