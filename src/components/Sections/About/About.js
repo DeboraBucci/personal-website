@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { traits } from "../../../Data";
+import { technologies, traits } from "../../../Data";
 import Header from "../../UI/Header";
 import classes from "./About.module.css";
 
@@ -22,6 +22,18 @@ const About = () => {
             <li key={Math.random()}>
               <span className={classes["list-title"]}>{title}</span>
               <span> — {content}</span>
+            </li>
+          ))}
+        </ul>
+
+        <h3>
+          <span className={classes.text}>Technologies</span>
+        </h3>
+        <ul>
+          <h4>I'm Comfortable With:</h4>
+          {technologies.map((technology) => (
+            <li>
+              <img src={technology} style={{ width: "50px" }} />
             </li>
           ))}
         </ul>
