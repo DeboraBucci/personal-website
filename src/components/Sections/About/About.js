@@ -41,14 +41,16 @@ const About = () => {
             <span className={classes.text}>Technologies I Use</span>
           </h3>
           <div className={classes["icon-container"]}>
-            {technologies.map((technology) => (
+            {technologies.map(({ text, icon }) => (
               <li
                 key={Math.random().toString()}
-                className={-isOver ? classes.grey : ""}
                 onMouseEnter={enableGreyscale}
                 onMouseLeave={disableGreyscale}
               >
-                <img src={technology} style={{ width: "50px" }} />
+                <div className={isOver ? classes.grey : ""}>
+                  <img src={icon} style={{ width: "50px" }} />
+                </div>
+                <span>{text}</span>
               </li>
             ))}
           </div>
