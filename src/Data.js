@@ -138,7 +138,7 @@ const traits = [
   {
     title: "Drawing Artist",
     content:
-      "I love drawing and styling, and I'm always looking foward to apply that part of me in everything I do.",
+      "I love drawing and styling, and I'm always looking forward to apply that part of me in everything I do.",
   },
   {
     title: "Book Lover",
