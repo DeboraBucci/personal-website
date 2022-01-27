@@ -51,10 +51,14 @@
 .icon-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  margin: 0 auto;
+  max-width: 800px;
   gap: 20px;
 }
 
-.icon-container li {
+.icon-container li div {
   background: #2e2e2e;
   color: white;
   border-radius: 50%;
