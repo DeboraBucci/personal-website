@@ -89,3 +89,10 @@
   transform: scale(1.2);
   filter: none;
 }
+
+.icon-container li:hover span {
+  width: max-content;
+  padding-left: 50px;
+  transition: all 1s;
+  z-index: 10;
+}
