@@ -48,6 +48,10 @@
   filter: grayscale(100%);
 }
 
+.grey li {
+  z-index: 1;
+}
+
 .icon-container {
   display: flex;
   justify-content: center;
@@ -63,6 +67,8 @@
 }
 
 .icon-container li div {
+  display: flex;
+  z-index: -10;
   background: #2e2e2e;
   color: white;
   border-radius: 50%;
@@ -86,8 +92,10 @@
 }
 
 .icon-container li:hover div {
+  position: relative;
   transform: scale(1.2);
   filter: none;
+  z-index: 888;
 }
 
 .icon-container li:hover span {
