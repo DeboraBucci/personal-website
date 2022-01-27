@@ -45,7 +45,7 @@
 }
 
 .grey {
-  filter: grayscale(100%);
+  filter: blur(2px) grayscale(100%);
 }
 
 .grey li {
