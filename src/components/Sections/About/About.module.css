@@ -96,3 +96,8 @@
   transition: all 1s;
   z-index: 10;
 }
+
+.icon-container li span:hover {
+  width: 0;
+  padding: 0;
+}
