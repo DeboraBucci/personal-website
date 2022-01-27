@@ -61,7 +61,7 @@
   padding: 15px;
 }
 
-.icon-container li:hover {
+.icon-container li:hover div {
   transform: scale(1.2);
   filter: none;
 }
