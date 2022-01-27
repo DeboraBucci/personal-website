@@ -33,13 +33,70 @@ import Express from "./imgs/technologies-icons/express.png";
 import Redux from "./imgs/technologies-icons/redux.svg";
 
 const technologies = [
-  Technology01,
-  Technology02,
-  Technology03,
-  Technology04,
-  Technology05,
-  Technology06,
-  Technology07,
+  {
+    icon: React,
+    text: "React",
+  },
+  {
+    icon: JavaScript,
+    text: "JavaScript",
+  },
+  {
+    icon: HTML5,
+    text: "HTML5",
+  },
+  {
+    icon: CSS3,
+    text: "CSS3",
+  },
+  {
+    icon: GIT,
+    text: "GIT",
+  },
+  {
+    icon: GitHub,
+    text: "GitHub",
+  },
+  {
+    icon: Bootstrap,
+    text: "Bootstrap",
+  },
+  {
+    icon: NodeJS,
+    text: "NodeJS",
+  },
+  {
+    icon: NPM,
+    text: "NPM",
+  },
+  {
+    icon: TypeScript,
+    text: "TypeScript",
+  },
+  {
+    icon: Postman,
+    text: "Postman",
+  },
+  {
+    icon: Python,
+    text: "Python",
+  },
+  {
+    icon: Jest,
+    text: "Jest",
+  },
+  {
+    icon: MongoDB,
+    text: "MongoDB",
+  },
+  {
+    icon: Express,
+    text: "Express",
+  },
+  {
+    icon: Redux,
+    text: "Redux",
+  },
 ];
 
 const linksList = [
