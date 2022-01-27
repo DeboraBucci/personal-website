@@ -15,13 +15,22 @@ import Course03 from "./imgs/certifications/course-03.jpg";
 import Course04 from "./imgs/certifications/course-04.jpg";
 import Course05 from "./imgs/certifications/course-05.png";
 
-import Technology01 from "./imgs/technologies-icons/react.svg";
-import Technology02 from "./imgs/technologies-icons/javascript.svg";
-import Technology03 from "./imgs/technologies-icons/html5.svg";
-import Technology04 from "./imgs/technologies-icons/css3.svg";
-import Technology05 from "./imgs/technologies-icons/git.svg";
-import Technology06 from "./imgs/technologies-icons/github.svg";
-import Technology07 from "./imgs/technologies-icons/bootstrap.svg";
+import React from "./imgs/technologies-icons/react.svg";
+import JavaScript from "./imgs/technologies-icons/javascript.svg";
+import HTML5 from "./imgs/technologies-icons/html5.svg";
+import CSS3 from "./imgs/technologies-icons/css3.svg";
+import GIT from "./imgs/technologies-icons/git.svg";
+import GitHub from "./imgs/technologies-icons/github.png";
+import Bootstrap from "./imgs/technologies-icons/bootstrap.svg";
+import NodeJS from "./imgs/technologies-icons/nodejs.svg";
+import NPM from "./imgs/technologies-icons/npm.svg";
+import TypeScript from "./imgs/technologies-icons/typescript.svg";
+import Postman from "./imgs/technologies-icons/postman.png";
+import Python from "./imgs/technologies-icons/python.svg";
+import Jest from "./imgs/technologies-icons/jest.svg";
+import MongoDB from "./imgs/technologies-icons/mongodb.svg";
+import Express from "./imgs/technologies-icons/express.png";
+import Redux from "./imgs/technologies-icons/redux.svg";
 
 const technologies = [
   Technology01,
