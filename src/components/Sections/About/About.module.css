@@ -109,3 +109,9 @@
   width: 0;
   padding: 0;
 }
+
+@media (hover: none) {
+  .grey {
+    filter: blur(0);
+  }
+}
