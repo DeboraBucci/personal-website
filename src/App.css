@@ -122,3 +122,8 @@ a {
 
 /*     rgb(102, 126, 234) 0%,
       rgb(118, 75, 162) 100% */
+
+#about {
+  background-color: #fff;
+  color: #2e2e2e;
+}
