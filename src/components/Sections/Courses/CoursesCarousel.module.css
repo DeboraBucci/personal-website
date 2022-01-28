@@ -1,35 +1,24 @@
-.empty-space {
-  margin-top: 20px;
-  height: 40px;
-}
-
 .carousel-container {
   margin: 0 auto;
-  max-width: 1200px;
   padding-top: 50px;
+  max-width: 1200px;
 }
 
-.img-container {
-  background-color: #181818;
+.img-box {
+  background: #181818;
   border-radius: 7px;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 50px;
 }
 
-.img-carousel {
+.img {
   width: 100%;
 }
 
 @media (max-width: 1000px) {
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    display: none;
-  }
-
-  .carousel-container,
-  .img-container,
-  img {
-    width: 100vw;
+  .img-box {
+    border-radius: 0px;
   }
 }
