@@ -1,23 +1,22 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import { coursesImages } from "../../../Data";
-
-import "./CoursesCarousel.css";
+import classes from "./CoursesCarousel.module.css";
 
 const CoursesCarousel = () => {
   return (
-    <div className="carousel-container mrg-auto">
+    <div className={classes["carousel-container"]}>
       <Carousel touch={true}>
         {coursesImages.map(({ image, alt }, i) => {
           return (
             <Carousel.Item key={`carousel${i}`} interval={3000}>
-              <div className="img-container mrg-auto overflow-hdn">
+              <div className={classes["img-container"]}>
                 <img
-                  className="d-block w-100"
+                  className={classes["img-carousel"]}
                   src={image}
                   alt={`${alt} slide`}
                 />
-                <div className="empty-space"></div>
+                <div className={classes["empty-space"]}></div>
               </div>
             </Carousel.Item>
           );
