@@ -71,7 +71,8 @@ a {
   cursor: pointer;
 }
 
-#about {
+#about,
+#portfolio {
   background-color: #fff;
   color: #2e2e2e;
 }
