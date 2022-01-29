@@ -3,6 +3,7 @@ import { technologies, traits } from "../../../Data";
 import Header from "../../UI/Header";
 import classes from "./About.module.css";
 import Technologies from "./Technologies";
+import Traits from "./Traits";
 
 const About = () => {
   return (
@@ -21,16 +22,7 @@ const About = () => {
           <h3 className={classes["list-title"]}>
             <span className={classes.text}>SOME OF MY TRAITS</span>
           </h3>
-          <ul className={classes.list}>
-            {traits.map(({ title, content, i }) => (
-              <li className={classes["traits-box"]} key={Math.random()}>
-                <div className={classes["triangle-parent"]}>
-                  <span className={classes["traits-heading"]}>{title}</span>
-                </div>
-                <span className={classes["traits-text"]}> — {content}</span>
-              </li>
-            ))}
-          </ul>
+          <Traits />
         </div>
 
         <div className={classes.box}>
