@@ -1,0 +1,150 @@
+.footer {
+  background-color: #464646;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+}
+
+.info {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.info i {
+  padding: 0 10px;
+}
+
+.info a:link,
+.info a:visited {
+  color: white;
+}
+
+.heart {
+  cursor: pointer;
+  color: red;
+  transition: all 0.5s;
+}
+
+.heart:hover {
+  -webkit-animation: movement 1s linear infinite;
+  -moz-animation: movement 1s linear infinite;
+  animation: movement 1s linear infinite;
+}
+
+.react {
+  color: #61dbfb;
+}
+
+.link-container .hover {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-container .hover:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 0px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.45s;
+  opacity: 0;
+  background-color: #e69500;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.link-container:hover .hover:before {
+  width: 90%;
+  opacity: 1;
+}
+
+.info a:hover .react {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes movement {
+  0% {
+    -moz-transform: scale(1);
+  }
+  20% {
+    -moz-transform: scale(1.25);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+  60% {
+    -moz-transform: scale(1.25);
+  }
+  80% {
+    -moz-transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-webkit-keyframes movement {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.25);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.25);
+  }
+  80% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes movement {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.25);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.25);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
