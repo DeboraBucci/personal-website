@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { technologies } from "../../../Data";
 import classes from "./Technologies.module.css";
 
 const Technologies = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const filterOn = () => {
+    setIsHovered(true);
+  };
+
+  const filterOff = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <ul className={classes["icons-list"]}>
+    <ul
+      onMouseLeave={filterOff}
+      onPointerLeave={filterOff}
+      className={classes["icons-list"]}
+    >
       {technologies.map(({ text, icon }) => (
-        <li className={classes["list-el"]} key={Math.random().toString()}>
-          <div className={classes["icon-box"]}>
+        <li
+          onMouseEnter={filterOn}
+          onMouseLeave={filterOff}
+          onPointerLeave={filterOff}
+          className={`${classes["list-el"]}`}
+          key={Math.random().toString()}
+        >
+          <div
+            onMouseLeave={filterOff}
+            className={`${classes["icon-box"]}  ${
+              isHovered ? classes["filter-on"] : ""
+            }`}
+          >
             <img src={icon} style={{ width: "50px", height: "50px" }} />
           </div>
           <span>{text}</span>

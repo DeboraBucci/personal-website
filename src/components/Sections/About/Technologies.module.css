@@ -37,7 +37,7 @@
 
 /* HOVER
 -------------------------------------------------------------------------- */
-.icons-list:hover .icon-box {
+.filter-on {
   filter: blur(2px) grayscale(100%);
 }
 
@@ -63,8 +63,8 @@
 /* MEDIA QUERIES
 -------------------------------------------------------------------------- */
 @media (hover: none) {
-  .icons-list:hover .icon-box {
-    filter: blur(0) !important;
+  .filter-on {
+    filter: none !important;
   }
 }
 
