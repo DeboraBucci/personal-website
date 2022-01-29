@@ -41,6 +41,10 @@
   z-index: -1;
 }
 
+.icons-container:hover .list-el div {
+  filter: blur(2px) grayscale(100%);
+}
+
 .list-el:hover div {
   position: relative;
   transform: scale(1.2);
@@ -61,20 +65,8 @@
 
 /* FILTER CLASSES
 --------------------------------------------- */
-.filter-on {
-  filter: blur(2px) grayscale(100%);
-}
-
-.filter-on li {
-  z-index: 1;
-}
-
-.filter-off {
-  filter: none !important;
-}
-
 @media (hover: none) {
-  .filter-on {
+  .icons-container:hover .list-el div {
     filter: blur(0) !important;
   }
 }
