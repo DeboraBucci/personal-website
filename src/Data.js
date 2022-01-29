@@ -236,7 +236,7 @@ const traits = [
   {
     title: "Perfectionist",
     content:
-      "I'm someone that just loves to give her all in everything that she does, and refuses to leave anything uncovered. Of course, this doesn't mean I don't make mistakes, I do tons of them! But I love to correct them.",
+      "I'm someone that just loves to give her all in everything that she does, and refuses to leave anything uncovered",
   },
 ];
 
