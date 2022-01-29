@@ -16,7 +16,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/d%C3%A9bora-bucci-13a07a212/"
             target={"_blank"}
           >
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
             LinkedIn
           </a>
         </li>
@@ -26,7 +26,7 @@ const Contact = () => {
             href="https://github.com/DeboraBucci"
             target={"_blank"}
           >
-            <i class="fab fa-github-alt"></i>
+            <i className="fab fa-github-alt"></i>
             GitHub
           </a>
         </li>
@@ -36,7 +36,7 @@ const Contact = () => {
             href="mailto:dbucci@protonmail.com"
             target={"_blank"}
           >
-            <i class="fas fa-at"></i>
+            <i className="fas fa-at"></i>
             send me an e-mail
           </a>
         </li>
