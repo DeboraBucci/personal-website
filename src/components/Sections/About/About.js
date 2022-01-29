@@ -6,18 +6,18 @@ import classes from "./About.module.css";
 const About = () => {
   const [isOver, setIsOver] = useState(false);
 
-  const enableGreyscale = (e) => {
+  const filterOn = () => {
     setIsOver(true);
   };
 
-  const disableGreyscale = (e) => {
+  const filterOff = () => {
     setIsOver(false);
   };
 
   return (
     <Fragment>
       <Header title="Get to know me more" subtitle="about me" />
-      <main className={classes.container}>
+      <main className={classes["info-container"]}>
         <p>
           I'm a 21 years-old web-developer who lives in Argentina, in the city
           of Rosario. Ever since I started to design and code websites in March
@@ -44,8 +44,8 @@ const About = () => {
             {technologies.map(({ text, icon }) => (
               <li
                 key={Math.random().toString()}
-                onMouseEnter={enableGreyscale}
-                onMouseLeave={disableGreyscale}
+                onMouseEnter={filterOn}
+                onMouseLeave={filterOff}
               >
                 <div className={isOver ? classes.grey : ""}>
                   <img src={icon} style={{ width: "50px" }} />
@@ -55,6 +55,8 @@ const About = () => {
             ))}
           </div>
         </ul>
+
+        <div className={classes["last-line"]}></div>
       </main>
     </Fragment>
   );
