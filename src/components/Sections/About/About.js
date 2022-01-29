@@ -2,18 +2,9 @@ import React, { Fragment, useState } from "react";
 import { technologies, traits } from "../../../Data";
 import Header from "../../UI/Header";
 import classes from "./About.module.css";
+import Technologies from "./Technologies";
 
 const About = () => {
-  const [isOver, setIsOver] = useState(false);
-
-  const filterOn = () => {
-    setIsOver(true);
-  };
-
-  const filterOff = () => {
-    setIsOver(false);
-  };
-
   return (
     <Fragment>
       <Header title="Get to know me more" subtitle="about me" />
@@ -46,25 +37,7 @@ const About = () => {
           <h3 className={classes["list-title"]}>
             <span className={classes.text}>Technologies I Use</span>
           </h3>
-          <ul className={classes["icons-container"]}>
-            {technologies.map(({ text, icon }) => (
-              <li
-                className={classes["list-el"]}
-                key={Math.random().toString()}
-                onMouseEnter={filterOn}
-                onMouseLeave={filterOff}
-              >
-                <div
-                  className={
-                    isOver ? classes["filter-on"] : classes["filter-off"]
-                  }
-                >
-                  <img src={icon} style={{ width: "50px", height: "50px" }} />
-                </div>
-                <span>{text}</span>
-              </li>
-            ))}
-          </ul>
+          <Technologies />
         </div>
         <div className={classes["last-line"]}></div>
       </main>
