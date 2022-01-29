@@ -11,15 +11,20 @@
 
 .project {
   border-radius: 10px;
-  background: #3c3c41;
   overflow: hidden;
+  transition: all 0.4s;
+  box-shadow: -10px 10px 0px #e69500, 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .title {
+  margin: 0;
+  background: #3c3c41;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   color: white;
   gap: 10px;
   font-size: 1.3rem;
@@ -44,6 +49,10 @@
   transition: all 0.5s;
 }
 
+.project:hover {
+  box-shadow: 10px -10px 0px #e69500, 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 .project__title {
   gap: 15px;
   padding: 1rem;
@@ -52,4 +61,11 @@
 
 .visible {
   color: #ff7300 !important;
+}
+
+@media (max-width: 600px) {
+  .project {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+  }
 }
