@@ -7,21 +7,28 @@
   position: relative;
 }
 
-.list {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 150px;
-  gap: 5rem;
-  position: relative;
+.box {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
-.traits-heading {
+.title-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 5px;
+  transform: skewX(-15deg);
+  max-width: max-content;
+}
+
+.title {
   font-weight: 700;
-  color: #4e4e4e;
+  color: white;
   display: flex;
   align-items: center;
-  background-color: white;
+  background: #fff
+    linear-gradient(120deg, rgba(41, 14, 41, 0.5), rgba(22, 22, 88, 0.5));
   border-bottom: 2px solid #2e2e2e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -31,52 +38,7 @@
   border-radius: 3px;
 }
 
-.triangle-parent {
-  display: flex;
-  position: relative;
-  align-items: center;
-  border-radius: 5px;
-  transform: skewX(-15deg);
-  max-width: max-content;
-}
-
-.triangle-parent:after {
-  z-index: -10;
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  right: -15px;
-  height: 0px;
-  width: 0px;
-  transform: rotate(25deg);
-  border-bottom: 50px solid #ff53a9;
-  border-left: 100px solid transparent;
-}
-
-.triangle-parent:before {
-  z-index: -10;
-  content: "";
-  position: absolute;
-  bottom: 15px;
-  right: -15px;
-  height: 0px;
-  width: 0px;
-  transform: rotate(40deg);
-  border-bottom: 50px solid #f59f00;
-  border-left: 50px solid transparent;
-}
-
-.traits-box {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-
-.traits-box:hover .traits-text {
-  display: block;
-}
-
-.traits-text {
+.text {
   position: relative;
   margin-top: 1rem;
   background-color: #2e2e2e;
@@ -93,7 +55,49 @@
   transition: all 1s;
 }
 
-.traits-text:before {
+/* HOVER
+-------------------------------------- */
+.box:hover .title {
+  background: #525252;
+}
+
+.box:hover .text {
+  display: block;
+}
+
+.box:hover .text {
+  top: 60px;
+  opacity: 1;
+}
+
+/* TRIANGLES
+-------------------------------------- */
+.title-box:after,
+.title-box:before {
+  z-index: -10;
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+}
+
+.title-box:after {
+  bottom: 30px;
+  right: -15px;
+  transform: rotate(25deg);
+  border-bottom: 50px solid #ff53a9;
+  border-left: 100px solid transparent;
+}
+
+.title-box:before {
+  bottom: 15px;
+  right: -15px;
+  transform: rotate(40deg);
+  border-bottom: 50px solid #f59f00;
+  border-left: 50px solid transparent;
+}
+
+.text:before {
   z-index: 2;
   position: absolute;
   content: "";
@@ -106,11 +110,8 @@
   border-bottom: 10px solid #ff53a9;
 }
 
-.traits-box:hover .traits-text {
-  top: 60px;
-  opacity: 1;
-}
-
+/* MEDIA QUERIES
+-------------------------------------- */
 @media (max-width: 1000px) {
   .list-el span {
     display: none;
@@ -119,24 +120,21 @@
     grid-template-columns: repeat(2, 1fr);
     height: auto;
     gap: 0;
-    justify-content: center;
-    align-items: center;
   }
 
-  .traits-text {
+  .text {
     opacity: 0.8;
     top: 10px;
     position: relative;
     margin-bottom: 2rem;
   }
 
-  .traits-box {
+  .box {
     margin: 0 auto;
   }
 
-  .traits-box:hover .traits-text {
+  .box:hover .text {
     opacity: 1;
-
     top: 0px;
     transition: all 0.1s;
   }

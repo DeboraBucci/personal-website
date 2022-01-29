@@ -5,12 +5,12 @@ import classes from "./Traits.module.css";
 const Traits = () => {
   return (
     <ul className={classes.list}>
-      {traits.map(({ title, content, i }) => (
-        <li className={classes["traits-box"]} key={Math.random()}>
-          <div className={classes["triangle-parent"]}>
-            <span className={classes["traits-heading"]}>{title}</span>
+      {traits.map(({ title, content }) => (
+        <li className={classes.box} key={Math.random()}>
+          <div className={classes["title-box"]}>
+            <span className={classes.title}>{title}</span>
           </div>
-          <span className={classes["traits-text"]}> — {content}</span>
+          <span className={classes.text}> — {content}</span>
         </li>
       ))}
     </ul>
