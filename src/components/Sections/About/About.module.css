@@ -1,47 +1,121 @@
 .info-container {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+  width: 900px;
 }
 
-.info-container {
-  width: 800px;
-  margin: 0 auto;
+.box {
+  width: 100%;
 }
+
+/* TITLE
+--------------------------------------------- */
+.list-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.list-title::before,
+.list-title::after {
+  content: "";
+  width: 34%;
+  height: 10px;
+  background-color: #f59f00;
+}
+
+.list-title::before {
+  border-top-right-radius: 300px;
+  border-bottom-left-radius: 300px;
+}
+
+.list-title::after {
+  border-top-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+}
+
+.text {
+  width: 34%;
+  text-align: center;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .list {
   padding: 0;
-  width: 900px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.title {
+.traits-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* ICONS MANAGEMENT
+--------------------------------------------- */
+.icons-container {
   display: flex;
-  align-items: center;
-  font-size: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
+  gap: 20px;
 }
 
-.title::before,
-.title::after {
-  content: "";
-  width: 33%;
-  height: 10px;
-  background-color: #f59f00;
+.list-el {
+  cursor: pointer;
+  position: relative;
 }
 
-.title::before {
-  border-top-right-radius: 300px;
-  border-bottom-left-radius: 300px;
+.list-el div {
+  /* z-index: -10; */
+  background: #2e2e2e;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
 }
 
-.title::after {
-  border-top-left-radius: 300px;
-  border-bottom-right-radius: 300px;
+/* TAG FOR THE NAME OF THE TECHNOLOGY */
+.list-el span {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ff53a9;
+  color: white;
+  top: 30px;
+  left: 50px;
+  width: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  padding: 2px 10px;
+  z-index: -1;
 }
+
+.list-el:hover div {
+  position: relative;
+  transform: scale(1.2);
+  filter: none !important;
+  z-index: 888;
+}
+
+.list-el:hover span {
+  width: max-content;
+  padding-left: 50px;
+  transition: all 1s;
+  z-index: 10;
+}
+
+.list-el span:hover {
+  display: none;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .last-line {
   margin-top: 3rem;
@@ -52,84 +126,23 @@
   border-bottom-right-radius: 300px;
 }
 
-.text {
-  width: 34%;
-  text-align: center;
-}
-
-.list-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.grey {
+/* FILTER CLASSES
+--------------------------------------------- */
+.filter-on {
   filter: blur(2px) grayscale(100%);
 }
 
-.grey li {
+.filter-on li {
   z-index: 1;
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  cursor: pointer;
-  margin: 0 auto;
-  max-width: 800px;
-  gap: 20px;
-}
-
-.icon-container li {
-  position: relative;
-}
-
-.icon-container li div {
-  display: flex;
-  z-index: -10;
-  background: #2e2e2e;
-  color: white;
-  border-radius: 50%;
-  padding: 15px;
-}
-
-.icon-container li span {
-  position: absolute;
-  top: 30px;
-  left: 50px;
-  width: 0px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #ff53a9;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: flex-end;
-  padding: 2px 10px;
-  z-index: -1;
-}
-
-.icon-container li:hover div {
-  position: relative;
-  transform: scale(1.2);
-  filter: none;
-  z-index: 888;
-}
-
-.icon-container li:hover span {
-  width: max-content;
-  padding-left: 50px;
-  transition: all 1s;
-  z-index: 10;
-}
-
-.icon-container li span:hover {
-  width: 0;
-  padding: 0;
+.filter-off {
+  filter: none !important;
 }
 
 @media (hover: none) {
-  .grey {
-    filter: blur(0);
+  .filter-on {
+    filter: blur(0) !important;
   }
 }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
