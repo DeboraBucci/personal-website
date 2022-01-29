@@ -31,10 +31,19 @@ const About = () => {
             <span className={classes.text}>SOME OF MY TRAITS</span>
           </h3>
           <ul className={classes.list}>
-            {traits.map(({ title, content }) => (
-              <li key={Math.random()}>
-                <span className={classes["traits-heading"]}>{title}</span>
-                <span> — {content}</span>
+            {traits.map(({ title, content, i }) => (
+              <li className={classes["traits-box"]} key={Math.random()}>
+                <div className={classes["triangle-parent"]}>
+                  <span className={classes["traits-heading"]}>{title}</span>
+                </div>
+                <span
+                  className={`${classes["traits-text"]} ${
+                    classes[`trait-${i}`]
+                  }`}
+                >
+                  {" "}
+                  — {content}
+                </span>
               </li>
             ))}
           </ul>

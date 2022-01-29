@@ -69,6 +69,7 @@
   margin: 0 auto;
   max-width: 800px;
   gap: 20px;
+  margin-bottom: 3rem;
 }
 
 .list-el {
@@ -121,7 +122,6 @@
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .last-line {
-  margin-top: 3rem;
   width: 500px;
   height: 15px;
   background: #f59f00;
