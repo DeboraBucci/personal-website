@@ -33,6 +33,7 @@ import Express from "./imgs/technologies-icons/express.png";
 import Redux from "./imgs/technologies-icons/redux.svg";
 import VSCode from "./imgs/technologies-icons/vscode.svg";
 import StyledComponents from "./imgs/technologies-icons/styledcomponents.svg";
+import Contact from "./components/contact/Contact";
 
 const technologies = [
   {
@@ -203,6 +204,11 @@ const sections = [
   {
     content: <Portfolio />,
     id: "portfolio",
+  },
+
+  {
+    content: <Contact />,
+    id: "contact",
   },
 ];
 
