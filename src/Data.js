@@ -103,9 +103,9 @@ const linksList = [
   { text: "Home", icon: "home", href: "#home", key: "l1" },
   { text: "About", icon: "address-card", href: "#about", key: "l2" },
   {
-    text: "Certifications",
+    text: "Courses",
     icon: "award",
-    href: "#certifications",
+    href: "#courses",
     key: "l3",
   },
   { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l4" },
@@ -187,7 +187,7 @@ const sections = [
   },
   {
     content: <Courses />,
-    id: "certifications",
+    id: "courses",
   },
 
   {
