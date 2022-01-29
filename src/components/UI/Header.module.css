@@ -1,9 +1,6 @@
 .header {
   border-bottom: 2px solid #ff53a9;
-}
-
-.container {
-  margin: 2rem 3rem 2rem 10rem;
+  padding: 2rem 3rem 2rem 10rem;
 }
 
 .heading {
@@ -14,4 +11,16 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   color: #ff53a9;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 2rem;
+  }
 }
