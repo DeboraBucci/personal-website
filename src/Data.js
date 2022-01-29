@@ -7,6 +7,7 @@ import productLanding from "./imgs/projects/product-landing-project.png";
 import Courses from "./components/Sections/Courses/Courses";
 import Hero from "./components/Sections/Hero/Hero";
 import About from "./components/Sections/About/About";
+import Contact from "./components/contact/Contact";
 
 import Portfolio from "./components/Sections/Portfolio/Portfolio";
 import Course01 from "./imgs/certifications/course-01.webp";
@@ -33,7 +34,7 @@ import Express from "./imgs/technologies-icons/express.png";
 import Redux from "./imgs/technologies-icons/redux.svg";
 import VSCode from "./imgs/technologies-icons/vscode.svg";
 import StyledComponents from "./imgs/technologies-icons/styledcomponents.svg";
-import Contact from "./components/contact/Contact";
+import Lighthouse from "./imgs/technologies-icons/lighthouse.png";
 
 const technologies = [
   {
@@ -107,6 +108,10 @@ const technologies = [
   {
     icon: StyledComponents,
     text: "Styled Componets",
+  },
+  {
+    icon: Lighthouse,
+    text: "Lighthouse",
   },
 ];
 
