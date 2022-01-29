@@ -1,15 +1,47 @@
 .navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   position: fixed;
   z-index: 999;
   width: 100vw;
-  height: 50px;
-  background: rgba(46, 46, 46, 0.8);
+  padding: 10px 0 0 0;
+  background: rgba(46, 46, 46, 0.95);
 }
 
-.list {
-  justify-content: space-around;
-  gap: 100px;
+.navbar-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
 }
+
+/* HOVER ANIMATION
+--------------------------------------------- */
+.link-container .hover {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-container .hover:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.45s;
+  opacity: 0;
+  background-color: #e69500;
+}
+
+.link-container:hover .hover:before {
+  width: 100%;
+  opacity: 1;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .link:link,
 .link:visited {

@@ -5,11 +5,11 @@ import { linksList } from "../../Data";
 
 const Navbar = () => {
   return (
-    <nav className={`${classes.navbar} flex centered`}>
-      <ul className={`${classes.list} flex`}>
+    <nav className={classes.navbar}>
+      <ul className={classes["navbar-list"]}>
         {linksList.map(({ text, icon, href, key }) => (
-          <li className="pointer link-container" key={key}>
-            <a className={`${classes.link} flex h-centered hover`} href={href}>
+          <li className={classes["link-container"]} key={key}>
+            <a className={`${classes.link} ${classes.hover}`} href={href}>
               <Icon icon={icon} />
               <span className={classes.span}>{text}</span>
             </a>
