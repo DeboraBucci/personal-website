@@ -36,14 +36,7 @@ const About = () => {
                 <div className={classes["triangle-parent"]}>
                   <span className={classes["traits-heading"]}>{title}</span>
                 </div>
-                <span
-                  className={`${classes["traits-text"]} ${
-                    classes[`trait-${i}`]
-                  }`}
-                >
-                  {" "}
-                  — {content}
-                </span>
+                <span className={classes["traits-text"]}> — {content}</span>
               </li>
             ))}
           </ul>
