@@ -42,8 +42,16 @@ const technologies = [
     text: "React",
   },
   {
+    icon: Jest,
+    text: "Jest",
+  },
+  {
     icon: JavaScript,
     text: "JavaScript",
+  },
+  {
+    icon: TypeScript,
+    text: "TypeScript",
   },
   {
     icon: HTML5,
@@ -54,6 +62,14 @@ const technologies = [
     text: "CSS3",
   },
   {
+    icon: Bootstrap,
+    text: "Bootstrap",
+  },
+  {
+    icon: StyledComponents,
+    text: "Styled Componets",
+  },
+  {
     icon: GIT,
     text: "GIT",
   },
@@ -62,41 +78,26 @@ const technologies = [
     text: "GitHub",
   },
   {
-    icon: Bootstrap,
-    text: "Bootstrap",
-  },
-  {
     icon: NodeJS,
     text: "NodeJS",
+  },
+  {
+    icon: Express,
+    text: "Express",
   },
   {
     icon: NPM,
     text: "NPM",
   },
-  // {
-  //   icon: TypeScript,
-  //   text: "TypeScript",
-  // },
   {
     icon: Postman,
     text: "Postman",
   },
-  {
-    icon: Python,
-    text: "Python",
-  },
-  // {
-  //   icon: Jest,
-  //   text: "Jest",
-  // },
   // {
   //   icon: MongoDB,
   //   text: "MongoDB",
   // },
-  {
-    icon: Express,
-    text: "Express",
-  },
+
   // {
   //   icon: Redux,
   //   text: "Redux",
@@ -106,12 +107,12 @@ const technologies = [
     text: "VS Code",
   },
   {
-    icon: StyledComponents,
-    text: "Styled Componets",
-  },
-  {
     icon: Lighthouse,
     text: "Lighthouse",
+  },
+  {
+    icon: Python,
+    text: "Python",
   },
 ];
 
