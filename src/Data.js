@@ -9,11 +9,11 @@ import Hero from "./components/Sections/Hero/Hero";
 import About from "./components/Sections/About/About";
 
 import Portfolio from "./components/Sections/Portfolio/Portfolio";
-import Course01 from "./imgs/certifications/course-01.jpg";
-import Course02 from "./imgs/certifications/course-02.jpg";
-import Course03 from "./imgs/certifications/course-03.jpg";
-import Course04 from "./imgs/certifications/course-04.jpg";
-import Course05 from "./imgs/certifications/course-05.png";
+import Course01 from "./imgs/certifications/course-01.webp";
+import Course02 from "./imgs/certifications/course-02.webp";
+import Course03 from "./imgs/certifications/course-03.webp";
+import Course04 from "./imgs/certifications/course-04.webp";
+import Course05 from "./imgs/certifications/course-05.webp";
 
 import React from "./imgs/technologies-icons/react.svg";
 import JavaScript from "./imgs/technologies-icons/javascript.svg";
@@ -31,6 +31,8 @@ import Jest from "./imgs/technologies-icons/jest.svg";
 import MongoDB from "./imgs/technologies-icons/mongodb.svg";
 import Express from "./imgs/technologies-icons/express.png";
 import Redux from "./imgs/technologies-icons/redux.svg";
+import VSCode from "./imgs/technologies-icons/vscode.svg";
+import StyledComponents from "./imgs/technologies-icons/styledcomponents.svg";
 
 const technologies = [
   {
@@ -69,10 +71,10 @@ const technologies = [
     icon: NPM,
     text: "NPM",
   },
-  {
-    icon: TypeScript,
-    text: "TypeScript",
-  },
+  // {
+  //   icon: TypeScript,
+  //   text: "TypeScript",
+  // },
   {
     icon: Postman,
     text: "Postman",
@@ -81,21 +83,29 @@ const technologies = [
     icon: Python,
     text: "Python",
   },
-  {
-    icon: Jest,
-    text: "Jest",
-  },
-  {
-    icon: MongoDB,
-    text: "MongoDB",
-  },
+  // {
+  //   icon: Jest,
+  //   text: "Jest",
+  // },
+  // {
+  //   icon: MongoDB,
+  //   text: "MongoDB",
+  // },
   {
     icon: Express,
     text: "Express",
   },
+  // {
+  //   icon: Redux,
+  //   text: "Redux",
+  // },
   {
-    icon: Redux,
-    text: "Redux",
+    icon: VSCode,
+    text: "VS Code",
+  },
+  {
+    icon: StyledComponents,
+    text: "Styled Componets",
   },
 ];
 
