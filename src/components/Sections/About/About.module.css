@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  width: 900px;
+  max-width: 900px;
 }
 
 .box {
@@ -17,6 +17,7 @@
 .list-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -24,7 +25,7 @@
 .list-title::before,
 .list-title::after {
   content: "";
-  width: 34%;
+  width: 40%;
   height: 10px;
   background-color: #f59f00;
 }
@@ -40,7 +41,8 @@
 }
 
 .text {
-  width: 34%;
+  width: 35%;
+  padding: 0 5px;
   text-align: center;
 }
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -146,3 +148,27 @@
   }
 }
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+@media (max-width: 600px) {
+  .list-title {
+    font-size: 1.3rem;
+  }
+
+  .list-title::before,
+  .list-title::after {
+    width: 20%;
+  }
+
+  .text {
+    width: 60%;
+  }
+
+  .list-el div img {
+    height: 30px !important;
+    width: 30px !important;
+  }
+
+  .last-line {
+    width: 60vw;
+  }
+}
