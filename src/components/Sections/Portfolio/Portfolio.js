@@ -7,7 +7,11 @@ import classes from "./Portfolio.module.css";
 const Portfolio = () => {
   return (
     <Fragment>
-      <Header title="Here are my projects" subtitle="projects" />
+      <Header
+        title="Here are my projects"
+        subtitle="projects"
+        className={"portfolio-heading"}
+      />
       <Projects />
       <div className={classes.actions}>
         <a

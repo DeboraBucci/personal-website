@@ -8,7 +8,11 @@ import Traits from "./Traits";
 const About = () => {
   return (
     <Fragment>
-      <Header title="Get to know me more" subtitle="about me" />
+      <Header
+        title="Get to know me more"
+        subtitle="about me"
+        className={"portfolio-heading"}
+      />
       <main className={classes["info-container"]}>
         <div className={classes.box}>
           <p>

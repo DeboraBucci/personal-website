@@ -1,5 +1,4 @@
 .header {
-  border-bottom: 2px solid #ff53a9;
   padding: 2rem 3rem 2rem 10rem;
 }
 
@@ -10,7 +9,7 @@
 .subheading {
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #ff53a9;
+  font-weight: 500;
 }
 
 @media (max-width: 1200px) {
@@ -23,4 +22,22 @@
   .heading {
     font-size: 2rem;
   }
+}
+
+.default {
+  border-bottom: 2px solid #ff53a9;
+}
+
+.default .subheading {
+  color: #ff53a9;
+}
+
+.portfolio-heading,
+.about-heading {
+  border-bottom: 2px solid #ca2d7c;
+}
+
+.portfolio-heading .subheading,
+.about-heading .subheading {
+  color: #ca2d7c;
 }
