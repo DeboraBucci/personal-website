@@ -1,9 +1,9 @@
-import pigGame from "./imgs/projects/pig-game-project.png";
-import googleHomepage from "./imgs/projects/google-homepage-project.png";
-import tributePage from "./imgs/projects/tribute-page-project.png";
-import surveyForm from "./imgs/projects/survey-form-project.png";
-import technicalDocumentation from "./imgs/projects/technical-documentation-project.png";
-import productLanding from "./imgs/projects/product-landing-project.png";
+import pigGame from "./imgs/projects/pig-game-project.webp";
+import omnifood from "./imgs/projects/omnifood.webp";
+import tributePage from "./imgs/projects/tribute-page-project.webp";
+import surveyForm from "./imgs/projects/survey-form-project.webp";
+import technicalDocumentation from "./imgs/projects/technical-documentation-project.webp";
+import productLanding from "./imgs/projects/product-landing-project.webp";
 import Courses from "./components/Sections/Courses/Courses";
 import Hero from "./components/Sections/Hero/Hero";
 import About from "./components/Sections/About/About";
@@ -174,9 +174,9 @@ const projects = [
     key: "project--03",
   },
   {
-    title: "Google's Homepage",
-    link: "google-homepage",
-    image: googleHomepage,
+    title: "Omnifood",
+    link: "omnifood",
+    image: omnifood,
     key: "project--04",
   },
   {
