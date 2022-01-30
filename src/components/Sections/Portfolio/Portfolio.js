@@ -12,7 +12,7 @@ const Portfolio = () => {
       <div className={classes.actions}>
         <a
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           href="https://github.com/DeboraBucci?tab=repositories"
         >
           <Button classes={classes["all-projects-btn"]}>

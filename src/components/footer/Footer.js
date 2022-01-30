@@ -8,6 +8,7 @@ const Footer = () => {
         <p>
           Created with<i className={`fas fa-heart ${classes.heart}`}></i>and{" "}
           <a
+            rel="noopener noreferrer"
             className={classes["link-container"]}
             href="https://create-react-app.dev/"
             target={"_blank"}

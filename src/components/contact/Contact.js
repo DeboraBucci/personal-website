@@ -15,6 +15,7 @@ const Contact = () => {
             className={classes.link}
             href="https://www.linkedin.com/in/d%C3%A9bora-bucci-13a07a212/"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             <i className="fab fa-linkedin"></i>
             LinkedIn
@@ -25,6 +26,7 @@ const Contact = () => {
             className={classes.link}
             href="https://github.com/DeboraBucci"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             <i className="fab fa-github-alt"></i>
             GitHub
@@ -35,6 +37,7 @@ const Contact = () => {
             className={classes.link}
             href="mailto:dbucci@protonmail.com"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             <i className="fas fa-at"></i>
             send me an e-mail
