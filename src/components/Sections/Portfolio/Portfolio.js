@@ -4,6 +4,7 @@ import Header from "../../UI/Header";
 import Button from "../../UI/Button";
 import classes from "./Portfolio.module.css";
 import Link from "../../UI/Link";
+import Icon from "../../UI/Icon";
 
 const Portfolio = () => {
   return (
@@ -18,7 +19,7 @@ const Portfolio = () => {
         <Link href="https://github.com/DeboraBucci?tab=repositories">
           <Button classes={classes["all-projects-btn"]}>
             See all my projects
-            <i className="fas fa-angle-right"></i>
+            <Icon icon={"fas fa-angle-right"} />
           </Button>
         </Link>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "../UI/Icon";
 import Link from "../UI/Link";
 import classes from "./Footer.module.css";
 
@@ -7,13 +8,14 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes.info}>
         <p>
-          Created with<i className={`fas fa-heart ${classes.heart}`}></i>and{" "}
+          Created with <Icon icon={`fas fa-heart ${classes.heart}`} /> and{" "}
           <Link
             className={classes["link-container"]}
             href="https://create-react-app.dev/"
           >
             <span className={classes.hover}>
-              React<i className={`fab fa-react ${classes.react}`}></i>
+              React
+              <Icon icon={`fab fa-react ${classes.react}`} />
             </span>
           </Link>
         </p>

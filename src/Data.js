@@ -117,17 +117,22 @@ const technologies = [
 ];
 
 const linksList = [
-  { text: "Home", icon: "home", href: "#home", key: "l1" },
-  { text: "About", icon: "address-card", href: "#about", key: "l2" },
+  { text: "Home", icon: "fas fa-home", href: "#home", key: "l1" },
+  { text: "About", icon: "fas fa-address-card", href: "#about", key: "l2" },
   {
     text: "Courses",
     icon: "award",
     href: "#courses",
     key: "l3",
   },
-  { text: "Portfolio", icon: "briefcase", href: "#portfolio", key: "l4" },
+  {
+    text: "Portfolio",
+    icon: "fas fa-briefcase",
+    href: "#portfolio",
+    key: "l4",
+  },
 
-  { text: "Contact", icon: "paper-plane", href: "#contact", key: "l5" },
+  { text: "Contact", icon: "fas fa-paper-plane", href: "#contact", key: "l5" },
 ];
 
 const coursesImages = [

@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "../UI/Icon";
 import Link from "../UI/Link";
 import classes from "./Contact.module.css";
 
@@ -16,19 +17,19 @@ const Contact = () => {
             className={classes.link}
             href="https://www.linkedin.com/in/d%C3%A9bora-bucci-13a07a212/"
           >
-            <i className="fab fa-linkedin"></i>
+            <Icon icon={"fab fa-linkedin"} />
             LinkedIn
           </Link>
         </li>
         <li className={classes["link-box"]}>
           <Link className={classes.link} href="https://github.com/DeboraBucci">
-            <i className="fab fa-github-alt"></i>
+            <Icon icon={"fab fa-github-alt"} />
             GitHub
           </Link>
         </li>
         <li className={classes["link-box"]}>
           <Link className={classes.link} href="mailto:dbucci@protonmail.com">
-            <i className="fas fa-at"></i>
+            <Icon icon={"fas fa-at"} />
             send me an e-mail
           </Link>
         </li>
