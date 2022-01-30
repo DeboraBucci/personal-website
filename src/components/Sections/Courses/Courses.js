@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import CoursesCarousel from "./CoursesCarousel";
 import Header from "../../UI/Header";
-import "./Courses.css";
 
 const Courses = () => {
   return (
