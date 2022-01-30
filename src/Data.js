@@ -67,7 +67,7 @@ const technologies = [
   },
   {
     icon: StyledComponents,
-    text: "Styled Componets",
+    text: "Styled Components",
   },
   {
     icon: GIT,
