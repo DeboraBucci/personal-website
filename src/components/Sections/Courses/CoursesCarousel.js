@@ -9,7 +9,13 @@ const CoursesCarousel = () => {
       {coursesImages.map(({ image, alt }, i) => (
         <Carousel.Item key={`carousel${i}`} interval={2000}>
           <div className={classes["img-box"]}>
-            <img className={classes.img} src={image} alt={`${alt} slide`} />
+            <img
+              width={900}
+              height={669}
+              className={classes.img}
+              src={image}
+              alt={`${alt} slide`}
+            />
           </div>
         </Carousel.Item>
       ))}
