@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "../UI/Link";
 import classes from "./Contact.module.css";
 
 const Contact = () => {
@@ -11,37 +12,25 @@ const Contact = () => {
       </div>
       <ul className={classes.list}>
         <li className={classes["link-box"]}>
-          <a
+          <Link
             className={classes.link}
             href="https://www.linkedin.com/in/d%C3%A9bora-bucci-13a07a212/"
-            target={"_blank"}
-            rel="noopener noreferrer"
           >
             <i className="fab fa-linkedin"></i>
             LinkedIn
-          </a>
+          </Link>
         </li>
         <li className={classes["link-box"]}>
-          <a
-            className={classes.link}
-            href="https://github.com/DeboraBucci"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
+          <Link className={classes.link} href="https://github.com/DeboraBucci">
             <i className="fab fa-github-alt"></i>
             GitHub
-          </a>
+          </Link>
         </li>
         <li className={classes["link-box"]}>
-          <a
-            className={classes.link}
-            href="mailto:dbucci@protonmail.com"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
+          <Link className={classes.link} href="mailto:dbucci@protonmail.com">
             <i className="fas fa-at"></i>
             send me an e-mail
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
