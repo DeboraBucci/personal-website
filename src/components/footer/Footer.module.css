@@ -1,4 +1,5 @@
 .footer {
+  border-top: 2px solid #e69500;
   background-color: #464646;
   color: white;
   padding: 2rem;
@@ -6,9 +7,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-.copyright {
 }
 
 .info {

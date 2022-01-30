@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
         </p>
       </div>
-      <p className={classes.copyright}>&copy; Copyright 2022 | Débora Bucci</p>
+      <p>&copy; Copyright 2022 | Débora Bucci</p>
     </footer>
   );
 };
