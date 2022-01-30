@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "../UI/Link";
 import classes from "./Footer.module.css";
 
 const Footer = () => {
@@ -7,16 +8,14 @@ const Footer = () => {
       <div className={classes.info}>
         <p>
           Created with<i className={`fas fa-heart ${classes.heart}`}></i>and{" "}
-          <a
-            rel="noopener noreferrer"
+          <Link
             className={classes["link-container"]}
             href="https://create-react-app.dev/"
-            target={"_blank"}
           >
             <span className={classes.hover}>
               React<i className={`fab fa-react ${classes.react}`}></i>
             </span>
-          </a>
+          </Link>
         </p>
       </div>
       <p>&copy; Copyright 2022 | Débora Bucci</p>
