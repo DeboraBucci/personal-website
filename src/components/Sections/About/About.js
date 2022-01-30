@@ -12,9 +12,9 @@ const About = () => {
       <main className={classes["info-container"]}>
         <div className={classes.box}>
           <p>
-            I'm a 22 years-old web-developer who lives in Argentina, in the city
-            of Rosario. Ever since I started to design and code websites in
-            March of 2021, I absolutely fell in love with it.
+            I'm a 22 years-old Frontend Developer living in the city of Rosario,
+            Argentina. I've been in love with coding and web development since
+            March of 2021.
           </p>
         </div>
 

@@ -221,7 +221,8 @@ const sections = [
 const traits = [
   {
     title: "Coding Enthusiast",
-    content: "Ever since I started to code I couldn't stop!",
+    content:
+      "The day I created my first website I realized it was one of my passions.",
   },
   {
     title: "Drawing Artist",
@@ -231,12 +232,12 @@ const traits = [
   {
     title: "Book Lover",
     content:
-      "I like spending some of my time nurturing my knowledge and vocabulary by reading books.",
+      "When I'm not coding, I like spending my time nurturing my knowledge and vocabulary by reading books.",
   },
   {
     title: "Perfectionist",
     content:
-      "I'm someone that just loves to give her all in everything that she does, and refuses to leave anything uncovered.",
+      "I'm someone that just loves to give it all in everything that she does, and refuses to leave anything uncovered.",
   },
 ];
 
