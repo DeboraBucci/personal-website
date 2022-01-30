@@ -84,16 +84,6 @@ a {
   }
 }
 
-#home {
-  display: flex;
-  justify-content: center;
-  background: url("/src/imgs/background.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden !important;
-}
-
 #home::after,
 #home::before {
   content: "";
@@ -110,6 +100,18 @@ a {
 
 #home::before {
   transform: skew(-15deg) translateX(-50%);
+}
+
+#home {
+  position: relative;
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  background: url("/src/imgs/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100vw;
 }
 
 #home * {
