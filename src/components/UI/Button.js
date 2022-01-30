@@ -1,8 +1,16 @@
 import React from "react";
-import "./Button.css";
+import classes from "./Button.module.css";
 
-const Button = ({ children, classes = "default" }) => {
-  return <button className={`btn--component ${classes}`}>{children}</button>;
+const Button = ({ children, className = "default" }) => {
+  return (
+    <button
+      className={`${classes["btn--component"]} ${
+        className === "default" ? classes.default : className
+      }`}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default Button;

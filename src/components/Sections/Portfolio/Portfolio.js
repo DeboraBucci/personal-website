@@ -17,7 +17,7 @@ const Portfolio = () => {
       <Projects />
       <div className={classes.actions}>
         <Link href="https://github.com/DeboraBucci?tab=repositories">
-          <Button classes={classes["all-projects-btn"]}>
+          <Button className={classes["all-projects-btn"]}>
             See all my projects
             <Icon icon={"fas fa-angle-right"} />
           </Button>
