@@ -39,7 +39,13 @@ const Projects = () => {
               rel="noopener"
             >
               <div className={classes["img-container"]}>
-                <img className={classes.img} src={image} />
+                <img
+                  alt={`${title} project`}
+                  className={classes.img}
+                  width={400}
+                  height={400}
+                  src={image}
+                />
               </div>
 
               <h3 className={classes.title}>
