@@ -33,7 +33,11 @@ const Technologies = () => {
               isHovered ? classes["filter-on"] : ""
             }`}
           >
-            <img src={icon} style={{ width: "50px", height: "50px" }} />
+            <img
+              alt={`${icon} icon`}
+              src={icon}
+              style={{ width: "50px", height: "50px" }}
+            />
           </div>
           <span>{text}</span>
         </li>
