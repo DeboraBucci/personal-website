@@ -21,7 +21,7 @@ const Introduction = () => {
                 "Frontend Developer",
                 "Web Designer",
                 "Forever Student",
-                "Devote Christian",
+                "Devout Christian",
               ]}
               cursorType={"|"}
             />
