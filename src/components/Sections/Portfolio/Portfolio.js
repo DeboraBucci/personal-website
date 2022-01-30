@@ -3,6 +3,7 @@ import Projects from "./Projects";
 import Header from "../../UI/Header";
 import Button from "../../UI/Button";
 import classes from "./Portfolio.module.css";
+import Link from "../../UI/Link";
 
 const Portfolio = () => {
   return (
@@ -14,16 +15,12 @@ const Portfolio = () => {
       />
       <Projects />
       <div className={classes.actions}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/DeboraBucci?tab=repositories"
-        >
+        <Link href="https://github.com/DeboraBucci?tab=repositories">
           <Button classes={classes["all-projects-btn"]}>
             See all my projects
             <i className="fas fa-angle-right"></i>
           </Button>
-        </a>
+        </Link>
       </div>
     </Fragment>
   );
