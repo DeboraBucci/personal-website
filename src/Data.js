@@ -121,7 +121,7 @@ const linksList = [
   { text: "About", icon: "fas fa-address-card", href: "#about", key: "l2" },
   {
     text: "Courses",
-    icon: "award",
+    icon: "fas fa-award",
     href: "#courses",
     key: "l3",
   },
