@@ -116,7 +116,6 @@ const technologies = [
     icon: Lighthouse,
     text: "Lighthouse",
   },
-
   {
     icon: Python,
     text: "Python",
