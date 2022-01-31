@@ -6,6 +6,12 @@ import Technologies from "./Technologies";
 import Traits from "./Traits";
 
 const About = () => {
+  const birthYear = new Date(1999, 10, 14);
+  const currentYear = new Date();
+  const currentAge = Math.floor(
+    (currentYear.getTime() - birthYear.getTime()) / (1000 * 60 * 60 * 24 * 365)
+  );
+
   return (
     <Fragment>
       <Header
@@ -16,9 +22,9 @@ const About = () => {
       <main className={classes["info-container"]}>
         <div className={classes.box}>
           <p>
-            I'm a 22 years-old Frontend Developer living in the city of Rosario,
-            Argentina. I've been in love with coding and web development since
-            March of 2021.
+            I'm a {currentAge} years-old Frontend Developer living in the city
+            of Rosario, Argentina. I've been in love with coding and web
+            development since March of 2021.
           </p>
         </div>
 
