@@ -116,13 +116,14 @@ const technologies = [
     icon: Lighthouse,
     text: "Lighthouse",
   },
-  {
-    icon: StackOverflow,
-    text: "Stack Overflow",
-  },
+
   {
     icon: Python,
     text: "Python",
+  },
+  {
+    icon: StackOverflow,
+    text: "Stack Overflow",
   },
 ];
 
