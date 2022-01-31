@@ -35,6 +35,8 @@ import Redux from "./imgs/technologies-icons/redux.svg";
 import VSCode from "./imgs/technologies-icons/vscode.svg";
 import StyledComponents from "./imgs/technologies-icons/styledcomponents.svg";
 import Lighthouse from "./imgs/technologies-icons/lighthouse.png";
+import StackOverflow from "./imgs/technologies-icons/stackoverflow.svg";
+import ReactBootstrap from "./imgs/technologies-icons/reactbootstrap.png";
 
 const technologies = [
   {
@@ -64,6 +66,10 @@ const technologies = [
   {
     icon: Bootstrap,
     text: "Bootstrap",
+  },
+  {
+    icon: ReactBootstrap,
+    text: "React Bootstrap",
   },
   {
     icon: StyledComponents,
@@ -109,6 +115,10 @@ const technologies = [
   {
     icon: Lighthouse,
     text: "Lighthouse",
+  },
+  {
+    icon: StackOverflow,
+    text: "Stack Overflow",
   },
   {
     icon: Python,
