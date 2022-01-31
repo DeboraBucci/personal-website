@@ -6,11 +6,13 @@ import Technologies from "./Technologies";
 import Traits from "./Traits";
 
 const About = () => {
+  // CALCULATE CURRENT AGE //
   const birthYear = new Date(1999, 10, 14);
   const currentYear = new Date();
   const currentAge = Math.floor(
     (currentYear.getTime() - birthYear.getTime()) / (1000 * 60 * 60 * 24 * 365)
   );
+  // -----------------------------------//
 
   return (
     <Fragment>
