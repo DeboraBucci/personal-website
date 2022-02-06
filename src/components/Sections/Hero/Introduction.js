@@ -17,12 +17,7 @@ const Introduction = () => {
           <span>a</span>
           <span className={classes.typing}>
             <Typing
-              words={[
-                "Frontend Developer",
-                "Web Designer",
-                "Forever Student",
-                "Devout Christian",
-              ]}
+              words={["Frontend Developer", "Web Designer", "Forever Student"]}
               cursorType={"|"}
             />
           </span>
