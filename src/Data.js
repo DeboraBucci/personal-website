@@ -1,8 +1,3 @@
-import Courses from "./components/Sections/Courses/Courses";
-import Hero from "./components/Sections/Hero/Hero";
-import About from "./components/Sections/About/About";
-import Contact from "./components/contact/Contact";
-
 import Portfolio from "./components/Sections/Portfolio/Portfolio";
 import Course01 from "./imgs/certifications/course-01.webp";
 import Course02 from "./imgs/certifications/course-02.webp";
@@ -193,31 +188,6 @@ const projects = [
   },
 ];
 
-const sections = [
-  {
-    content: <Hero />,
-    id: "home",
-  },
-  {
-    content: <About />,
-    id: "about",
-  },
-  {
-    content: <Courses />,
-    id: "courses",
-  },
-
-  {
-    content: <Portfolio />,
-    id: "portfolio",
-  },
-
-  {
-    content: <Contact />,
-    id: "contact",
-  },
-];
-
 const traits = [
   {
     title: "Coding Enthusiast",
@@ -241,4 +211,4 @@ const traits = [
   },
 ];
 
-export { linksList, projects, sections, coursesImages, traits, technologies };
+export { linksList, projects, coursesImages, traits, technologies };
