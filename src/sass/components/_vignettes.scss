@@ -1,0 +1,50 @@
+.vignettes {
+  position: relative;
+  @include flexCenter;
+  font-size: $default-font-size;
+  color: tint($color-black, 40%);
+
+  & > * {
+    padding: 3rem 5rem;
+    max-width: 35rem;
+    background-color: #eee;
+  }
+
+  &--1 {
+    clip-path: polygon(0 5%, 95% 0, 95% 90%, 5% 100%);
+  }
+
+  &--2 {
+    padding-left: 6rem;
+    margin-top: 10rem;
+    clip-path: polygon(5% 0, 100% 5%, 90% 100%, 5% 95%);
+  }
+
+  &__line {
+    position: absolute;
+    width: 2px;
+    height: 20rem;
+    padding: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-color: rgb(255, 145, 106);
+    }
+
+    &::before {
+      top: 2rem;
+      right: 4rem;
+    }
+
+    &::after {
+      top: 8rem;
+      right: -4.5rem;
+    }
+  }
+}

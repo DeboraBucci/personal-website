@@ -1,0 +1,49 @@
+.traits {
+  @include flexCenter;
+  @include container;
+
+  flex-direction: column;
+  font-size: $default-font-size;
+
+  background: linear-gradient(
+      to right,
+      rgba(14, 5, 71, 0.5),
+      rgba(62, 42, 116, 0.6)
+    ),
+    url("/src/imgs/traits-background.webp");
+
+  background-size: cover;
+  background-position: center;
+
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+
+  &__list {
+    @include flexCenter;
+    gap: 3rem;
+  }
+
+  &__card {
+    width: 24rem;
+    height: 25rem;
+    padding: 2rem;
+    border-radius: 3px;
+    background-color: rgba($color-white, 0.85);
+    color: tint($color-black, 40%);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-1.5rem);
+    }
+
+    &--title {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 2rem;
+    }
+
+    &--text {
+      letter-spacing: 1.5px;
+      line-height: 2.5rem;
+    }
+  }
+}

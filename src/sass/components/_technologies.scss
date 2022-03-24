@@ -1,0 +1,83 @@
+.technologies {
+  @include flexCenter;
+  @include container;
+
+  flex-direction: column;
+
+  background: linear-gradient(
+      to right,
+      rgba(18, 37, 54, 0.5),
+      rgba(36, 46, 26, 0.6)
+    ),
+    url("/src/imgs/technologies-background.webp");
+
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+
+  &__list {
+    @include flexCenter;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__filter-on {
+    filter: blur(3px) grayscale(100%);
+  }
+
+  &__item {
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 100;
+      filter: none !important;
+      transform: scale(1.2);
+    }
+
+    &:hover &--text {
+      transition: all 0.5s;
+      width: max-content;
+      padding-left: 3rem;
+      color: $color-white;
+      opacity: 1;
+    }
+
+    &--img {
+      @include flexCenter;
+      position: relative;
+      z-index: 10;
+
+      border-radius: 50%;
+      background-color: $color-black;
+      height: 7.5rem;
+      width: 7.5rem;
+    }
+
+    &--text {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+
+      z-index: 1;
+
+      transform: translateY(-50%);
+      transition: all 0.4s 0.2s;
+
+      background-color: $color-primary;
+      color: transparent;
+      opacity: 0;
+
+      display: inline-block;
+
+      width: 0;
+      padding: 0.5rem;
+      border-radius: 3px;
+
+      &:hover {
+        display: none !important;
+      }
+    }
+  }
+}
