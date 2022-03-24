@@ -8,7 +8,12 @@
     &--greeting {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 1rem;
+      margin-bottom: -0.7rem;
+
+      opacity: 0;
+      animation: moveInTop 1s ease-out;
+      @include forwardAnim;
 
       &::before {
         content: "";
@@ -26,8 +31,12 @@
       width: 100%;
       font-size: $big-font-size;
 
+      opacity: 0;
+      animation: moveInRight 1s ease-out 1.2s;
+      @include forwardAnim;
+
       &-typing {
-        width: 70%;
+        width: 80%;
         color: $color-primary;
       }
     }
