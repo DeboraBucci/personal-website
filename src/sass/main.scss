@@ -7,4 +7,10 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/traits";
+@import "components/technologies";
+@import "components/vignettes";
+
 @import "layout/hero";
+
+@import "pages/home";
