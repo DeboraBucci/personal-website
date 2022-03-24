@@ -15,6 +15,10 @@ code {
   position: relative;
   font-size: 5rem;
 
+  opacity: 0;
+  animation: moveInLeft 1s ease-out 1s;
+  @include forwardAnim;
+
   &__first-part {
     position: absolute;
     top: 2rem;
