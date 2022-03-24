@@ -1,4 +1,42 @@
 .hero {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 75%;
+    height: 100%;
+    background-image: linear-gradient(120deg, rgb(41, 14, 41), rgb(22, 22, 88));
+    background-color: rgb(41, 14, 41);
+    opacity: 0.3;
+  }
+
+  &::before {
+    transform: skew(-15deg) translateX(-50%);
+    animation: moveInLeftSpecial 1.5s ease;
+  }
+
+  &::after {
+    transform: skew(15deg) translateX(-50%);
+    animation: moveInRightSpecial 1.5s ease;
+  }
+
+  & {
+    position: relative;
+    overflow: hidden !important;
+    display: flex;
+    justify-content: center;
+    background: url("/src/imgs/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  & > * {
+    z-index: 100;
+  }
+
   @include flexCenter;
   flex-direction: column;
 
@@ -12,7 +50,7 @@
       margin-bottom: -0.7rem;
 
       opacity: 0;
-      animation: moveInTop 1s ease-out;
+      animation: moveInTop 1s ease-out 1.7s;
       @include forwardAnim;
 
       &::before {
@@ -32,7 +70,7 @@
       font-size: $big-font-size;
 
       opacity: 0;
-      animation: moveInRight 1s ease-out 1.2s;
+      animation: moveInRight 1s ease-out 2.7s;
       @include forwardAnim;
 
       &-typing {
