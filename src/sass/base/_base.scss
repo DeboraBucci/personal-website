@@ -18,3 +18,19 @@ body {
   background-color: $color-primary-shade;
   color: $color-white;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(110, 110, 110, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(146, 146, 146);
+}
