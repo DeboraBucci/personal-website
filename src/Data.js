@@ -1,9 +1,3 @@
-import pigGame from "./imgs/projects/pig-game-project.webp";
-import omnifood from "./imgs/projects/omnifood.webp";
-import tributePage from "./imgs/projects/tribute-page-project.webp";
-import surveyForm from "./imgs/projects/survey-form-project.webp";
-import technicalDocumentation from "./imgs/projects/technical-documentation-project.webp";
-import productLanding from "./imgs/projects/product-landing-project.webp";
 import Courses from "./components/Sections/Courses/Courses";
 import Hero from "./components/Sections/Hero/Hero";
 import About from "./components/Sections/About/About";
@@ -29,9 +23,7 @@ import TypeScript from "./imgs/technologies-icons/typescript.svg";
 import Postman from "./imgs/technologies-icons/postman.png";
 import Python from "./imgs/technologies-icons/python.svg";
 import Jest from "./imgs/technologies-icons/jest.svg";
-import MongoDB from "./imgs/technologies-icons/mongodb.svg";
 import Express from "./imgs/technologies-icons/express.png";
-import Redux from "./imgs/technologies-icons/redux.svg";
 import VSCode from "./imgs/technologies-icons/vscode.svg";
 import StyledComponents from "./imgs/technologies-icons/styledcomponents.svg";
 import Lighthouse from "./imgs/technologies-icons/lighthouse.png";
@@ -99,15 +91,6 @@ const technologies = [
     icon: Postman,
     text: "Postman",
   },
-  // {
-  //   icon: MongoDB,
-  //   text: "MongoDB",
-  // },
-
-  // {
-  //   icon: Redux,
-  //   text: "Redux",
-  // },
   {
     icon: VSCode,
     text: "VS Code",
@@ -171,40 +154,42 @@ const coursesImages = [
 
 const projects = [
   {
-    title: "Tribute Page",
-    link: "tribute-page",
-    image: tributePage,
-    key: "project--01",
+    title: "Lily's Cuisine",
+    link: "https://alkemy-challenge-react.herokuapp.com/login",
+    num: "1",
+    info: [
+      { title: "Introduction", text: "Menu ordering app" },
+      { title: "Framework", text: "React" },
+      { title: "Technologies", text: "Bootstrap, Axios, etc." },
+      { title: "Commits", text: "400+" },
+      { title: "Designer", text: "Débora Bucci" },
+    ],
   },
   {
-    title: "Product Landing Page",
-    link: "product-landing-page",
-    image: productLanding,
-    key: "project--02",
+    title: "Natours",
+
+    link: "https://github.com/DeboraBucci/natours",
+    num: "2",
+    info: [
+      { title: "Introduction", text: "Tour app" },
+      { title: "Framework", text: "React" },
+      { title: "Technologies", text: "SASS" },
+      { title: "Commits", text: "130+" },
+      { title: "Designer", text: "Jonas Schmedtmann" },
+    ],
   },
+
   {
-    title: "Pig Game",
-    link: "pig-game",
-    image: pigGame,
-    key: "project--03",
-  },
-  {
-    title: "Omnifood",
-    link: "omnifood",
-    image: omnifood,
-    key: "project--04",
-  },
-  {
-    title: "Technical Documentation Page",
-    link: "technical-documentation-page",
-    image: technicalDocumentation,
-    key: "project--05",
-  },
-  {
-    title: "Survey Form",
-    link: "survey-form",
-    image: surveyForm,
-    key: "project--06",
+    title: "Mythical Books",
+    link: "#",
+    num: "3",
+    info: [
+      { title: "Introduction", text: "Book Subscription" },
+      { title: "Framework", text: "React" },
+      { title: "Technologies", text: "..." },
+      { title: "Commits", text: "..." },
+      { title: "Designer", text: "Débora Bucci" },
+    ],
   },
 ];
 
