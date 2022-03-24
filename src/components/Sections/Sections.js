@@ -1,14 +1,16 @@
 import React, { Fragment } from "react";
-import { sections } from "../../Data";
+import About from "./About/About";
+import Courses from "./Courses/Courses";
+import Hero from "./Hero/Hero";
+import Portfolio from "./Portfolio/Portfolio";
 
 const Sections = () => {
   return (
     <Fragment>
-      {sections.map(({ content, id }) => (
-        <section key={id} id={id}>
-          {content}
-        </section>
-      ))}
+      <Hero />
+      <About />
+      <Courses />
+      <Portfolio />
     </Fragment>
   );
 };
