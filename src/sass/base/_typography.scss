@@ -16,7 +16,7 @@ code {
   font-size: 5rem;
 
   opacity: 0;
-  animation: moveInLeft 1s ease-out 1s;
+  animation: moveInLeft 1s ease-out 2.5s;
   @include forwardAnim;
 
   &__first-part {
