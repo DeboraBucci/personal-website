@@ -1,0 +1,35 @@
+.hero {
+  @include flexCenter;
+  flex-direction: column;
+
+  font-size: $default-font-size;
+
+  &__text {
+    &--greeting {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &::before {
+        content: "";
+        width: 2rem;
+        height: 2px;
+        background-color: $color-primary;
+      }
+    }
+
+    &--professions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+
+      width: 100%;
+      font-size: $big-font-size;
+
+      &-typing {
+        width: 70%;
+        color: $color-primary;
+      }
+    }
+  }
+}
