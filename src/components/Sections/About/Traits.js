@@ -1,19 +1,23 @@
 import React from "react";
 import { traits } from "../../../Data";
-import classes from "./Traits.module.css";
 
 const Traits = () => {
   return (
-    <ul className={classes.list}>
-      {traits.map(({ title, content }) => (
-        <li className={classes.box} key={Math.random()}>
-          <div className={classes["title-box"]}>
-            <span className={classes.title}>{title}</span>
-          </div>
-          <span className={classes.text}> — {content}</span>
-        </li>
-      ))}
-    </ul>
+    <div className="traits u-margin-bottom-big ">
+      <h3 className="heading-tertiary u-margin-bottom-medium">
+        Some of my traits
+      </h3>
+      <ul className="traits__list">
+        {traits.map(({ title, content }) => (
+          <li className="traits__card" key={Math.random()}>
+            <h3 className="traits__card--title u-margin-bottom-small">
+              {title}
+            </h3>
+            <span className="traits__card--text"> — {content}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
