@@ -3,3 +3,17 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin container {
+  padding: 4rem 10rem;
+  width: 70vw;
+  min-height: 40rem;
+}
+
+@mixin forwardAnim {
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
