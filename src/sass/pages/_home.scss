@@ -1,0 +1,8 @@
+.section-about {
+  margin: 2rem;
+  padding: 5rem 2rem;
+  border: 1px solid #ddd;
+
+  @include flexCenter;
+  flex-direction: column;
+}
