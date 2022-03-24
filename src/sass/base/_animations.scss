@@ -45,3 +45,29 @@
     transform: translateY(0);
   }
 }
+
+@keyframes moveInLeftSpecial {
+  0% {
+    right: 0;
+    opacity: 0;
+    transform: skew(-15deg) translateX(-10rem);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: skew(-15deg) translateX(-50%);
+  }
+}
+
+@keyframes moveInRightSpecial {
+  0% {
+    left: 0;
+    opacity: 0;
+    transform: skew(15deg) translateX(-10rem);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: skew(15deg) translateX(-50%);
+  }
+}
