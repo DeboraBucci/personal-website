@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 ::selection {
   background-color: $color-primary-shade;
   color: $color-white;
