@@ -1,4 +1,14 @@
 .hero {
+  color: $color-white;
+  position: relative;
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  background: url("/src/imgs/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   &::after,
   &::before {
     content: "";
@@ -20,17 +30,6 @@
   &::after {
     transform: skew(15deg) translateX(-50%);
     animation: moveInRightSpecial 1.5s ease;
-  }
-
-  & {
-    position: relative;
-    overflow: hidden !important;
-    display: flex;
-    justify-content: center;
-    background: url("/src/imgs/background.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
 
   & > * {
