@@ -1,0 +1,19 @@
+.carousel {
+  margin: 5rem auto;
+  max-width: 120rem;
+
+  &__box {
+    background: #181818;
+    border-radius: 3px;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.1);
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
