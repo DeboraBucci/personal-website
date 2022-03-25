@@ -1,0 +1,63 @@
+.navigation {
+  @include flexCenter;
+  z-index: 999;
+  position: fixed;
+
+  width: 100%;
+  padding-top: 1.5rem;
+
+  background: rgba($color-black, 0.9);
+
+  font-size: $default-font-size;
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 0;
+    width: 50%;
+  }
+
+  &__item {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+
+      background-color: $color-secondary;
+
+      opacity: 0;
+      width: 0;
+      height: 2px;
+
+      transition: all 0.4s ease;
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+
+    &:hover:before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      @include flexCenter;
+      gap: 1rem;
+      color: $color-white;
+    }
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  &__span {
+    color: $color-white;
+  }
+}
