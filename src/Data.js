@@ -1,4 +1,3 @@
-import Portfolio from "./components/Sections/Portfolio/Portfolio";
 import Course01 from "./imgs/certifications/course-01.webp";
 import Course02 from "./imgs/certifications/course-02.webp";
 import Course03 from "./imgs/certifications/course-03.webp";
@@ -127,7 +126,6 @@ const coursesImages = [
   {
     image: Course01,
     alt: "First",
-    interval: 1000,
   },
   {
     image: Course02,
@@ -211,4 +209,29 @@ const traits = [
   },
 ];
 
-export { linksList, projects, coursesImages, traits, technologies };
+const contactLinks = [
+  {
+    href: "https://www.linkedin.com/in/d%C3%A9bora-bucci-13a07a212/",
+    icon: "fab fa-linkedin",
+    text: "LinkedIn",
+  },
+  {
+    href: "https://github.com/DeboraBucci",
+    icon: "fab fa-github-alt",
+    text: "GitHub",
+  },
+  {
+    href: "mailto:dbucci@protonmail.com",
+    icon: "fas fa-at",
+    text: "send me an e-mail",
+  },
+];
+
+export {
+  linksList,
+  projects,
+  coursesImages,
+  traits,
+  technologies,
+  contactLinks,
+};
