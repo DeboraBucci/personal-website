@@ -1,16 +1,15 @@
 import React from "react";
-import classes from "./Navbar.module.css";
 import { linksList } from "../../Data";
 
 const Navbar = () => {
   return (
-    <nav className={classes.navbar}>
-      <ul className={classes["navbar-list"]}>
+    <nav className="navigation">
+      <ul className="navigation__list">
         {linksList.map(({ text, icon, href, key }) => (
-          <li className={classes["link-container"]} key={key}>
-            <a className={`${classes.link} ${classes.hover}`} href={href}>
-              <i className={icon} />
-              <span className={classes.span}>{text}</span>
+          <li className="navigation__item" key={key}>
+            <a className="navigation__link" href={href}>
+              <i className={`${icon} navigation__icon`} />
+              <span className="navigation__span">{text}</span>
             </a>
           </li>
         ))}
