@@ -191,21 +191,25 @@ const traits = [
     title: "Coding Enthusiast",
     content:
       "The day I created my first website I realized it was one of my passions.",
+    icon: "fa-solid fa-code",
   },
   {
     title: "Drawing Artist",
     content:
       "I love drawing and styling, and I'm always looking forward to apply that part of me in everything I do.",
+    icon: "fa-solid fa-palette",
   },
   {
     title: "Book Lover",
     content:
       "When I'm not coding, I like spending my time nurturing my knowledge and vocabulary by reading books.",
+    icon: "fa-solid fa-book",
   },
   {
     title: "Perfectionist",
     content:
       "I'm someone that just loves to give it all in everything that she does, and refuses to leave anything uncovered.",
+    icon: "fa-solid fa-star",
   },
 ];
 
