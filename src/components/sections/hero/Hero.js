@@ -9,7 +9,7 @@ const Hero = () => {
 
         <h1 className="heading-primary">
           <span className="heading-primary__first-part">I'm</span>
-          <span className="heading-primary__second-part underline--magical">
+          <span className="heading-primary__second-part underline-magical">
             Débora Bucci
           </span>
         </h1>
