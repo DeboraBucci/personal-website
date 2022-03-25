@@ -1,13 +1,30 @@
-import React, { Fragment } from "react";
-import CoursesCarousel from "./CoursesCarousel";
+import React from "react";
+
+import { coursesImages } from "../../../Data";
+
+import { Carousel } from "react-bootstrap";
 import Header from "../../UI/Header";
 
 const Courses = () => {
   return (
-    <Fragment>
+    <section className="section-courses" id="courses">
       <Header title="My badges of Honor!" subtitle="courses" />
-      <CoursesCarousel />
-    </Fragment>
+      <Carousel touch={true} className="carousel">
+        {coursesImages.map(({ image, alt }, i) => (
+          <Carousel.Item key={`carousel${i}`} interval={2000}>
+            <div className="carousel__box">
+              <img
+                className="carousel__img"
+                width={900}
+                height={669}
+                src={image}
+                alt={`${alt} course's certificate`}
+              />
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </section>
   );
 };
 
