@@ -82,20 +82,30 @@
 @keyframes heartbeats {
   0% {
     transform: scale(1);
+    color: shade(#dc143c, 20%);
   }
+
   20% {
     transform: scale(1.25);
+    color: #dc143c;
   }
+
   40% {
     transform: scale(1);
+    color: shade(#dc143c, 20%);
   }
+
   60% {
     transform: scale(1.25);
+    color: #dc143c;
   }
+
   80% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1);
+    color: shade(#dc143c, 20%);
   }
 }
