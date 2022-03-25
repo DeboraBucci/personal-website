@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../UI/Header";
-import Button from "../../UI/Button";
 
 import Link from "../../UI/Link";
 import { projects } from "../../../Data";
@@ -23,10 +22,10 @@ const Portfolio = () => {
 
       <div className="u-margin-top-medium section-portfolio__cta">
         <Link href="https://github.com/DeboraBucci?tab=repositories">
-          <Button className="section-portfolio__cta--btn">
+          <button className="section-portfolio__cta--btn">
             See all my projects
             <i className="section-portfolio__cta--icon fas fa-angle-right" />
-          </Button>
+          </button>
         </Link>
       </div>
     </section>
