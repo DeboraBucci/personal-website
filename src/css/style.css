@@ -102,6 +102,10 @@ code {
     left: -2.5rem;
     font-size: 1.6rem; }
 
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 300; }
+
 .heading-tertiary {
   color: #fff;
   text-transform: uppercase;
@@ -258,6 +262,14 @@ code {
     .vignettes__line::after {
       top: 8rem;
       right: -4.5rem; }
+
+.heading {
+  padding: 3rem 3rem 1rem 10rem; }
+  .heading__subtitle {
+    color: #ca2d7c;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500; }
 
 .hero {
   display: flex;
