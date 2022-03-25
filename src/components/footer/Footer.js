@@ -1,26 +1,19 @@
 import React from "react";
 import Icon from "../UI/Icon";
 import Link from "../UI/Link";
-import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={classes.footer}>
-      <div className={classes.info}>
-        <p>
-          Created with <Icon icon={`fas fa-heart ${classes.heart}`} /> and{" "}
-          <Link
-            className={classes["link-container"]}
-            href="https://create-react-app.dev/"
-          >
-            <span className={classes.hover}>
-              React
-              <Icon icon={`fab fa-react ${classes.react}`} />
-            </span>
-          </Link>
-        </p>
-      </div>
-      <p>&copy; Copyright 2022 | Débora Bucci</p>
+    <footer className="footer">
+      <p className="footer__text">
+        Created with{" "}
+        <Icon icon="fas fa-heart" className="footer__icon--heart" /> and{" "}
+        <Link href="https://create-react-app.dev/" className="footer__link">
+          React
+          <Icon icon="fab fa-react" className="footer__icon--react" />
+        </Link>
+      </p>
+      <p className="footer__text">&copy; Copyright 2022 | Débora Bucci</p>
     </footer>
   );
 };
