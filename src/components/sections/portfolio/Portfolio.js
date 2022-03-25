@@ -22,9 +22,9 @@ const Portfolio = () => {
 
       <div className="u-margin-top-medium section-portfolio__cta">
         <Link href="https://github.com/DeboraBucci?tab=repositories">
-          <button className="section-portfolio__cta--btn">
+          <button className="btn btn--orange section-portfolio__cta--btn">
             See all my projects
-            <i className="section-portfolio__cta--icon fas fa-angle-right" />
+            <i className="fas fa-angle-right section-portfolio__cta--icon" />
           </button>
         </Link>
       </div>
