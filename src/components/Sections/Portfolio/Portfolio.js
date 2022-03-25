@@ -3,7 +3,6 @@ import Header from "../../UI/Header";
 import Button from "../../UI/Button";
 
 import Link from "../../UI/Link";
-import Icon from "../../UI/Icon";
 import { projects } from "../../../Data";
 import Project from "./Project";
 
@@ -26,10 +25,7 @@ const Portfolio = () => {
         <Link href="https://github.com/DeboraBucci?tab=repositories">
           <Button className="section-portfolio__cta--btn">
             See all my projects
-            <Icon
-              className="section-portfolio__cta--icon"
-              icon={"fas fa-angle-right"}
-            />
+            <i className="section-portfolio__cta--icon fas fa-angle-right" />
           </Button>
         </Link>
       </div>

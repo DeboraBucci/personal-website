@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Navbar.module.css";
-import Icon from "../UI/Icon";
 import { linksList } from "../../Data";
 
 const Navbar = () => {
@@ -10,7 +9,7 @@ const Navbar = () => {
         {linksList.map(({ text, icon, href, key }) => (
           <li className={classes["link-container"]} key={key}>
             <a className={`${classes.link} ${classes.hover}`} href={href}>
-              <Icon icon={icon} />
+              <i className={icon} />
               <span className={classes.span}>{text}</span>
             </a>
           </li>

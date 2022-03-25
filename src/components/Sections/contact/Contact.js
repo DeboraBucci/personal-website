@@ -1,5 +1,4 @@
 import React from "react";
-import Icon from "../../UI/Icon";
 import Link from "../../UI/Link";
 
 import { contactLinks } from "../../../Data";
@@ -20,7 +19,7 @@ const Contact = () => {
         {contactLinks.map(({ href, icon, text }) => (
           <li className="section-contact__item">
             <Link className="section-contact__link" href={href}>
-              <Icon icon={icon} />
+              <i className={icon} />
               {text}
             </Link>
           </li>
