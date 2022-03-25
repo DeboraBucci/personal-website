@@ -1,30 +1,39 @@
-import React, { Fragment } from "react";
-import Projects from "./Projects";
+import React from "react";
 import Header from "../../UI/Header";
 import Button from "../../UI/Button";
-import classes from "./Portfolio.module.css";
+
 import Link from "../../UI/Link";
 import Icon from "../../UI/Icon";
+import { projects } from "../../../Data";
+import Project from "./Project";
 
 const Portfolio = () => {
   return (
-    <Fragment>
+    <section className="section-portfolio" id="portfolio">
       <Header
         title="Here are my projects"
         subtitle="projects"
         className={"portfolio-heading"}
       />
-      <Projects />
-      <Link
-        className={classes.link}
-        href="https://github.com/DeboraBucci?tab=repositories"
-      >
-        <Button className={classes["all-projects-btn"]}>
-          See all my projects
-          <Icon icon={"fas fa-angle-right"} />
-        </Button>
-      </Link>
-    </Fragment>
+
+      <div className="section-portfolio__projects ">
+        {projects.map(({ title, link, num, info }) => {
+          return <Project title={title} link={link} num={num} info={info} />;
+        })}
+      </div>
+
+      <div className="u-margin-top-medium section-portfolio__cta">
+        <Link href="https://github.com/DeboraBucci?tab=repositories">
+          <Button className="section-portfolio__cta--btn">
+            See all my projects
+            <Icon
+              className="section-portfolio__cta--icon"
+              icon={"fas fa-angle-right"}
+            />
+          </Button>
+        </Link>
+      </div>
+    </section>
   );
 };
 
