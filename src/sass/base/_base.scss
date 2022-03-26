@@ -59,3 +59,14 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(146, 146, 146);
 }
+
+.carousel-control {
+  &-prev-icon,
+  &-next-icon {
+    transform: scale(3);
+
+    @include respond(62.5em) {
+      display: none;
+    }
+  }
+}
