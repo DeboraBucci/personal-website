@@ -47,6 +47,12 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #929292; }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  transform: scale(3); }
+  @media only screen and (max-width: 62.5em) {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      display: none; } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -216,8 +222,8 @@ code {
     justify-content: flex-start;
     flex-direction: column;
     gap: 1rem;
-    width: 24rem;
-    height: 27rem;
+    width: 25rem;
+    height: 31rem;
     padding: 2rem;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -292,24 +298,25 @@ code {
     .technologies {
       padding: 4rem 5rem; } }
   .technologies__list {
+    pointer-events: none;
     padding: 0 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem; }
-  .technologies__filter-on {
-    filter: blur(3px) grayscale(100%); }
+    .technologies__list:hover > * {
+      filter: blur(3px) grayscale(100%); }
   .technologies__item {
+    pointer-events: auto;
     position: relative;
     transition: all 0.3s;
     cursor: pointer; }
     .technologies__item:hover {
+      filter: blur(0) grayscale(0%) !important;
       z-index: 100;
-      filter: none !important;
       transform: scale(1.2); }
     .technologies__item:hover .technologies__item--text {
-      transition: all 0.5s;
       width: max-content;
       padding-left: 3rem;
       color: #fff;
@@ -331,7 +338,7 @@ code {
       font-weight: 600;
       text-transform: uppercase;
       transform: translateY(-50%);
-      transition: all 0.4s 0.2s;
+      transition: all 0.4s;
       background-color: rgba(255, 83, 169, 0.8);
       color: transparent;
       opacity: 0;
@@ -446,7 +453,10 @@ code {
 
 .carousel {
   margin: 5rem auto;
-  max-width: 120rem; }
+  width: 120rem; }
+  @media only screen and (max-width: 62.5em) {
+    .carousel {
+      width: auto; } }
   .carousel__box {
     background: #181818;
     border-radius: 3px;
@@ -455,6 +465,9 @@ code {
     padding-bottom: 5rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(35, 35, 35, 0.1); }
+    @media only screen and (max-width: 62.5em) {
+      .carousel__box {
+        width: 90%; } }
   .carousel__img {
     width: 100%;
     height: auto; }
