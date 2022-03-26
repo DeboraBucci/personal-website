@@ -28,11 +28,15 @@ const Technologies = () => {
             onMouseEnter={filterOn}
             onMouseLeave={filterOff}
           >
-            <div className="technologies__item--img" onMouseLeave={filterOff}>
+            <div
+              className="technologies__item--img-container"
+              onMouseLeave={filterOff}
+            >
               <img
                 alt={`${icon} icon`}
                 src={icon}
                 style={{ width: "50px", height: "50px" }}
+                className="technologies__item--img"
               />
             </div>
             <span className="technologies__item--text">{text}</span>
