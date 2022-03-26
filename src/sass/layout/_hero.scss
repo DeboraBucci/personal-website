@@ -1,4 +1,5 @@
 .hero {
+  min-height: 100vh;
   color: $color-white;
   position: relative;
   overflow: hidden !important;
@@ -25,6 +26,10 @@
       transparent 100%
     );
     opacity: 0.3;
+
+    @include respond(37.5em) {
+      width: 200%;
+    }
   }
 
   &::before {
