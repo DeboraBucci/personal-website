@@ -190,25 +190,25 @@ const traits = [
   {
     title: "Coding Enthusiast",
     content:
-      "The day I created my first website I realized it was one of my passions.",
+      "I've been coding for quite a while now, and it has grown to be one of my strongest passions. I love seeing previous projects and realizing how much I've learned so far.",
     icon: "fa-solid fa-code",
   },
   {
     title: "Drawing Artist",
     content:
-      "I love drawing and styling, and I'm always looking forward to apply that part of me in everything I do.",
+      "Maybe not as diligent as I once was, but I still love drawing and painting from time to time, taking my time in every detail I may find along the way.",
     icon: "fa-solid fa-palette",
   },
   {
-    title: "Book Lover",
+    title: "Bibliomane",
     content:
-      "When I'm not coding, I like spending my time nurturing my knowledge and vocabulary by reading books.",
+      "Reading a book while drinking some tea or coffee in a bright cozy place next to my husband and cats is one of my favorite things to do.",
     icon: "fa-solid fa-book",
   },
   {
-    title: "Perfectionist",
+    title: "Resilient",
     content:
-      "I'm someone that just loves to give it all in everything that she does, and refuses to leave anything uncovered.",
+      "I've come to realize that the pace in which you trace the journey doesn't matter, as long as you keep moving forward.",
     icon: "fa-solid fa-star",
   },
 ];
