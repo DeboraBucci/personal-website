@@ -28,11 +28,17 @@
   @include flexCenter;
   flex-direction: column;
   padding: 5rem 2rem;
+  margin: 0 auto;
 
   &__projects {
-    display: flex;
+    @include flexCenter;
     justify-content: space-evenly;
+    gap: 1rem;
     width: 100%;
+
+    @include respond(53.5em) {
+      flex-wrap: wrap;
+    }
   }
 
   .link {
@@ -57,6 +63,7 @@
 }
 
 .section-contact {
+  min-height: 100vh;
   @include flexCenter;
   flex-direction: column;
   gap: 4rem;
@@ -97,6 +104,11 @@
     display: flex;
     gap: 3rem;
     font-size: 1.3rem;
+
+    @include respond(62.5em) {
+      flex-direction: column;
+      margin-top: 5rem;
+    }
   }
 
   &__item {
