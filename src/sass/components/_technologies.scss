@@ -16,29 +16,32 @@
   clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 
   &__list {
+    pointer-events: none;
+
     padding: 0 5rem;
     @include flexCenter;
     flex-wrap: wrap;
     gap: 3rem;
-  }
 
-  &__filter-on {
-    filter: blur(3px) grayscale(100%);
+    &:hover > * {
+      filter: blur(3px) grayscale(100%);
+    }
   }
 
   &__item {
+    pointer-events: auto;
+
     position: relative;
     transition: all 0.3s;
     cursor: pointer;
 
     &:hover {
+      filter: blur(0) grayscale(0%) !important;
       z-index: 100;
-      filter: none !important;
       transform: scale(1.2);
     }
 
     &:hover &--text {
-      transition: all 0.5s;
       width: max-content;
       padding-left: 3rem;
       color: $color-white;
@@ -66,7 +69,7 @@
       text-transform: uppercase;
 
       transform: translateY(-50%);
-      transition: all 0.4s 0.2s;
+      transition: all 0.4s;
 
       background-color: rgba($color-primary, 0.8);
       color: transparent;
