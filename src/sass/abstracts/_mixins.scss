@@ -8,6 +8,14 @@
   padding: 4rem 10rem;
   width: 70vw;
   min-height: 40rem;
+
+  @include respond(87.5em) {
+    width: 90vw;
+  }
+
+  @include respond(28.5em) {
+    padding: 4rem 5rem;
+  }
 }
 
 @mixin forwardAnim {
@@ -16,4 +24,10 @@
   -o-animation-fill-mode: forwards;
   -ms-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+@mixin respond($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
 }
