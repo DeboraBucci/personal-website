@@ -220,8 +220,8 @@ code {
     height: 27rem;
     padding: 2rem;
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.85);
-    color: #7b7b7b;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #707070;
     transition: transform 0.3s; }
     .traits__card:hover {
       transform: translateY(-1.5rem); }
@@ -387,7 +387,7 @@ code {
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
-  color: #7b7b7b; }
+  color: #656565; }
   .vignettes > * {
     padding: 3rem 5rem;
     max-width: 35rem;
@@ -553,6 +553,8 @@ code {
       display: flex;
       align-items: baseline;
       gap: 1rem; }
+      .card__instructions--text code {
+        color: #ff75ba; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       overflow: hidden;

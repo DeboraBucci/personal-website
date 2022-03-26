@@ -2,7 +2,7 @@
   position: relative;
   @include flexCenter;
   font-size: $default-font-size;
-  color: tint($color-black, 40%);
+  color: tint($color-black, 30%);
 
   & > * {
     padding: 3rem 5rem;
