@@ -151,7 +151,7 @@ const projects = [
     link: "https://alkemy-challenge-react.herokuapp.com/login",
     num: "1",
     info: [
-      { title: "Introduction", text: "Menu ordering app" },
+      { title: "Type", text: "Menu ordering app" },
       { title: "Framework", text: "React" },
       { title: "Technologies", text: "Bootstrap, Axios, etc." },
       { title: "Commits", text: "400+" },
@@ -164,7 +164,7 @@ const projects = [
     link: "https://github.com/DeboraBucci/natours",
     num: "2",
     info: [
-      { title: "Introduction", text: "Tour app" },
+      { title: "Type", text: "Tour app" },
       { title: "Framework", text: "React" },
       { title: "Technologies", text: "SASS" },
       { title: "Commits", text: "130+" },
@@ -177,7 +177,7 @@ const projects = [
     link: "https://github.com/DeboraBucci/mythical-books",
     num: "3",
     info: [
-      { title: "Introduction", text: "Book Subscription" },
+      { title: "Type", text: "Book Subscription" },
       { title: "Framework", text: "React" },
       { title: "Technologies", text: "React-Bootstrap" },
       { title: "Commits", text: "30+" },
