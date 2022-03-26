@@ -174,13 +174,13 @@ const projects = [
 
   {
     title: "Mythical Books",
-    link: "#",
+    link: "https://github.com/DeboraBucci/mythical-books",
     num: "3",
     info: [
       { title: "Introduction", text: "Book Subscription" },
       { title: "Framework", text: "React" },
-      { title: "Technologies", text: "..." },
-      { title: "Commits", text: "..." },
+      { title: "Technologies", text: "React-Bootstrap" },
+      { title: "Commits", text: "30+" },
       { title: "Designer", text: "Débora Bucci" },
     ],
   },
