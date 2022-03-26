@@ -33,7 +33,7 @@ const Project = ({ title, link, num, info, password, mail }) => {
         {num === "1" && (
           <div className="card__instructions">
             <p className="card__instructions--text">
-              Mail: <code>challenge@alkemy.org</code>
+              Email: <code>challenge@alkemy.org</code>
             </p>
 
             <p className="card__instructions--text">
