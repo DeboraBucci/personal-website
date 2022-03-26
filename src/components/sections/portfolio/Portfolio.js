@@ -16,7 +16,15 @@ const Portfolio = () => {
 
       <div className="section-portfolio__projects ">
         {projects.map(({ title, link, num, info }) => {
-          return <Project title={title} link={link} num={num} info={info} />;
+          return (
+            <Project
+              key={`project ${num}`}
+              title={title}
+              link={link}
+              num={num}
+              info={info}
+            />
+          );
         })}
       </div>
 

@@ -17,7 +17,7 @@ const Contact = () => {
       </div>
       <ul className="section-contact__list">
         {contactLinks.map(({ href, icon, text }) => (
-          <li className="section-contact__item">
+          <li key={`${text} contact link`} className="section-contact__item">
             <Link className="section-contact__link" href={href}>
               <i className={icon} />
               {text}
