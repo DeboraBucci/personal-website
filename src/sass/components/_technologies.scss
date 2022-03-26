@@ -16,9 +16,10 @@
   clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 
   &__list {
+    padding: 0 5rem;
     @include flexCenter;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   &__filter-on {
@@ -44,15 +45,14 @@
       opacity: 1;
     }
 
-    &--img {
+    &--img-container {
       @include flexCenter;
       position: relative;
       z-index: 10;
 
+      padding: 2rem;
       border-radius: 50%;
       background-color: $color-black;
-      height: 7.5rem;
-      width: 7.5rem;
     }
 
     &--text {
@@ -68,7 +68,7 @@
       transform: translateY(-50%);
       transition: all 0.4s 0.2s;
 
-      background-color: $color-primary;
+      background-color: rgba($color-primary, 0.8);
       color: transparent;
       opacity: 0;
 
@@ -79,6 +79,72 @@
       border-radius: 3px;
 
       &:hover {
+        display: none !important;
+      }
+    }
+  }
+
+  @include respond(112.5em) {
+    &__list {
+      gap: 1rem;
+      padding: 0 !important;
+    }
+
+    &__item {
+      &--img {
+        width: 4rem !important;
+        height: 4rem !important;
+      }
+
+      &--text {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+
+        z-index: 1;
+
+        font-weight: 600;
+        text-transform: uppercase;
+
+        transform: translateY(-50%);
+        transition: all 0.4s 0.2s;
+
+        background-color: $color-primary;
+        color: transparent;
+        opacity: 0;
+
+        display: inline-block;
+
+        width: 0;
+        padding: 0.5rem;
+        border-radius: 3px;
+
+        &:hover {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  @include respond(28.5em) {
+    clip-path: none;
+  }
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    &__filter-on {
+      filter: none !important;
+    }
+
+    &__item {
+      position: relative;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        transform: none !important;
+      }
+
+      &:hover &--text {
         display: none !important;
       }
     }
