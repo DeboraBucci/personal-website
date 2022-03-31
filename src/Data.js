@@ -3,6 +3,7 @@ import Course02 from "./assets/courses/course-02.webp";
 import Course03 from "./assets/courses/course-03.webp";
 import Course04 from "./assets/courses/course-04.webp";
 import Course05 from "./assets/courses/course-05.webp";
+import Course06 from "./assets/courses/course-06.webp";
 
 import React from "./assets/technologies-icons/react.svg";
 import JavaScript from "./assets/technologies-icons/javascript.svg";
@@ -124,24 +125,28 @@ const linksList = [
 
 const coursesImages = [
   {
-    image: Course01,
-    alt: "First",
+    image: Course06,
+    alt: "Sixth",
   },
   {
-    image: Course02,
-    alt: "Second",
-  },
-  {
-    image: Course03,
-    alt: "Third",
+    image: Course05,
+    alt: "Fifth",
   },
   {
     image: Course04,
     alt: "Fourth",
   },
   {
-    image: Course05,
-    alt: "Fifth",
+    image: Course03,
+    alt: "Third",
+  },
+  {
+    image: Course02,
+    alt: "Second",
+  },
+  {
+    image: Course01,
+    alt: "First",
   },
 ];
 
