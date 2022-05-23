@@ -5,6 +5,9 @@ import Course04 from "./assets/courses/course-04.webp";
 import Course05 from "./assets/courses/course-05.webp";
 import Course06 from "./assets/courses/course-06.webp";
 
+import javascript from "./assets/certifications/javascript.webp";
+import responsiveWebDesign from "./assets/certifications/responsive-web-design.webp";
+
 import React from "./assets/technologies-icons/react.svg";
 import JavaScript from "./assets/technologies-icons/javascript.svg";
 import HTML5 from "./assets/technologies-icons/html5.svg";
@@ -129,6 +132,8 @@ const linksList = [
     key: "l6",
   },
 ];
+
+const certificationImages = [javascript, responsiveWebDesign];
 
 const coursesImages = [
   {
@@ -274,6 +279,7 @@ const contactLinks = [
 export {
   linksList,
   projects,
+  certificationImages,
   coursesImages,
   traits,
   technologies,
