@@ -15,7 +15,7 @@ const Portfolio = () => {
       />
 
       <div className="section-portfolio__projects ">
-        {projects.map(({ title, link, num, info }) => {
+        {projects.map(({ title, link, num, info, extraInfo }) => {
           return (
             <Project
               key={`project ${num}`}
@@ -23,6 +23,7 @@ const Portfolio = () => {
               link={link}
               num={num}
               info={info}
+              extraInfo={extraInfo}
             />
           );
         })}
