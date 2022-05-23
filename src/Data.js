@@ -153,7 +153,7 @@ const coursesImages = [
 const projects = [
   {
     title: "Lily's Cuisine",
-    link: "https://alkemy-challenge-react.herokuapp.com/login",
+    link: "lilys-cuisine",
     num: "1",
     info: [
       { title: "Type", text: "Menu ordering app" },
@@ -162,11 +162,21 @@ const projects = [
       { title: "Commits", text: "400+" },
       { title: "Designer", text: "Débora Bucci" },
     ],
+    extraInfo: (
+      <div className="card__instructions">
+        <p className="card__instructions--text">
+          Email: <code>challenge@alkemy.org</code>
+        </p>
+
+        <p className="card__instructions--text">
+          Password: <code>react</code>
+        </p>
+      </div>
+    ),
   },
   {
     title: "Natours",
-
-    link: "https://github.com/DeboraBucci/natours",
+    link: "natours",
     num: "2",
     info: [
       { title: "Type", text: "Tour app" },
@@ -175,19 +185,37 @@ const projects = [
       { title: "Commits", text: "130+" },
       { title: "Designer", text: "Jonas Schmedtmann" },
     ],
+    extraInfo: "",
   },
 
+  // {
+  //   title: "Mythical Books",
+  //   link: "https://github.com/DeboraBucci/mythical-books",
+  //   num: "3",
+  //   info: [
+  //     { title: "Type", text: "Book Subscription" },
+  //     { title: "Framework", text: "React" },
+  //     { title: "Technologies", text: "React-Bootstrap" },
+  //     { title: "Commits", text: "30+" },
+  //     { title: "Designer", text: "Débora Bucci" },
+  //   ],
+  // },
+
   {
-    title: "Mythical Books",
-    link: "https://github.com/DeboraBucci/mythical-books",
-    num: "3",
+    title: "Go Scrum",
+    link: "go-scrum",
+    num: "4",
     info: [
-      { title: "Type", text: "Book Subscription" },
+      { title: "Type", text: "Task Manager" },
       { title: "Framework", text: "React" },
-      { title: "Technologies", text: "React-Bootstrap" },
-      { title: "Commits", text: "30+" },
+      {
+        title: "Technologies",
+        text: "React-router-dom, SASS, etc.",
+      },
+      { title: "Commits", text: "190+" },
       { title: "Designer", text: "Débora Bucci" },
     ],
+    extraInfo: "",
   },
 ];
 
