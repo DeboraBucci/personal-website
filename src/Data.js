@@ -121,6 +121,13 @@ const linksList = [
   },
 
   { text: "Contact", icon: "fas fa-paper-plane", href: "#contact", key: "l5" },
+
+  {
+    text: "Certifications",
+    icon: "fa-solid fa-scroll",
+    href: "#certifications",
+    key: "l6",
+  },
 ];
 
 const coursesImages = [
