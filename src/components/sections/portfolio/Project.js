@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "../../UI/Link";
 
-const Project = ({ title, link, num, info, password, mail }) => {
+const Project = ({ title, link, num, info, extraInfo }) => {
   return (
     <div className="card" key={`project-${num}`}>
       <div className="card__side card__side--front">
@@ -21,26 +22,21 @@ const Project = ({ title, link, num, info, password, mail }) => {
       <div className={`card__side card__side--back card__side--back-${num}`}>
         <h3 className="heading-tertiary">{title}</h3>
 
-        <a
-          href={link}
-          target={"_blank"}
-          rel="noopener"
+        <Link
+          href={`https://deborabucci.github.io/${link}`}
           className="btn btn--white"
         >
           Visit Project
-        </a>
+        </Link>
 
-        {num === "1" && (
-          <div className="card__instructions">
-            <p className="card__instructions--text">
-              Email: <code>challenge@alkemy.org</code>
-            </p>
+        <Link
+          href={`https://github.com/DeboraBucci/${link}`}
+          className="card__btn-source-code"
+        >
+          Source Code <i className="fa-solid fa-code"></i>
+        </Link>
 
-            <p className="card__instructions--text">
-              Password: <code>react</code>
-            </p>
-          </div>
-        )}
+        {extraInfo}
       </div>
     </div>
   );
