@@ -44,6 +44,10 @@
       &-3 {
         background-image: linear-gradient(to right bottom, #993399, #660066);
       }
+
+      &-4 {
+        background-image: linear-gradient(to right bottom, #4c2771, #261439);
+      }
     }
   }
 
@@ -80,6 +84,32 @@
           rgba(29, 0, 75, 0.5)
         ),
         url(../assets/projects/mythical-books.webp);
+    }
+
+    &-4 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(86, 1, 134, 0.5),
+          rgba(29, 0, 75, 0.5)
+        ),
+        url(../assets/projects/go-scrum.webp);
+    }
+  }
+
+  &__btn-source-code {
+    &:link,
+    &:visited {
+      background-color: #232323;
+      color: rgb(133, 135, 255);
+      padding: 0.5rem 3rem;
+      margin-top: 1rem;
+      border-radius: 3px;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      transform: translateY(-2px);
     }
   }
 
@@ -159,7 +189,7 @@
 
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     overflow: hidden;
-    height: 70rem;
+    height: 75rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -506,6 +506,8 @@ code {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #993399, #660066); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #4c2771, #261439); }
   .card__picture {
     height: 50%;
     border-top-left-radius: 3px;
@@ -521,6 +523,17 @@ code {
       background-image: url(../assets/projects/natours.webp); }
     .card__picture-3 {
       background-image: linear-gradient(to right bottom, rgba(86, 1, 134, 0.5), rgba(29, 0, 75, 0.5)), url(../assets/projects/mythical-books.webp); }
+    .card__picture-4 {
+      background-image: linear-gradient(to right bottom, rgba(86, 1, 134, 0.5), rgba(29, 0, 75, 0.5)), url(../assets/projects/go-scrum.webp); }
+  .card__btn-source-code:link, .card__btn-source-code:visited {
+    background-color: #232323;
+    color: #8587ff;
+    padding: 0.5rem 3rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    transition: all 0.2s; }
+  .card__btn-source-code:hover, .card__btn-source-code:focus {
+    transform: translateY(-2px); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card:hover .card__side--front {
@@ -571,7 +584,7 @@ code {
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       overflow: hidden;
-      height: 70rem;
+      height: 75rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
