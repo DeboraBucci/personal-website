@@ -862,14 +862,14 @@ code {
   background-size: cover;
   background-position: center; }
 
-.section-portfolio {
+.section-projects {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 5rem 2rem;
   margin: 0 auto; }
-  .section-portfolio__projects {
+  .section-projects__projects {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -877,21 +877,21 @@ code {
     gap: 1rem;
     width: 100%; }
     @media only screen and (max-width: 53.5em) {
-      .section-portfolio__projects {
+      .section-projects__projects {
         flex-wrap: wrap; } }
-  .section-portfolio .link {
+  .section-projects .link {
     display: flex;
     justify-content: center; }
-  .section-portfolio__cta {
+  .section-projects__cta {
     font-size: 2.5rem; }
-    .section-portfolio__cta--btn {
+    .section-projects__cta--btn {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 1rem;
       font-weight: 500;
       box-shadow: 0 1rem 2rem rgba(35, 35, 35, 0.2); }
-    .section-portfolio__cta--icon {
+    .section-projects__cta--icon {
       font-size: 2.5rem; }
 
 .section-contact {
@@ -946,3 +946,25 @@ code {
   .section-contact__link:hover i,
   .section-contact__link i {
     color: #f59f00 !important; }
+
+.certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem; }
+  .certifications__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 2rem; }
+  .certifications__image-box:hover {
+    cursor: pointer; }
+  .certifications__image-box img {
+    max-width: 50rem; }
+  @media only screen and (max-width: 62.5em) {
+    .certifications__container {
+      flex-direction: column; }
+    .certifications img {
+      width: 100%; } }
