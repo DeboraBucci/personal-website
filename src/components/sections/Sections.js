@@ -4,7 +4,7 @@ import Certifications from "./certifications/Certifications";
 import Contact from "./contact/Contact";
 import Courses from "./courses/Courses";
 import Hero from "./hero/Hero";
-import Portfolio from "./portfolio/Portfolio";
+import Projects from "./projects/Projects";
 
 const Sections = () => {
   return (
@@ -13,7 +13,7 @@ const Sections = () => {
       <About />
       <Certifications />
       <Courses />
-      <Portfolio />
+      <Projects />
       <Contact />
     </Fragment>
   );
