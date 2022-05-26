@@ -143,3 +143,35 @@
     }
   }
 }
+
+.certifications {
+  @include flexCenter;
+  flex-direction: column;
+  padding: 6rem;
+
+  &__container {
+    @include flexCenter;
+    gap: 6rem;
+    padding: 2rem;
+  }
+
+  &__image-box {
+    &:hover {
+      cursor: pointer;
+    }
+
+    & img {
+      max-width: 50rem;
+    }
+  }
+
+  @include respond(62.5em) {
+    &__container {
+      flex-direction: column;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+}
