@@ -11,10 +11,10 @@ const Sections = () => {
     <Fragment>
       <Hero />
       <About />
+      <Certifications />
       <Courses />
       <Portfolio />
       <Contact />
-      <Certifications />
     </Fragment>
   );
 };
