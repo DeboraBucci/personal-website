@@ -111,29 +111,42 @@ const linksList = [
   { text: "Home", icon: "fas fa-home", href: "#home", key: "l1" },
   { text: "About", icon: "fas fa-address-card", href: "#about", key: "l2" },
   {
+    text: "Certifications",
+    icon: "fa-solid fa-scroll",
+    href: "#certifications",
+    key: "l6",
+  },
+  {
     text: "Courses",
     icon: "fas fa-award",
     href: "#courses",
     key: "l3",
   },
   {
-    text: "Portfolio",
+    text: "Projects",
     icon: "fas fa-briefcase",
-    href: "#portfolio",
+    href: "#projects",
     key: "l4",
   },
 
   { text: "Contact", icon: "fas fa-paper-plane", href: "#contact", key: "l5" },
-
-  {
-    text: "Certifications",
-    icon: "fa-solid fa-scroll",
-    href: "#certifications",
-    key: "l6",
-  },
 ];
 
-const certificationImages = [javascript, responsiveWebDesign];
+const certificationImages = [
+  {
+    image: javascript,
+    alt: "JavaScript certificate from freeCodeCamp",
+    href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/javascript-algorithms-and-data-structures",
+    text: "place some text here...",
+  },
+
+  {
+    image: responsiveWebDesign,
+    alt: "Responsive Web Design certificate from freeCodeCamp",
+    href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/responsive-web-design",
+    text: "place some text here...",
+  },
+];
 
 const coursesImages = [
   {
