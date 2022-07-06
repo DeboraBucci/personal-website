@@ -37,14 +37,7 @@ const technologies = [
     icon: Jest,
     text: "Jest",
   },
-  {
-    icon: JavaScript,
-    text: "JavaScript",
-  },
-  {
-    icon: TypeScript,
-    text: "TypeScript",
-  },
+
   {
     icon: HTML5,
     text: "HTML5",
@@ -97,13 +90,25 @@ const technologies = [
     icon: Lighthouse,
     text: "Lighthouse",
   },
-  {
-    icon: Python,
-    text: "Python",
-  },
+
   {
     icon: StackOverflow,
     text: "Stack Overflow",
+  },
+];
+
+const programmingLanguages = [
+  {
+    icon: JavaScript,
+    text: "JavaScript",
+  },
+  {
+    icon: TypeScript,
+    text: "TypeScript",
+  },
+  {
+    icon: Python,
+    text: "Python",
   },
 ];
 
@@ -297,4 +302,5 @@ export {
   traits,
   technologies,
   contactLinks,
+  programmingLanguages,
 };
