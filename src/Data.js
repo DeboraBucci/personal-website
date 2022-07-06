@@ -27,11 +27,18 @@ import StyledComponents from "./assets/technologies-icons/styledcomponents.svg";
 import Lighthouse from "./assets/technologies-icons/lighthouse.png";
 import StackOverflow from "./assets/technologies-icons/stackoverflow.svg";
 import ReactBootstrap from "./assets/technologies-icons/reactbootstrap.png";
+import Formik from "./assets/technologies-icons/formik.svg";
+import ReactRouterDom from "./assets/technologies-icons/react-router-dom.svg";
+import Mui from "./assets/technologies-icons/mui.svg";
 
 const technologies = [
   {
     icon: React,
     text: "React",
+  },
+  {
+    icon: ReactRouterDom,
+    text: "React Router DOM",
   },
   {
     icon: Jest,
@@ -47,6 +54,10 @@ const technologies = [
     text: "CSS3",
   },
   {
+    icon: Mui,
+    text: "Material UI",
+  },
+  {
     icon: Bootstrap,
     text: "Bootstrap",
   },
@@ -57,6 +68,10 @@ const technologies = [
   {
     icon: StyledComponents,
     text: "Styled Components",
+  },
+  {
+    icon: Formik,
+    text: "Formik",
   },
   {
     icon: GIT,
