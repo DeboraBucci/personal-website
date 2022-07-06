@@ -3,7 +3,7 @@ import { traits } from "../../../Data";
 
 const Traits = () => {
   return (
-    <div className="traits u-margin-bottom-big ">
+    <div className="traits">
       <h3 className="heading-tertiary u-margin-bottom-medium">
         Some of my traits
       </h3>

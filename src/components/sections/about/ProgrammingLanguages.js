@@ -3,7 +3,7 @@ import { programmingLanguages } from "../../../Data";
 
 const ProgrammingLanguages = () => {
   return (
-    <div className="languages u-center-text u-margin-bottom-big ">
+    <div className="languages u-center-text ">
       <h3 className="heading-tertiary u-margin-bottom-big ">
         Programming Languages
       </h3>
