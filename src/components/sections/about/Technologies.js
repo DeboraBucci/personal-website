@@ -4,9 +4,7 @@ import { technologies } from "../../../Data";
 const Technologies = () => {
   return (
     <div className="technologies u-center-text">
-      <h3 className="heading-tertiary u-margin-bottom-medium ">
-        Technologies I Use
-      </h3>
+      <h3 className="heading-tertiary u-margin-bottom-medium ">Technologies</h3>
 
       <ul className="technologies__list">
         {technologies.map(({ text, icon }) => (
