@@ -4,6 +4,7 @@ import SecondaryHeading from "../../UI/Header";
 import Vignettes from "./Vignettes";
 import Traits from "./Traits";
 import Technologies from "./Technologies";
+import ProgrammingLanguages from "./ProgrammingLanguages";
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
       />
       <Vignettes />
       <Traits />
+      <ProgrammingLanguages />
       <Technologies />
     </section>
   );
