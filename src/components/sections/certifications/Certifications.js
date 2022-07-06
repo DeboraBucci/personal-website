@@ -10,7 +10,7 @@ const Certifications = () => {
 
       <div className="certifications__container">
         {certificationImages.map((certificate) => (
-          <div className="certifications__image-box">
+          <div key={certificate.alt} className="certifications__image-box">
             <Link href={certificate.href}>
               <img
                 src={certificate.image}
