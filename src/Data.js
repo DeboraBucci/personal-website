@@ -7,6 +7,7 @@ import Course06 from "./assets/courses/course-06.webp";
 
 import javascript from "./assets/certifications/javascript.webp";
 import responsiveWebDesign from "./assets/certifications/responsive-web-design.webp";
+import alkemy from "./assets/certifications/alkemy.webp";
 
 import React from "./assets/technologies-icons/react.svg";
 import JavaScript from "./assets/technologies-icons/javascript.svg";
@@ -153,6 +154,13 @@ const linksList = [
 ];
 
 const certificationImages = [
+  {
+    image: alkemy,
+    alt: "certificate of Skill Up of React, Work Methodologies and Soft Skills from Alkemy",
+    href: "https://www.alkemy.org/",
+    text: "place some text here...",
+  },
+
   {
     image: javascript,
     alt: "JavaScript certificate from freeCodeCamp",
