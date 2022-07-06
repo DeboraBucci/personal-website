@@ -290,7 +290,7 @@ code {
   background: linear-gradient(to right, rgba(18, 37, 54, 0.5), rgba(36, 46, 26, 0.6)), url("/src/assets/backgrounds/technologies-background.webp");
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); }
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%); }
   @media only screen and (max-width: 87.5em) {
     .technologies {
       width: 90vw; } }
@@ -788,6 +788,26 @@ code {
         transform: none !important; }
       .languages__item:hover .languages__item--text {
         display: none !important; } }
+
+.thin-line {
+  position: relative;
+  height: 2px;
+  width: 60%;
+  background-color: #eee;
+  margin: 4rem; }
+  .thin-line::before, .thin-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #ff916a; }
+  .thin-line::before {
+    left: -3rem; }
+  .thin-line::after {
+    right: -3rem; }
 
 .navigation-wrapper {
   position: fixed;

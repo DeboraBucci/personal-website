@@ -16,7 +16,9 @@ const About = () => {
       />
       <Vignettes />
       <Traits />
+      <div className="thin-line"></div>
       <ProgrammingLanguages />
+      <div className="thin-line"></div>
       <Technologies />
     </section>
   );

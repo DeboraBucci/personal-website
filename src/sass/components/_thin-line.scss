@@ -1,0 +1,27 @@
+.thin-line {
+  position: relative;
+  height: 2px;
+  width: 60%;
+  background-color: #eee;
+  margin: 4rem;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 145, 106);
+  }
+
+  &::before {
+    left: -3rem;
+  }
+
+  &::after {
+    right: -3rem;
+  }
+}
