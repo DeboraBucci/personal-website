@@ -792,7 +792,6 @@ code {
 .thin-line {
   position: relative;
   height: 2px;
-  width: 60%;
   background-color: #eee;
   margin: 4rem; }
   .thin-line::before, .thin-line::after {
@@ -808,6 +807,145 @@ code {
     left: -3rem; }
   .thin-line::after {
     right: -3rem; }
+  .thin-line--small {
+    width: 60%; }
+  .thin-line--big {
+    width: 100%; }
+
+.overlay {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw; }
+  .overlay ::-webkit-scrollbar {
+    width: 0.8rem; }
+
+.backdrop {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(35, 35, 35, 0.8);
+  backdrop-filter: blur(4px); }
+
+.certifications-modal {
+  z-index: 25000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  border-radius: 3px;
+  padding: 1rem;
+  background-color: #fff; }
+  @media only screen and (max-height: 50em) {
+    .certifications-modal {
+      height: 90%; } }
+  .certifications-modal__btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+    border-radius: 50%;
+    color: #a7a7a7;
+    background-color: rgba(255, 255, 255, 0.8); }
+    .certifications-modal__btn:hover {
+      color: #cc4287; }
+  .certifications-modal__content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 9fr 1fr;
+    gap: 1rem;
+    overflow: auto;
+    padding: 1rem; }
+    .certifications-modal__content::-webkit-scrollbar-track {
+      margin-top: 5rem; }
+  .certifications-modal__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 1rem;
+    background-color: rgba(35, 35, 35, 0.9); }
+    .certifications-modal__img img {
+      width: 100%; }
+  .certifications-modal__info {
+    grid-column: 2/ -1;
+    grid-row: 1/ -1; }
+  .certifications-modal__title {
+    font-size: 4rem;
+    margin-bottom: -2.5rem;
+    text-align: center;
+    font-family: "Quintessential", cursive; }
+  .certifications-modal__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .certifications-modal__cta a:link,
+    .certifications-modal__cta a:visited {
+      color: #fff;
+      background-color: #f59f00;
+      border: 3px solid #f59f00;
+      border-radius: 3px;
+      font-size: 1.6rem;
+      padding: 1rem;
+      transition: all 0.2s; }
+    .certifications-modal__cta a:hover {
+      transform: translateY(-3px);
+      background-color: transparent;
+      color: #f59f00; }
+    .certifications-modal__cta a.disabled {
+      background-color: #bdbdbd;
+      border-color: #bdbdbd;
+      pointer-events: none; }
+      .certifications-modal__cta a.disabled:hover {
+        transform: none;
+        background-color: #bdbdbd;
+        color: #fff; }
+  .certifications-modal__text {
+    height: 70%;
+    overflow: auto;
+    padding: 0 4rem;
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    letter-spacing: 0.2rem; }
+    .certifications-modal__text p {
+      margin-bottom: 2.5rem; }
+  .certifications-modal h4 {
+    text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .certifications-modal__info {
+      height: 95%;
+      overflow: auto; }
+    .certifications-modal__text {
+      font-size: 1.9rem;
+      margin-bottom: 2rem;
+      height: auto; }
+    .certifications-modal__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .certifications-modal__img {
+      display: none; } }
+
+.complexity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem; }
+  .complexity__point {
+    height: 0.7rem;
+    width: 5rem;
+    background-color: #eee;
+    border-radius: 3px;
+    transform: skewX(-50deg); }
 
 .navigation-wrapper {
   position: fixed;
@@ -1148,14 +1286,14 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 6rem;
     padding: 2rem; }
   .certifications__image-box:hover {
     cursor: pointer; }
   .certifications__image-box img {
     max-width: 50rem; }
-  @media only screen and (max-width: 62.5em) {
-    .certifications__container {
-      flex-direction: column; }
+  @media only screen and (max-width: 50em) {
     .certifications img {
-      width: 100%; } }
+      width: 100%;
+      max-width: 100%; } }

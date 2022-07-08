@@ -1,22 +1,40 @@
-import React from "react";
-import { certificationImages } from "../../../Data";
+import React, { useState } from "react";
+
+import { certifications } from "../../../Data";
 import Header from "../../UI/Header";
-import Link from "../../UI/Link";
+import CertificationsOverlay from "../../UI/CertificationsOverlay";
 
 const Certifications = () => {
+  const [modalIsOpened, setModalIsOpened] = useState(false);
+  const [modalInfo, setModalInfo] = useState({});
+
+  const closeModalHandler = () => setModalIsOpened(false);
+  const openModalHandler = (certificate) => {
+    setModalIsOpened(true);
+    setModalInfo(certificate);
+  };
+
   return (
     <section className="certifications" id="certifications">
+      {modalIsOpened && (
+        <CertificationsOverlay
+          closeModalHandler={closeModalHandler}
+          modalInfo={modalInfo}
+        />
+      )}
       <Header title="These are my certificates" subtitle="certifications" />
 
       <div className="certifications__container">
-        {certificationImages.map((certificate) => (
-          <div key={certificate.alt} className="certifications__image-box">
-            <Link href={certificate.href}>
-              <img
-                src={certificate.image}
-                alt={`${certificate.alt} certificate`}
-              />
-            </Link>
+        {certifications.map((certificate) => (
+          <div
+            onClick={openModalHandler.bind(null, certificate)}
+            key={certificate.alt}
+            className="certifications__image-box"
+          >
+            <img
+              src={certificate.image}
+              alt={`${certificate.alt} certificate`}
+            />
           </div>
         ))}
       </div>
