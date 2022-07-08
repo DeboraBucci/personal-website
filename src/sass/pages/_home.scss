@@ -151,6 +151,7 @@
 
   &__container {
     @include flexCenter;
+    flex-wrap: wrap;
     gap: 6rem;
     padding: 2rem;
   }
@@ -165,13 +166,10 @@
     }
   }
 
-  @include respond(62.5em) {
-    &__container {
-      flex-direction: column;
-    }
-
+  @include respond(50em) {
     & img {
       width: 100%;
+      max-width: 100%;
     }
   }
 }
