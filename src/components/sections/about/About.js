@@ -16,9 +16,9 @@ const About = () => {
       />
       <Vignettes />
       <Traits />
-      <div className="thin-line"></div>
+      <div className="thin-line thin-line--small"></div>
       <ProgrammingLanguages />
-      <div className="thin-line"></div>
+      <div className="thin-line thin-line--small"></div>
       <Technologies />
     </section>
   );
