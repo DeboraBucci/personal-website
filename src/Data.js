@@ -153,26 +153,48 @@ const linksList = [
   { text: "Contact", icon: "fas fa-paper-plane", href: "#contact", key: "l5" },
 ];
 
-const certificationImages = [
+const certifications = [
   {
     image: alkemy,
     alt: "certificate of Skill Up of React, Work Methodologies and Soft Skills from Alkemy",
-    href: "https://www.alkemy.org/",
-    text: "place some text here...",
+    href: "",
+    text: [
+      "Alkemy offered a bootcamp, which consisted in many ordered challenges that needed to be overcome in order to pass to the next one.",
+      "The first step was to make a medium-sized project to get accepted, and that alone was a hard task because it had a month-long time limit, and having that deadline in mind while planning the project was very challenging.",
+      "When I got accepted, I had 7 weeks to complete four courses, which were the following: Soft Skills, Agile Methodologies, Skill Up React I, Skill Up React II, a project, and three screenings.",
+      "In the Soft Skills' course I learnt a lot of new things about interacting with people around me, both in personal and professional environments. Learnt to hear properly, and have the courage to ask when not understanding something completely. This course was very short, yet considerably important.",
+      "In Agile Methodologies I was able to learn how SCRUM functions, with its Sprints, its team composition (product owner, scrum master and development team), the backlog, user stories, estimations and the well known Kanban system (used in websites like Trello). I was able to fully understand the dynamic of a work enviroment and its benefits. Also, it had a basic level of Git, which worked as a refreshment for me.",
+      "In the React Skill Ups, I learnt many new features of React, and was able to review some other fundamental ones learnt in previous courses. Some of which were hooks, debugging, testing, redux, etc.",
+      "And almost at the end of the 7 weeks, I had to complete three screenings (for soft skills, agile methodologies and React), which were very challenging, having to resolve many exercises in a span of some hours without any breaks.",
+      "Overall, being in Alkemy was a very unique and nurturing experience, which helped transform my character.",
+    ],
+    complexity: 4,
   },
 
   {
     image: javascript,
     alt: "JavaScript certificate from freeCodeCamp",
     href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/javascript-algorithms-and-data-structures",
-    text: "place some text here...",
+    text: [
+      "This certification was a little bit of a challenge for me at the time because the five projects they gave required a lot of thinking and researching.",
+      "It was more of thinking intricate ways of resolving puzzles and problems, instead of being like the previous one (responsive web design), which consisted in my imagination and designing of the page.",
+      "I liked it a lot, because it was a whole different experience and a new challenge for my career. I most definitely learnt a lot of new ways of coding in JavaScript, while also reviewing lots of basic stuff that I already knew, but having it as a refreshment of knowledge was appreciated.",
+      "This course taught things like regex, object oriented programming, debugging, ES6, and more!",
+    ],
+    complexity: 3,
   },
 
   {
     image: responsiveWebDesign,
     alt: "Responsive Web Design certificate from freeCodeCamp",
     href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/responsive-web-design",
-    text: "place some text here...",
+    text: [
+      "When I started this certification's course, back in 2021, I was still very inexperienced, and only knew some HTML, CSS and a little bit of JS. ",
+      "Although the course only consisted in HTML and CSS, it wasn't that simple. It had an intermediate level, so for the beginner that I was, it felt like a big challenge to be able to complete the five projects they handed me.",
+      "They taught things like flexbox, grid, best practices, and much more. And in a very interactive way, with an exercise for each new thing they taught. That's why I love freeCodeCamp so much, they make you part of the learning process by making you code alongside the lessons!",
+      "The course had a big influence in my career because it molded me and my way of thinking. It was a very fun and nurturing experience, and it felt great when I finally received my first certification ever. It was a big leap for my career, and it left me with a solid basis, some good projects to practice and improve with, and feeling very enthusiastic to learn more about the wonderful world of a Frontend developer!",
+    ],
+    complexity: 2,
   },
 ];
 
@@ -320,7 +342,7 @@ const contactLinks = [
 export {
   linksList,
   projects,
-  certificationImages,
+  certifications,
   coursesImages,
   traits,
   technologies,
