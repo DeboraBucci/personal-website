@@ -20,7 +20,6 @@ import NodeJS from "./assets/technologies-icons/nodejs.svg";
 import NPM from "./assets/technologies-icons/npm.svg";
 import TypeScript from "./assets/technologies-icons/typescript.svg";
 import Postman from "./assets/technologies-icons/postman.png";
-import Python from "./assets/technologies-icons/python.svg";
 import Jest from "./assets/technologies-icons/jest.svg";
 import Express from "./assets/technologies-icons/express.png";
 import VSCode from "./assets/technologies-icons/vscode.svg";
@@ -121,10 +120,6 @@ const programmingLanguages = [
   {
     icon: TypeScript,
     text: "TypeScript",
-  },
-  {
-    icon: Python,
-    text: "Python",
   },
 ];
 
