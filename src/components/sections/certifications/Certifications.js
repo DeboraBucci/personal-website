@@ -35,6 +35,7 @@ const Certifications = () => {
               src={certificate.image}
               alt={`${certificate.alt} certificate`}
             />
+            <i className="fa-solid fa-magnifying-glass certifications__zoom"></i>
           </div>
         ))}
       </div>

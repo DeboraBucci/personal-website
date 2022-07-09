@@ -157,13 +157,68 @@
   }
 
   &__image-box {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      transform: skewX(-53.5deg);
+      transition: all 0.7s;
+    }
+
+    &::before {
+      background: linear-gradient(
+        to right,
+        rgba($color-white, 0.1) 0%,
+        rgba($color-white, 0.3) 100%
+      );
+
+      left: -200%;
+    }
+
+    &::after {
+      background: linear-gradient(
+        to left,
+        rgba($color-black, 0.1) 0%,
+        rgba($color-black, 0.2) 100%
+      );
+      right: -200%;
+    }
+
     &:hover {
-      cursor: pointer;
+      &::before {
+        left: -50%;
+      }
+
+      &::after {
+        right: -50%;
+      }
     }
 
     & img {
       max-width: 50rem;
     }
+  }
+
+  &__zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: tint($color-black, 15%);
+    opacity: 0;
+    font-size: 6rem;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-out 0s;
+  }
+
+  &__image-box:hover &__zoom {
+    opacity: 1;
   }
 
   @include respond(50em) {

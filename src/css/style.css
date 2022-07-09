@@ -1289,10 +1289,41 @@ code {
     flex-wrap: wrap;
     gap: 6rem;
     padding: 2rem; }
-  .certifications__image-box:hover {
-    cursor: pointer; }
-  .certifications__image-box img {
-    max-width: 50rem; }
+  .certifications__image-box {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; }
+    .certifications__image-box::before, .certifications__image-box::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      transform: skewX(-53.5deg);
+      transition: all 0.7s; }
+    .certifications__image-box::before {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 100%);
+      left: -200%; }
+    .certifications__image-box::after {
+      background: linear-gradient(to left, rgba(35, 35, 35, 0.1) 0%, rgba(35, 35, 35, 0.2) 100%);
+      right: -200%; }
+    .certifications__image-box:hover::before {
+      left: -50%; }
+    .certifications__image-box:hover::after {
+      right: -50%; }
+    .certifications__image-box img {
+      max-width: 50rem; }
+  .certifications__zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #444444;
+    opacity: 0;
+    font-size: 6rem;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-out 0s; }
+  .certifications__image-box:hover .certifications__zoom {
+    opacity: 1; }
   @media only screen and (max-width: 50em) {
     .certifications img {
       width: 100%;
