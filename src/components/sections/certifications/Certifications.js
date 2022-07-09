@@ -22,7 +22,7 @@ const Certifications = () => {
           modalInfo={modalInfo}
         />
       )}
-      <Header title="These are my certificates" subtitle="certifications" />
+      <Header title="These are my certifications" subtitle="certifications" />
 
       <div className="certifications__container">
         {certifications.map((certificate) => (
