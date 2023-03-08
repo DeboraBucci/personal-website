@@ -1,5 +1,5 @@
 import React from "react";
-import { programmingLanguages } from "../../../Data";
+import { programmingLanguages } from "../../../data";
 
 const ProgrammingLanguages = () => {
   return (

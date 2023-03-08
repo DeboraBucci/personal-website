@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { linksList } from "../../Data";
+import { linksList } from "../../data";
 
 const Navbar = () => {
   const [isNavbarOpened, setIsNavbarOpened] = useState(false);

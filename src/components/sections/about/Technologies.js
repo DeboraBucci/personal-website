@@ -1,5 +1,5 @@
 import React from "react";
-import { technologies } from "../../../Data";
+import { technologies } from "../../../data";
 
 const Technologies = () => {
   return (

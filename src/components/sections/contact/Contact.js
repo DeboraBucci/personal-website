@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "../../UI/Link";
 
-import { contactLinks } from "../../../Data";
+import { contactLinks } from "../../../data";
 
 const Contact = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { certifications } from "../../../Data";
+import { certifications } from "../../../data";
 import Header from "../../UI/Header";
 import CertificationsOverlay from "../../UI/CertificationsOverlay";
 
