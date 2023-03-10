@@ -6,8 +6,11 @@ import Course05 from "./assets/courses/course-05.webp";
 import Course06 from "./assets/courses/course-06.webp";
 
 import javascript from "./assets/certifications/javascript.webp";
+import javascript2 from "./assets/certifications/javascript-coder.webp";
 import responsiveWebDesign from "./assets/certifications/responsive-web-design.webp";
 import alkemy from "./assets/certifications/alkemy.webp";
+import react from "./assets/certifications/react-coder.webp";
+import webDesign from "./assets/certifications/web-design-coder.webp";
 
 import React from "./assets/technologies-icons/react.svg";
 import JavaScript from "./assets/technologies-icons/javascript.svg";
@@ -150,18 +153,72 @@ const linksList = [
 
 const certifications = [
   {
+    image: react,
+    alt: "React JS",
+    href: "https://www.coderhouse.com/certificados/637d8946d42cb5000e4fe274",
+    text: [
+      "This course taught React JS from scratch, while giving challenges that had to be delivered within a week of being offered.",
+
+      "Since I already knew React from a course I made before I didn't learn much from it, but it helped me review a lot of its content to better retain all the knowledge I had.",
+
+      "I was also able to understand more clearly how react-router-dom works, and to implement it in the project I was building, so that's a win in my book!",
+    ],
+    date: "February 1st, 2023",
+    complexity: 3,
+  },
+
+  {
+    image: javascript2,
+    alt: "JavaScript",
+    href: "https://www.coderhouse.com/certificados/637d8946d42cb5000e4fe274",
+    text: [
+      "I found this course to be a much-needed refresher on JavaScript, helping me remember many powerful functionalities of the language.",
+
+      "Throughout it, I encountered many situations where I had to search extensively for something I had learned in the past in order to apply it again.",
+
+      "Although the course didn't introduce me to many new concepts, I was able to get a lot of practice thanks to the challenging exercises.",
+
+      "Overall, I'm grateful for the opportunity to reinforce my knowledge and skills in JavaScript, and I feel more confident in my abilities as a result of taking this course.",
+    ],
+    date: "December 5th, 2022",
+    complexity: 2,
+  },
+
+  {
+    image: webDesign,
+    alt: "Web Design",
+    href: "https://www.coderhouse.com/certificados/637d8946d42cb5000e4fe274",
+    text: [
+      "This course was very intersting, specially at the beginning.",
+
+      "Since it was the first one I took from CoderHouse, I had to get to know their mode of instruction, which were two meetings of two hours each every week. And they would also offer a new challenge for me to complete every other week.",
+
+      "Also, I learnt a lot about planning projects ahead of time, by making prototypes using rough sketches, mockups, etc., and then transitioning it to code.",
+
+      "I was able to learn the basics of Figma, and use it for building the prototype for my project.",
+    ],
+    date: "October 5th, 2022",
+    complexity: 2,
+  },
+
+  {
     image: alkemy,
     alt: "certificate of Skill Up of React, Work Methodologies and Soft Skills from Alkemy",
     href: "",
     text: [
-      "Alkemy offered a bootcamp, which consisted in many ordered challenges that needed to be overcome in order to pass to the next one.",
-      "The first step was to make a medium-sized project to get accepted, and that alone was a hard task because it had a month-long time limit, and having that deadline in mind while planning the project was very challenging.",
-      "When I got accepted, I had 7 weeks to complete four courses, which were the following: Soft Skills, Agile Methodologies, Skill Up React I, Skill Up React II, a project, and three screenings.",
-      "In the Soft Skills' course I learnt a lot of new things about interacting with people around me, both in personal and professional environments. Learnt to hear properly, and have the courage to ask when not understanding something completely. This course was very short, yet considerably important.",
-      "In Agile Methodologies I was able to learn how SCRUM functions, with its Sprints, its team composition (product owner, scrum master and development team), the backlog, user stories, estimations and the well known Kanban system (used in websites like Trello). I was able to fully understand the dynamic of a work enviroment and its benefits. Also, it had a basic level of Git, which worked as a refreshment for me.",
-      "In the React Skill Ups, I learnt many new features of React, and was able to review some other fundamental ones learnt in previous courses. Some of which were hooks, debugging, testing, redux, etc.",
-      "And almost at the end of the 7 weeks, I had to complete three screenings (for soft skills, agile methodologies and React), which were very challenging, having to resolve many exercises in a span of some hours without any breaks.",
-      "Overall, being in Alkemy was a very unique and nurturing experience, which helped transform my character.",
+      "Alkemy offered a rigorous bootcamp consisting of a series of ordered challenges that needed to be overcome in order to progress to the next level.",
+
+      "The first challenge was to create a medium-sized project to be accepted into the bootcamp, which was no easy feat due to the month-long time limit. Planning the project while keeping the deadline in mind was a daunting task.",
+
+      "Once accepted, I had seven weeks to complete four courses (Soft Skills, Agile Methodologies, Skill Up React I, Skill Up React II), a project, and three screenings.",
+
+      "The Soft Skills course taught me valuable skills for effective communication and collaboration in both personal and professional environments. I learned how to listen attentively and ask questions when I needed clarification. Although it was a short course, it was essential for developing my interpersonal skills.",
+
+      "In Agile Methodologies, I learned how SCRUM functions, including Sprints, team composition (product owner, scrum master, and development team), the backlog, user stories, estimations, and the popular Kanban system used in websites like Trello. This course helped me understand the dynamics of a work environment and its benefits. Additionally, I gained a basic level of Git, which served as a refresher for me.",
+
+      "The React Skill Ups course covered new features of React and allowed me to review fundamental concepts learned in previous courses, such as hooks, debugging, testing, and redux.",
+
+      "Near the end of the seven weeks, I had to complete three challenging screenings for soft skills, agile methodologies, and React, which consisted in solving many exercises in a span of a few hours without any breaks.",
     ],
     complexity: 4,
   },
@@ -171,12 +228,14 @@ const certifications = [
     alt: "JavaScript certificate from freeCodeCamp",
     href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/javascript-algorithms-and-data-structures",
     text: [
-      "This certification was a little bit of a challenge for me at the time because the five projects they gave required a lot of thinking and researching.",
-      "It was more of thinking intricate ways of resolving puzzles and problems, instead of being like the previous one (responsive web design), which consisted in my imagination and designing of the page.",
-      "I liked it a lot, because it was a whole different experience and a new challenge for my career. I most definitely learnt a lot of new ways of coding in JavaScript, while also reviewing lots of basic stuff that I already knew, but having it as a refreshment of knowledge was appreciated.",
-      "This course taught things like regex, object oriented programming, debugging, ES6, and more!",
+      "This course was somewhat challenging for me at the time, due to the complexity of the projects they offered, which took plenty of thinking and researching to be done, and the fact that I wasn't as exposed to JavaScript as I am today.",
+
+      "I spent most of it researching and delving deep into complex problem-solving techniques for resolving the puzzles and problems that were handed to me.",
+
+      "Overall, I enjoyed it a lot. It was very entertaining to think and resolve the exercises they gave. And I was able to learn a plathera of JavaScript's functionalities, such as regex, object oriented programming, debugging, ES6+, just to name a few.",
     ],
     complexity: 3,
+    date: "May 20th, 2022",
   },
 
   {
@@ -184,12 +243,16 @@ const certifications = [
     alt: "Responsive Web Design certificate from freeCodeCamp",
     href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/responsive-web-design",
     text: [
-      "When I started this certification's course, back in 2021, I was still very inexperienced, and only knew some HTML, CSS and a little bit of JS. ",
-      "Although the course only consisted in HTML and CSS, it wasn't that simple. It had an intermediate level, so for the beginner that I was, it felt like a big challenge to be able to complete the five projects they handed me.",
-      "They taught things like flexbox, grid, best practices, and much more. And in a very interactive way, with an exercise for each new thing they taught. That's why I love freeCodeCamp so much, they make you part of the learning process by making you code alongside the lessons!",
-      "The course had a big influence in my career because it molded me and my way of thinking. It was a very fun and nurturing experience, and it felt great when I finally received my first certification ever. It was a big leap for my career, and it left me with a solid basis, some good projects to practice and improve with, and feeling very enthusiastic to learn more about the wonderful world of a Frontend developer!",
+      "At the start of this course, I was still very inexperienced, knowing little HTML, CSS and a little bit of JavaScript, I wasn't able to do much yet.",
+
+      "Due to my little knowledge in code, being able to complete five different static websites felt as a big leap from where I was before.",
+
+      "When I started with the projects, I was met with many problems, errors, lack of knowledge, and many other obstacles, which at the end of the day, helped me grow into a better developer.",
+
+      "In the course, things like flexbox, grid, best practices, and much more were taught in a very interactive way, with an exercise for every other lecture. That's why I love freeCodeCamp so much, they make you part of the learning process by making you code alongside the lessons!",
     ],
     complexity: 2,
+    date: "September 8th, 2022",
   },
 ];
 
