@@ -503,10 +503,8 @@ code {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #e34363, #b01030); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #993399, #660066); }
-      .card__side--back-4 {
+      .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #4c2771, #261439); }
   .card__picture {
     height: 50%;
@@ -520,15 +518,13 @@ code {
     .card__picture-1 {
       background-image: linear-gradient(to right bottom, rgba(114, 16, 36, 0.8), rgba(212, 57, 88, 0.3)), url(../assets/projects/lilys-cuisine.webp); }
     .card__picture-2 {
-      background-image: url(../assets/projects/natours.webp); }
-    .card__picture-3 {
       background-image: linear-gradient(to right bottom, rgba(86, 1, 134, 0.5), rgba(29, 0, 75, 0.5)), url(../assets/projects/mythical-books.webp); }
-    .card__picture-4 {
+    .card__picture-3 {
       background-image: linear-gradient(to right bottom, rgba(86, 1, 134, 0.5), rgba(29, 0, 75, 0.5)), url(../assets/projects/go-scrum.webp); }
   .card__btn-source-code:link, .card__btn-source-code:visited {
-    background-color: #232323;
+    background-color: #2e2e2e;
     color: #8587ff;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 4rem;
     margin-top: 1rem;
     border-radius: 3px;
     transition: all 0.2s; }

@@ -307,37 +307,27 @@ const projects = [
       </div>
     ),
   },
+
   {
-    title: "Natours",
-    link: "natours",
+    title: "Mythical Books",
+    link: "mythical-books",
     num: "2",
     info: [
-      { title: "Type", text: "Tour app" },
+      { title: "Type", text: "Book Subscription" },
       { title: "Framework", text: "React" },
-      { title: "Technologies", text: "SASS" },
-      { title: "Commits", text: "130+" },
-      { title: "Designer", text: "Jonas Schmedtmann" },
+      {
+        title: "Technologies",
+        text: "SASS, react-router-dom, etc.",
+      },
+      { title: "Commits", text: "140+" },
+      { title: "Designer", text: "Débora Bucci" },
     ],
-    extraInfo: "",
   },
-
-  // {
-  //   title: "Mythical Books",
-  //   link: "https://github.com/DeboraBucci/mythical-books",
-  //   num: "3",
-  //   info: [
-  //     { title: "Type", text: "Book Subscription" },
-  //     { title: "Framework", text: "React" },
-  //     { title: "Technologies", text: "React-Bootstrap" },
-  //     { title: "Commits", text: "30+" },
-  //     { title: "Designer", text: "Débora Bucci" },
-  //   ],
-  // },
 
   {
     title: "Go Scrum",
     link: "go-scrum",
-    num: "4",
+    num: "3",
     info: [
       { title: "Type", text: "Task Manager" },
       { title: "Framework", text: "React" },
@@ -348,7 +338,6 @@ const projects = [
       { title: "Commits", text: "190+" },
       { title: "Designer", text: "Débora Bucci" },
     ],
-    extraInfo: "",
   },
 ];
 
