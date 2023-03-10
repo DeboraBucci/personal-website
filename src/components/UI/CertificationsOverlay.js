@@ -26,6 +26,8 @@ const CertificationsModal = ({ closeHandler, info }) => {
           <h3 className="certifications-modal__title">My Journey</h3>
           <div className="thin-line hin-line--big"></div>
 
+          <p className="certifications-modal__date">Issued in {info.date}</p>
+
           <div className="certifications-modal__text">
             {info.text.map((sentence) => (
               <p key={sentence.slice(1, 10)}>{sentence}</p>

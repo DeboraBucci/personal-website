@@ -843,6 +843,10 @@ code {
   @media only screen and (max-height: 50em) {
     .certifications-modal {
       height: 90%; } }
+  .certifications-modal__date {
+    font-size: 2rem;
+    text-align: center;
+    color: #a7a7a7; }
   .certifications-modal__btn {
     position: absolute;
     top: 1rem;

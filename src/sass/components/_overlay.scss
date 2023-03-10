@@ -35,6 +35,12 @@
     height: 90%;
   }
 
+  &__date {
+    font-size: 2rem;
+    text-align: center;
+    color: tint($color-black, 60%);
+  }
+
   &__btn {
     position: absolute;
     top: 1rem;
