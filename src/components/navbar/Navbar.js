@@ -54,12 +54,27 @@ const Navbar = () => {
       </div>
 
       {isWindowSmaller1000 && !isNavbarOpened ? (
-        <i
-          onClick={headerHandler}
-          className={`fa-solid fa-bars header__nav--bars ${
-            isNavbarOpened ? "header__nav--hidden" : ""
-          }`}
-        ></i>
+        <div className="header__sidebar-wrapper">
+          <i
+            onClick={headerHandler}
+            className={`fa-solid fa-bars header__nav--bars ${
+              isNavbarOpened ? "header__nav--hidden" : ""
+            }`}
+          ></i>
+          <ul
+            className={`header__icon-list ${
+              !isNavbarOpened ? "header__icon-list--overlay" : ""
+            }`}
+          >
+            {linksList.map(({ text, icon, href, key }) => (
+              <li key={key} onClick={linkClickHandler}>
+                <a href={href}>
+                  <i className={`${icon} header__nav--icon`} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : (
         <i
           onClick={headerHandler}

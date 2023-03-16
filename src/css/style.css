@@ -1003,7 +1003,7 @@ code {
         opacity: 0;
         width: 0;
         height: 2px;
-        transition: all 0.4s ease;
+        transition: all 0.3s ease;
         border-bottom-right-radius: 7px;
         border-bottom-left-radius: 7px; }
       .header__nav--item:hover:before {
@@ -1021,17 +1021,44 @@ code {
       color: #fff; }
     .header__nav--bars {
       display: none; }
+  .header__sidebar-wrapper {
+    position: relative; }
+  .header__icon-list {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    padding-top: 8rem;
+    width: 8rem;
+    height: 50rem;
+    font-size: 3rem;
+    border-radius: 20rem;
+    background-color: rgba(35, 35, 35, 0.8);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    overflow: hidden;
+    transition: all 0.3s; }
+    .header__icon-list a {
+      color: #f59f00; }
+    .header__icon-list--hidden {
+      height: 0;
+      opacity: 0; }
   @media only screen and (max-width: 62.5em) {
     .header {
-      flex-direction: row-reverse;
+      flex-direction: column;
       align-items: flex-start;
-      justify-content: flex-end;
+      justify-content: flex-start;
       gap: 1.5rem;
       padding: 2rem 3rem;
       transition: color 0.2s; }
       .header__logo {
-        width: 7rem;
-        height: 7rem; }
+        width: 8rem;
+        height: 8rem; }
       .header--opened-nav {
         height: 100vh;
         background-color: rgba(35, 35, 35, 0.9);
@@ -1047,12 +1074,14 @@ code {
           transform: translateX(-50%);
           left: 50%; }
         .header__nav--bars {
+          z-index: 2;
+          position: relative;
           cursor: pointer;
           font-size: 5rem;
-          color: white;
-          background: rgba(35, 35, 35, 0.9);
-          width: 7rem;
-          height: 7rem;
+          color: #fff;
+          background: rgba(35, 35, 35, 0.8);
+          width: 8rem;
+          height: 8rem;
           border-radius: 50%;
           display: flex;
           align-items: center;
