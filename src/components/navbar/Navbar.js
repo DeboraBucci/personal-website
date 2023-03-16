@@ -1,61 +1,95 @@
 import React, { useEffect, useState } from "react";
+
 import { linksList } from "../../data";
+import logo from "../../assets/logo.webp";
 
 const Navbar = () => {
-  const [isNavbarOpened, setIsNavbarOpened] = useState(false);
+  const [isHeaderShrinked, setIsHeaderShrinked] = useState(false);
+  const [isNavbarOpened, setisNavbarOpened] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
-  const navbarHandler = (bool) => windowSize < 1000 && bool;
-  const openNavbarHandler = () =>
-    navbarHandler(!isNavbarOpened) && setIsNavbarOpened(true);
-  const closeNavbarHandler = () =>
-    navbarHandler(isNavbarOpened) && setIsNavbarOpened(false);
+  const isWindowSmaller1000 = windowSize < 1000;
 
+  // WINDOW WIDTH
   useEffect(() => {
-    if (window.innerWidth > 1000) setIsNavbarOpened(false);
+    if (isWindowSmaller1000) setisNavbarOpened(false);
 
     const handleWindowResize = () => setWindowSize(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
 
+    window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
-  }, [windowSize]);
+  }, [windowSize, isWindowSmaller1000]);
+
+  // WINDOW SCROLL
+  useEffect(() => {
+    const windowScrollHandler = () =>
+      setIsHeaderShrinked(window.scrollY > 0 ? true : false);
+
+    window.addEventListener("scroll", windowScrollHandler);
+    return () => window.removeEventListener("scroll", windowScrollHandler);
+  }, [isHeaderShrinked]);
+
+  const headerHandler = () => {
+    if (isWindowSmaller1000) setisNavbarOpened((prev) => !prev);
+  };
+
+  const linkClickHandler = () => {
+    if (isNavbarOpened) setisNavbarOpened(false);
+  };
 
   return (
-    <div className="navigation-wrapper">
-      {windowSize < 1000 && (
+    <header
+      className={`header ${
+        isHeaderShrinked && !isWindowSmaller1000 ? "header--shrinked" : ""
+      } ${isNavbarOpened ? "header--opened-nav" : ""}`}
+    >
+      <div className="header__logo">
+        <a
+          href="https://github.com/DeboraBucci"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={logo} alt="logo" />
+        </a>
+      </div>
+
+      {isWindowSmaller1000 && !isNavbarOpened ? (
         <i
-          onClick={openNavbarHandler}
-          className={`fa-solid fa-bars navigation__bars ${
-            isNavbarOpened ? "hidden" : ""
+          onClick={headerHandler}
+          className={`fa-solid fa-bars header__nav--bars ${
+            isNavbarOpened ? "header__nav--hidden" : ""
+          }`}
+        ></i>
+      ) : (
+        <i
+          onClick={headerHandler}
+          className={`fa-solid fa-xmark header__nav--bars ${
+            isNavbarOpened ? "" : "header__nav--hidden"
           }`}
         ></i>
       )}
 
       <nav
-        className={`navigation ${isNavbarOpened ? "overlay" : ""}`}
-        onClick={closeNavbarHandler}
+        className={`header__nav ${
+          isNavbarOpened ? "header__nav--overlay" : ""
+        }`}
       >
-        {windowSize < 1000 && (
-          <i
-            onClick={closeNavbarHandler}
-            className={`fa-solid fa-xmark navigation__bars ${
-              isNavbarOpened ? "" : "hidden"
-            }`}
-          ></i>
-        )}
-
-        <ul className="navigation__list">
+        <ul className="header__nav--list">
           {linksList.map(({ text, icon, href, key }) => (
-            <li className="navigation__item" key={key}>
-              <a className="navigation__link" href={href}>
-                <i className={`${icon} navigation__icon`} />
-                <span className="navigation__span">{text}</span>
+            <li
+              className="header__nav--item"
+              key={key}
+              onClick={linkClickHandler}
+            >
+              <a className="header__nav--link" href={href}>
+                <i className={`${icon} header__nav--icon`} />
+                <span className="header__nav--span">{text}</span>
               </a>
             </li>
           ))}
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 
