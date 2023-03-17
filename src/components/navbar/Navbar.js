@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { linksList } from "../../data";
 import logo from "../../assets/logo.webp";
+import ThemeContext from "../../context/theme-context";
 
 const Navbar = () => {
   const [isHeaderShrinked, setIsHeaderShrinked] = useState(false);
   const [isNavbarOpened, setisNavbarOpened] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  const themeCtx = useContext(ThemeContext);
 
   const isWindowSmaller1000 = windowSize < 1000;
 
@@ -37,6 +40,10 @@ const Navbar = () => {
     if (isNavbarOpened) setisNavbarOpened(false);
   };
 
+  const changeThemeHandler = () => {
+    themeCtx.toggleTheme();
+  };
+
   return (
     <header
       className={`header ${
@@ -55,7 +62,7 @@ const Navbar = () => {
         </div>
 
         <div className="header__logo-wrapper--options">
-          <button>
+          <button onClick={changeThemeHandler}>
             <i className="fa-solid fa-circle-half-stroke"></i>
           </button>
           <button>
