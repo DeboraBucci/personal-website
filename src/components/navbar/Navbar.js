@@ -43,14 +43,25 @@ const Navbar = () => {
         isHeaderShrinked && !isWindowSmaller1000 ? "header--shrinked" : ""
       } ${isNavbarOpened ? "header--opened-nav" : ""}`}
     >
-      <div className="header__logo">
-        <a
-          href="https://github.com/DeboraBucci"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={logo} alt="logo" />
-        </a>
+      <div className="header__logo-wrapper">
+        <div className="header__logo">
+          <a
+            href="https://github.com/DeboraBucci"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={logo} alt="logo" />
+          </a>
+        </div>
+
+        <div className="header__logo-wrapper--options">
+          <button>
+            <i className="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <button>
+            <i className="fa-solid fa-language"></i>
+          </button>
+        </div>
       </div>
 
       {isWindowSmaller1000 && !isNavbarOpened ? (
