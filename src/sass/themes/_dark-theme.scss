@@ -1,0 +1,103 @@
+body .dark {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.dark {
+  .section-about {
+    border: 1px solid rgba($color-white, 0.1);
+  }
+
+  .card__side--front {
+    background-color: rgb(38, 38, 65);
+  }
+
+  .card {
+    background-color: $color-black;
+
+    &__item {
+      &--first {
+        color: rgba($color-white, 0.6);
+      }
+
+      &--second {
+        color: $color-white;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($color-white, 0.1);
+      }
+    }
+  }
+
+  .thin-line {
+    background-color: rgba($color-white, 0.1);
+
+    &::before,
+    &::after {
+      background-color: shade($color-orange, 20%);
+    }
+  }
+
+  .vignettes {
+    color: tint($color-white, 30%);
+
+    & > * {
+      background-color: rgb(38, 38, 65);
+    }
+
+    &__line {
+      background-color: rgba($color-white, 0.1);
+
+      &::before,
+      &::after {
+        background-color: shade($color-orange, 20%);
+      }
+    }
+  }
+
+  .traits {
+    &__card {
+      background-color: rgba($color-black, 0.9);
+      color: tint($color-white, 35%);
+
+      &--icon {
+        filter: grayscale(0%);
+        opacity: 1;
+
+        &-2 {
+          color: tint(#dc143c, 20%);
+        }
+
+        &-3 {
+          color: tint(#800080, 20%);
+        }
+      }
+    }
+  }
+
+  .certifications-modal {
+    background-color: rgb(38, 38, 65);
+
+    &__date {
+      color: tint($color-white, 60%);
+    }
+
+    &__btn {
+      color: tint($color-white, 30%);
+      background-color: rgba($color-black, 0.8);
+
+      &:hover {
+        color: $color-primary-shade;
+      }
+    }
+
+    &__img {
+      background-color: transparent;
+    }
+
+    &__text {
+      color: tint($color-white, 30%);
+    }
+  }
+}

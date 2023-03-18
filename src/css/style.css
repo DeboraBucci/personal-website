@@ -1428,3 +1428,61 @@ code {
     .certifications img {
       width: 100%;
       max-width: 100%; } }
+
+body .dark {
+  background-color: #232323;
+  color: #fff; }
+
+.dark .section-about {
+  border: 1px solid rgba(255, 255, 255, 0.1); }
+
+.dark .card__side--front {
+  background-color: #262641; }
+
+.dark .card {
+  background-color: #232323; }
+  .dark .card__item--first {
+    color: rgba(255, 255, 255, 0.6); }
+  .dark .card__item--second {
+    color: #fff; }
+  .dark .card__item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.dark .thin-line {
+  background-color: rgba(255, 255, 255, 0.1); }
+  .dark .thin-line::before, .dark .thin-line::after {
+    background-color: #cc7455; }
+
+.dark .vignettes {
+  color: white; }
+  .dark .vignettes > * {
+    background-color: #262641; }
+  .dark .vignettes__line {
+    background-color: rgba(255, 255, 255, 0.1); }
+    .dark .vignettes__line::before, .dark .vignettes__line::after {
+      background-color: #cc7455; }
+
+.dark .traits__card {
+  background-color: rgba(35, 35, 35, 0.9);
+  color: white; }
+  .dark .traits__card--icon {
+    filter: grayscale(0%);
+    opacity: 1; }
+    .dark .traits__card--icon-2 {
+      color: #e34363; }
+    .dark .traits__card--icon-3 {
+      color: #993399; }
+
+.dark .certifications-modal {
+  background-color: #262641; }
+  .dark .certifications-modal__date {
+    color: white; }
+  .dark .certifications-modal__btn {
+    color: white;
+    background-color: rgba(35, 35, 35, 0.8); }
+    .dark .certifications-modal__btn:hover {
+      color: #cc4287; }
+  .dark .certifications-modal__img {
+    background-color: transparent; }
+  .dark .certifications-modal__text {
+    color: white; }
