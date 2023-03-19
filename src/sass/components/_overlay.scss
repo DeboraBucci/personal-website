@@ -36,12 +36,13 @@
   }
 
   &__date {
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
-    color: tint($color-black, 60%);
+    color: shade($color-orange, 30%);
   }
 
   &__btn {
+    @include flexCenter;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -51,6 +52,7 @@
     border-radius: 50%;
     color: tint($color-black, 60%);
     background-color: rgba($color-white, 0.8);
+    transition: all 0.2s;
 
     &:hover {
       color: $color-primary-shade;
@@ -132,7 +134,7 @@
     height: 70%;
     overflow: auto;
     padding: 0 4rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: tint($color-black, 20%);
     letter-spacing: 0.2rem;
 

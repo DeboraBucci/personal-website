@@ -80,11 +80,11 @@ body .dark {
     background-color: rgb(38, 38, 65);
 
     &__date {
-      color: tint($color-white, 60%);
+      color: tint($color-secondary, 30%);
     }
 
     &__btn {
-      color: tint($color-white, 30%);
+      color: shade($color-white, 30%);
       background-color: rgba($color-black, 0.8);
 
       &:hover {

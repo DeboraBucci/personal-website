@@ -840,10 +840,13 @@ code {
     .certifications-modal {
       height: 90%; } }
   .certifications-modal__date {
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
-    color: #a7a7a7; }
+    color: #b3664a; }
   .certifications-modal__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -852,7 +855,8 @@ code {
     font-size: 3rem;
     border-radius: 50%;
     color: #a7a7a7;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.2s; }
     .certifications-modal__btn:hover {
       color: #cc4287; }
   .certifications-modal__content {
@@ -912,7 +916,7 @@ code {
     height: 70%;
     overflow: auto;
     padding: 0 4rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #4f4f4f;
     letter-spacing: 0.2rem; }
     .certifications-modal__text p {
@@ -1071,7 +1075,7 @@ code {
       padding: 0.5rem 2rem;
       border-top-right-radius: 2rem;
       border-bottom-right-radius: 2rem;
-      background-color: rgba(255, 83, 169, 0.3);
+      background-color: rgba(245, 159, 0, 0.5);
       transition: all 0.2s; }
     .header__logo-wrapper button {
       font-size: 2.5rem;
@@ -1079,7 +1083,7 @@ code {
       background-color: transparent;
       color: #fff;
       transition: all 0.2s;
-      opacity: 0.7; }
+      opacity: 0.8; }
       .header__logo-wrapper button:hover {
         opacity: 1;
         transform: translateY(-2px); }
@@ -1476,9 +1480,9 @@ body .dark {
 .dark .certifications-modal {
   background-color: #262641; }
   .dark .certifications-modal__date {
-    color: white; }
+    color: #f8bc4d; }
   .dark .certifications-modal__btn {
-    color: white;
+    color: #b3b3b3;
     background-color: rgba(35, 35, 35, 0.8); }
     .dark .certifications-modal__btn:hover {
       color: #cc4287; }
