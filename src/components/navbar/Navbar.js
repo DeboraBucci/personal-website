@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 
-import { linksList } from "../../data";
+import { linksList } from "../../database/data";
 import logo from "../../assets/logo.webp";
 import ThemeContext from "../../context/theme-context";
 import LanguageContext from "../../context/language-context";

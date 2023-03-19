@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../UI/Header";
 
 import Link from "../../UI/Link";
-import { projects } from "../../../data";
+import { projects } from "../../../database/data";
 import Project from "./Project";
 
 const Projects = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { traits } from "../../../data";
+import { traits } from "../../../database/data";
 
 const Traits = () => {
   return (
