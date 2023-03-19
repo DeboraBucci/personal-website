@@ -100,4 +100,23 @@ body .dark {
       color: tint($color-white, 30%);
     }
   }
+
+  .language-btn {
+    &__opts {
+      background-color: $color-black;
+
+      &--selected {
+        background-color: rgba($color-white, 0.05);
+        color: shade($color-white, 30%);
+      }
+
+      & button {
+        color: $color-white;
+      }
+
+      & button:not(:last-child) {
+        border-bottom: 1px solid rgba($color-white, 0.1);
+      }
+    }
+  }
 }

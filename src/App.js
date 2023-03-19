@@ -11,6 +11,8 @@ function App() {
 
   useEffect(() => {
     if (!localStorage.getItem("theme")) localStorage.setItem("theme", "light");
+    if (!localStorage.getItem("language"))
+      localStorage.setItem("language", "english");
   }, []);
 
   return (

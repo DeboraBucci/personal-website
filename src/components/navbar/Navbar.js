@@ -3,13 +3,16 @@ import React, { useContext, useEffect, useState } from "react";
 import { linksList } from "../../data";
 import logo from "../../assets/logo.webp";
 import ThemeContext from "../../context/theme-context";
+import LanguageContext from "../../context/language-context";
 
 const Navbar = () => {
+  const [areLangOptsVisible, setAreLangOptsVisible] = useState(false);
   const [isHeaderShrinked, setIsHeaderShrinked] = useState(false);
   const [isNavbarOpened, setisNavbarOpened] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   const themeCtx = useContext(ThemeContext);
+  const languageCtx = useContext(LanguageContext);
 
   const isWindowSmaller1000 = windowSize < 1000;
 
@@ -32,6 +35,17 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", windowScrollHandler);
   }, [isHeaderShrinked]);
 
+  useEffect(() => {
+    const clicks = (e) => {
+      if (!e.target.closest(".language-btn__wrapper")) {
+        closeLanguagesOptsHandler();
+      }
+    };
+
+    window.addEventListener("click", clicks);
+    return () => window.removeEventListener("click", clicks);
+  }, [isHeaderShrinked]);
+
   const headerHandler = () => {
     if (isWindowSmaller1000) setisNavbarOpened((prev) => !prev);
   };
@@ -43,6 +57,18 @@ const Navbar = () => {
   const changeThemeHandler = () => {
     themeCtx.toggleTheme();
   };
+
+  const chosenLangHandler = (e) => {
+    if (e.target.textContent === languageCtx.language) {
+    } else {
+      languageCtx.changeLang(e.target.textContent);
+      closeLanguagesOptsHandler();
+    }
+  };
+
+  const toggleLanguagesOptHandler = () =>
+    setAreLangOptsVisible((prev) => !prev);
+  const closeLanguagesOptsHandler = () => setAreLangOptsVisible(false);
 
   return (
     <header
@@ -62,12 +88,39 @@ const Navbar = () => {
         </div>
 
         <div className="header__logo-wrapper--options">
-          <button onClick={changeThemeHandler}>
+          <button
+            className="header__logo-wrapper--btn"
+            onClick={changeThemeHandler}
+          >
             <i className="fa-solid fa-circle-half-stroke"></i>
           </button>
-          <button>
-            <i className="fa-solid fa-language"></i>
-          </button>
+          <div className="language-btn__wrapper">
+            <button
+              className="header__logo-wrapper--btn language-btn"
+              onClick={toggleLanguagesOptHandler}
+            >
+              <i className="fa-solid fa-language"></i>
+            </button>
+            <div
+              className={`language-btn__opts ${
+                areLangOptsVisible ? "language-btn__opts--visible" : ""
+              }`}
+            >
+              {["english", "spanish"].map((el) => (
+                <button
+                  className={
+                    el === languageCtx.language
+                      ? "language-btn__opts--selected"
+                      : ""
+                  }
+                  key={el}
+                  onClick={chosenLangHandler}
+                >
+                  {el}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
