@@ -13,7 +13,7 @@ code {
 
 .heading-primary {
   position: relative;
-  font-size: 5rem;
+  font-size: 7rem;
 
   opacity: 0;
   animation: moveInLeft 1s ease-out 2.5s;
@@ -22,9 +22,9 @@ code {
   &__first-part {
     position: absolute;
     top: 2rem;
-    left: -2.5rem;
-
-    font-size: $default-font-size;
+    left: -4rem;
+    font-weight: 400;
+    font-size: $big-font-size;
   }
 }
 
