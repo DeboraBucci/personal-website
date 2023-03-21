@@ -246,7 +246,8 @@ code {
     .traits__card--title {
       text-transform: uppercase;
       font-weight: 300;
-      font-size: 2rem; }
+      font-size: 2rem;
+      text-align: center; }
     .traits__card--text {
       letter-spacing: 1.5px;
       line-height: 2.5rem; }
@@ -419,7 +420,7 @@ code {
       border-radius: 50%;
       background-color: #ff916a; }
     .vignettes__line::before {
-      top: 2rem;
+      top: 3.5rem;
       right: 4rem; }
     .vignettes__line::after {
       top: 8rem;
@@ -1042,8 +1043,7 @@ code {
       display: flex;
       justify-content: space-evenly;
       gap: 4rem;
-      padding: 0;
-      width: 50%; }
+      padding: 0; }
     .header__nav--item {
       position: relative;
       transition: all 0.2s ease-in-out; }
@@ -1254,10 +1254,10 @@ code {
       background-color: #ff53a9; }
   .hero__text--professions {
     display: flex;
-    justify-content: flex-end;
     gap: 1rem;
-    width: 100%;
     font-size: 2.5rem;
+    white-space: nowrap;
+    width: 30rem;
     opacity: 0;
     animation: moveInRight 1s ease-out 2.7s;
     -webkit-animation-fill-mode: forwards;
@@ -1266,7 +1266,6 @@ code {
     -ms-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
     .hero__text--professions-typing {
-      width: 80%;
       color: #ff53a9; }
 
 .footer {
