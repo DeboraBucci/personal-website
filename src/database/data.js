@@ -10,7 +10,7 @@ import JavaScript from "../assets/technologies-icons/javascript.svg";
 import HTML5 from "../assets/technologies-icons/html5.svg";
 import CSS3 from "../assets/technologies-icons/css3.svg";
 import GIT from "../assets/technologies-icons/git.svg";
-import GitHub from "../assets/technologies-icons/github.png";
+import GitHub from "../assets/technologies-icons/github.svg";
 import Bootstrap from "../assets/technologies-icons/bootstrap.svg";
 import NodeJS from "../assets/technologies-icons/nodejs.svg";
 import NPM from "../assets/technologies-icons/npm.svg";
@@ -26,11 +26,22 @@ import ReactBootstrap from "../assets/technologies-icons/reactbootstrap.png";
 import Formik from "../assets/technologies-icons/formik.svg";
 import ReactRouterDom from "../assets/technologies-icons/react-router-dom.svg";
 import Mui from "../assets/technologies-icons/mui.svg";
+import Docker from "../assets/technologies-icons/docker.svg";
+import Figma from "../assets/technologies-icons/figma.svg";
+import Redux from "../assets/technologies-icons/redux.svg";
 
 const others = [
   {
     icon: ReactRouterDom,
     text: "React Router DOM",
+  },
+  {
+    icon: Figma,
+    text: "Figma",
+  },
+  {
+    icon: Docker,
+    text: "Docker",
   },
   {
     icon: Mui,
@@ -80,7 +91,6 @@ const others = [
     icon: Lighthouse,
     text: "Lighthouse",
   },
-
   {
     icon: StackOverflow,
     text: "Stack Overflow",
@@ -93,12 +103,16 @@ const technologies = [
     text: "React",
   },
   {
-    icon: NodeJS,
-    text: "NodeJS",
+    icon: JavaScript,
+    text: "JavaScript",
   },
   {
-    icon: Jest,
-    text: "Jest",
+    icon: TypeScript,
+    text: "TypeScript",
+  },
+  {
+    icon: NodeJS,
+    text: "NodeJS",
   },
   {
     icon: HTML5,
@@ -109,12 +123,12 @@ const technologies = [
     text: "CSS3",
   },
   {
-    icon: JavaScript,
-    text: "JavaScript",
+    icon: Redux,
+    text: "Redux",
   },
   {
-    icon: TypeScript,
-    text: "TypeScript",
+    icon: Jest,
+    text: "Jest",
   },
 ];
 
