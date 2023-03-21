@@ -68,4 +68,29 @@
       color: #61dbfb;
     }
   }
+
+  &__icons8 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    font-size: 1.6rem;
+
+    & a {
+      &:link,
+      &:visited {
+        display: flex;
+        align-items: center;
+        color: #1fb141;
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        color: shade(#1fb141, 30%);
+      }
+    }
+
+    & img {
+      width: 2rem;
+    }
+  }
 }

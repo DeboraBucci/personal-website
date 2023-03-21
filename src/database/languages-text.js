@@ -527,8 +527,14 @@ const contact = {
 };
 
 const footer = {
-  english: ["Created with", "and", "Copyright"],
-  spanish: ["Creado con", "y", "Derechos de Autor"],
+  english: {
+    icons8: "Made using icons from ",
+    otherText: ["Created with", "and", "Copyright"],
+  },
+  spanish: {
+    icons8: "Creada usando íconos de ",
+    otherText: ["Creado con", "y", "Derechos de Autor"],
+  },
 };
 
 export {

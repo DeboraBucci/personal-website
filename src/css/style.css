@@ -1315,6 +1315,20 @@ code {
         animation: heartbeats 1s linear infinite; }
     .footer__icon--react {
       color: #61dbfb; }
+  .footer__icons8 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    font-size: 1.6rem; }
+    .footer__icons8 a:link, .footer__icons8 a:visited {
+      display: flex;
+      align-items: center;
+      color: #1fb141;
+      transition: all 0.2s; }
+    .footer__icons8 a:hover {
+      color: #167c2e; }
+    .footer__icons8 img {
+      width: 2rem; }
 
 .section-about {
   display: flex;
