@@ -3,8 +3,9 @@ import React from "react";
 import Heading from "../../UI/Header";
 import Vignettes from "./Vignettes";
 import Traits from "./Traits";
-import Technologies from "./Technologies";
-import ProgrammingLanguages from "./ProgrammingLanguages";
+import Others from "./Others";
+
+import ProgrammingLanguages from "./Technologies";
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
       <div className="thin-line thin-line--small"></div>
       <ProgrammingLanguages />
       <div className="thin-line thin-line--small"></div>
-      <Technologies />
+      <Others />
     </section>
   );
 };

@@ -1,4 +1,4 @@
-.languages {
+.others {
   @include flexCenter;
   @include container;
 
@@ -6,13 +6,14 @@
 
   background: linear-gradient(
       to right,
-      rgba(44, 18, 54, 0.5),
+      rgba(18, 37, 54, 0.5),
       rgba(36, 46, 26, 0.6)
     ),
-    url("/src/assets/backgrounds/languages-background.webp");
+    url("/src/assets/backgrounds/technologies-background.webp");
+
   background-size: cover;
-  background-position: bottom;
-  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+  background-position: center;
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
 
   &__list {
     pointer-events: none;

@@ -27,27 +27,10 @@ import Formik from "../assets/technologies-icons/formik.svg";
 import ReactRouterDom from "../assets/technologies-icons/react-router-dom.svg";
 import Mui from "../assets/technologies-icons/mui.svg";
 
-const technologies = [
-  {
-    icon: React,
-    text: "React",
-  },
+const others = [
   {
     icon: ReactRouterDom,
     text: "React Router DOM",
-  },
-  {
-    icon: Jest,
-    text: "Jest",
-  },
-
-  {
-    icon: HTML5,
-    text: "HTML5",
-  },
-  {
-    icon: CSS3,
-    text: "CSS3",
   },
   {
     icon: Mui,
@@ -78,10 +61,6 @@ const technologies = [
     text: "GitHub",
   },
   {
-    icon: NodeJS,
-    text: "NodeJS",
-  },
-  {
     icon: Express,
     text: "Express",
   },
@@ -108,7 +87,27 @@ const technologies = [
   },
 ];
 
-const programmingLanguages = [
+const technologies = [
+  {
+    icon: React,
+    text: "React",
+  },
+  {
+    icon: NodeJS,
+    text: "NodeJS",
+  },
+  {
+    icon: Jest,
+    text: "Jest",
+  },
+  {
+    icon: HTML5,
+    text: "HTML5",
+  },
+  {
+    icon: CSS3,
+    text: "CSS3",
+  },
   {
     icon: JavaScript,
     text: "JavaScript",
@@ -146,4 +145,4 @@ const coursesImages = [
   },
 ];
 
-export { coursesImages, technologies, programmingLanguages };
+export { coursesImages, technologies, others };

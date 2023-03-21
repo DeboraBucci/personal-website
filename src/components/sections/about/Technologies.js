@@ -8,8 +8,8 @@ const Technologies = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="technologies u-center-text">
-      <h3 className="heading-tertiary u-margin-bottom-medium ">
+    <div className="technologies u-center-text ">
+      <h3 className="heading-tertiary u-margin-bottom-big ">
         {about.titles.technologies[language]}
       </h3>
 
