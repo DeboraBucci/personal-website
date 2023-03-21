@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import LanguageContext from "../../../context/language-context";
 import { programmingLanguages } from "../../../database/data";
+import { about } from "../../../database/languages-text";
 
 const ProgrammingLanguages = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="languages u-center-text ">
       <h3 className="heading-tertiary u-margin-bottom-big ">
-        Programming Languages
+        {about.titles.languages[language]}
       </h3>
 
       <ul className="languages__list">

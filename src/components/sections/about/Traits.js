@@ -1,11 +1,15 @@
-import React from "react";
-import { traits } from "../../../database/data";
+import React, { useContext } from "react";
+
+import LanguageContext from "../../../context/language-context";
+import { about, traits } from "../../../database/languages-text";
 
 const Traits = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="traits">
       <h3 className="heading-tertiary u-margin-bottom-medium">
-        Some of my traits
+        {about.titles.traits[language]}
       </h3>
       <ul className="traits__list">
         {traits.map(({ title, content, icon }, i) => (
@@ -15,8 +19,8 @@ const Traits = () => {
                 i + 1
               }`}
             ></i>
-            <h3 className="traits__card--title ">{title}</h3>
-            <span className="traits__card--text"> — {content}</span>
+            <h3 className="traits__card--title ">{title[language]}</h3>
+            <span className="traits__card--text"> — {content[language]}</span>
           </li>
         ))}
       </ul>

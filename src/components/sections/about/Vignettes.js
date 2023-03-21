@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import LanguageContext from "../../../context/language-context.js";
+import { about } from "../../../database/languages-text";
 
 const Vignettes = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="vignettes u-margin-bottom-medium">
       <div className="vignettes__line"></div>
-
-      <p className="vignettes--1">
-        I'm a Frontend Developer who specializes in React, and is passionate
-        about learning, coding and developing. I'm not afraid of making mistakes
-        if that means I can learn from them.
-      </p>
-      <p className="vignettes--2">
-        I started coding at the beginning of 2021, and ever since, I've come to
-        learn many aspects of this career, growing more resilient with the
-        passing time.
-      </p>
+      {about.vignettes[language].map((text, i) => (
+        <p className={`vignettes--${i + 1}`} key={`vignette ${i + 1}`}>
+          {text}
+        </p>
+      ))}
     </div>
   );
 };

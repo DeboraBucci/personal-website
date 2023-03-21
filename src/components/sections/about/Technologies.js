@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import LanguageContext from "../../../context/language-context";
 import { technologies } from "../../../database/data";
+import { about } from "../../../database/languages-text";
 
 const Technologies = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="technologies u-center-text">
-      <h3 className="heading-tertiary u-margin-bottom-medium ">Technologies</h3>
+      <h3 className="heading-tertiary u-margin-bottom-medium ">
+        {about.titles.technologies[language]}
+      </h3>
 
       <ul className="technologies__list">
         {technologies.map(({ text, icon }) => (

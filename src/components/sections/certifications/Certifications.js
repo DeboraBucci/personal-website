@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
-import { certifications } from "../../../database/data";
 import Header from "../../UI/Header";
 import CertificationsOverlay from "../../UI/CertificationsOverlay";
+
+import { certifications } from "../../../database/languages-text";
 
 const Certifications = () => {
   const [modalIsOpened, setModalIsOpened] = useState(false);
@@ -22,7 +23,7 @@ const Certifications = () => {
           modalInfo={modalInfo}
         />
       )}
-      <Header title="These are my certifications" subtitle="certifications" />
+      <Header section="certifications" />
 
       <div className="certifications__container">
         {certifications.map((certificate) => (

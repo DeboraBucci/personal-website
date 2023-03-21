@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 
-import { linksList } from "../../database/data";
-import logo from "../../assets/logo.webp";
 import ThemeContext from "../../context/theme-context";
 import LanguageContext from "../../context/language-context";
+
+import logo from "../../assets/logo.webp";
+import { linksList } from "../../database/languages-text";
 
 const Navbar = () => {
   const [areLangOptsVisible, setAreLangOptsVisible] = useState(false);
@@ -137,7 +138,7 @@ const Navbar = () => {
               !isNavbarOpened ? "header__icon-list--overlay" : ""
             }`}
           >
-            {linksList.map(({ text, icon, href, key }) => (
+            {linksList.map(({ icon, href, key }) => (
               <li key={key} onClick={linkClickHandler}>
                 <a href={href}>
                   <i className={`${icon} header__nav--icon`} />
@@ -169,7 +170,9 @@ const Navbar = () => {
             >
               <a className="header__nav--link" href={href}>
                 <i className={`${icon} header__nav--icon`} />
-                <span className="header__nav--span">{text}</span>
+                <span className="header__nav--span">
+                  {text[languageCtx.language]}
+                </span>
               </a>
             </li>
           ))}

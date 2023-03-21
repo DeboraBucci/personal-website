@@ -1,14 +1,14 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
+
+import Header from "../../UI/Header";
 
 import { coursesImages } from "../../../database/data";
-
-import { Carousel } from "react-bootstrap";
-import Header from "../../UI/Header";
 
 const Courses = () => {
   return (
     <section className="section-courses" id="courses">
-      <Header title="My badges of Honor!" subtitle="courses" />
+      <Header section="courses" />
       <Carousel touch={true} className="carousel">
         {coursesImages.map(({ image, alt }, i) => (
           <Carousel.Item key={`carousel${i}`} interval={2000}>

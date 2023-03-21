@@ -1,29 +1,35 @@
-import React from "react";
+import React, { useContext } from "react";
 import Link from "../../UI/Link";
 
-import { contactLinks } from "../../../database/data";
+import LanguageContext from "../../../context/language-context";
+import { contact } from "../../../database/languages-text";
 
 const Contact = () => {
+  const { language } = useContext(LanguageContext);
+  const info = contact[language];
+
   return (
     <section className="section-contact" id="contact">
       <div className="section-contact__text">
-        <p className="section-contact__text--subtitle">Let's talk!</p>
+        <p className="section-contact__text--subtitle">{info.subtitle}</p>
         <h2 className="heading-secondary section-contact__text--title">
-          Contact info
+          {info.title}
         </h2>
-        <p className="section-contact__text--comment">
-          A penny for your thoughts!
-        </p>
+        <p className="section-contact__text--comment">{info.comment}</p>
       </div>
       <ul className="section-contact__list">
-        {contactLinks.map(({ href, icon, text }) => (
-          <li key={`${text} contact link`} className="section-contact__item">
-            <Link className="section-contact__link" href={href}>
-              <i className={icon} />
-              {text}
-            </Link>
-          </li>
-        ))}
+        {contact.links.map(({ href, icon, text }) => {
+          const finalText = text[language] || text;
+
+          return (
+            <li key={`${text} contact link`} className="section-contact__item">
+              <Link className="section-contact__link" href={href}>
+                <i className={icon} />
+                {finalText}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

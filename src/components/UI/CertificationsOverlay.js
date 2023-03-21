@@ -1,8 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+
 import { Backdrop } from "./Backdrop";
 import Link from "./Link";
 
+import LanguageContext from "../../context/language-context";
+
 const CertificationsModal = ({ closeHandler, info }) => {
+  const languageCtx = useContext(LanguageContext);
+
   useEffect(() => {
     const complexityPoints = document.querySelectorAll(".complexity__point");
     complexityPoints.forEach((point) => {
@@ -26,10 +31,12 @@ const CertificationsModal = ({ closeHandler, info }) => {
           <h3 className="certifications-modal__title">My Journey</h3>
           <div className="thin-line hin-line--big"></div>
 
-          <p className="certifications-modal__date">Issued in {info.date}</p>
+          <p className="certifications-modal__date">
+            {info.date[languageCtx.language]}
+          </p>
 
           <div className="certifications-modal__text">
-            {info.text.map((sentence) => (
+            {info.text[languageCtx.language].map((sentence) => (
               <p key={sentence.slice(1, 10)}>{sentence}</p>
             ))}
           </div>

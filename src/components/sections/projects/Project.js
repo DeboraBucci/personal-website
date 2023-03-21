@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "../../UI/Link";
 
-const Project = ({ title, link, num, info, extraInfo }) => {
+const Project = ({
+  project: { num, title, link, info, extraInfo },
+  language,
+  opts,
+}) => {
   return (
     <div className="card" key={`project-${num}`}>
       <div className="card__side card__side--front">
@@ -10,10 +14,12 @@ const Project = ({ title, link, num, info, extraInfo }) => {
 
         <div className="card__details">
           <ul className="card__list">
-            {info.map((item) => (
+            {info.map((item, i) => (
               <li className="card__item" key={Math.random()}>
-                <span className="card__item--first">{item.title}:</span>
-                <span className="card__item--second">{item.text}</span>
+                <span className="card__item--first">{opts.list[i]}:</span>
+                <span className="card__item--second">
+                  {item[language] || item}
+                </span>
               </li>
             ))}
           </ul>
@@ -26,17 +32,17 @@ const Project = ({ title, link, num, info, extraInfo }) => {
           href={`https://deborabucci.github.io/${link}`}
           className="btn btn--white"
         >
-          Visit Project
+          {opts.btn.big}
         </Link>
 
         <Link
           href={`https://github.com/DeboraBucci/${link}`}
           className="card__btn-source-code"
         >
-          Source Code <i className="fa-solid fa-code"></i>
+          {opts.btn.small} <i className="fa-solid fa-code"></i>
         </Link>
 
-        {extraInfo}
+        {extraInfo?.[language]}
       </div>
     </div>
   );
