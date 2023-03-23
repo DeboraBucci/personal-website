@@ -8,12 +8,12 @@ body .dark {
     border: 1px solid rgba($color-white, 0.1);
   }
 
-  .card__side--front {
-    background-color: rgb(38, 38, 65);
-  }
-
   .card {
     background-color: $color-black;
+
+    &__side--front {
+      background-color: rgb(38, 38, 65);
+    }
 
     &__item {
       &--first {
@@ -27,6 +27,10 @@ body .dark {
       &:not(:last-child) {
         border-bottom: 1px solid rgba($color-white, 0.1);
       }
+    }
+
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      background-color: rgb(38, 38, 65);
     }
   }
 
