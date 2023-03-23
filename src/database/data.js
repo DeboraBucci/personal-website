@@ -4,6 +4,8 @@ import Course03 from "../assets/courses/course-03.webp";
 import Course04 from "../assets/courses/course-04.webp";
 import Course05 from "../assets/courses/course-05.webp";
 import Course06 from "../assets/courses/course-06.webp";
+import Course07 from "../assets/courses/course-07.webp";
+import Course08 from "../assets/courses/course-08.webp";
 
 import React from "../assets/technologies-icons/react.svg";
 import JavaScript from "../assets/technologies-icons/javascript.svg";
@@ -133,6 +135,14 @@ const technologies = [
 ];
 
 const coursesImages = [
+  {
+    image: Course08,
+    alt: "Eighth",
+  },
+  {
+    image: Course07,
+    alt: "Seventh",
+  },
   {
     image: Course06,
     alt: "Sixth",
