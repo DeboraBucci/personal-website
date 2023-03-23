@@ -134,39 +134,42 @@ const technologies = [
   },
 ];
 
-const coursesImages = [
-  {
-    image: Course08,
-    alt: "Eighth",
-  },
-  {
-    image: Course07,
-    alt: "Seventh",
-  },
-  {
-    image: Course06,
-    alt: "Sixth",
-  },
-  {
-    image: Course05,
-    alt: "Fifth",
-  },
-  {
-    image: Course04,
-    alt: "Fourth",
-  },
-  {
-    image: Course03,
-    alt: "Third",
-  },
-  {
-    image: Course02,
-    alt: "Second",
-  },
-  {
-    image: Course01,
-    alt: "First",
-  },
-];
+const coursesInfo = {
+  positions: ["1", "2", "3", "4", "5", "6", "7", "8"],
+  courses: [
+    {
+      image: Course08,
+      alt: "Eighth",
+    },
+    {
+      image: Course07,
+      alt: "Seventh",
+    },
+    {
+      image: Course06,
+      alt: "Sixth",
+    },
+    {
+      image: Course05,
+      alt: "Fifth",
+    },
+    {
+      image: Course04,
+      alt: "Fourth",
+    },
+    {
+      image: Course03,
+      alt: "Third",
+    },
+    {
+      image: Course02,
+      alt: "Second",
+    },
+    {
+      image: Course01,
+      alt: "First",
+    },
+  ],
+};
 
-export { coursesImages, technologies, others };
+export { coursesInfo, technologies, others };

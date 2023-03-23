@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import About from "./about/About";
 import Certifications from "./certifications/Certifications";
 import Contact from "./contact/Contact";
-import Courses from "./courses/Courses";
+import Courses from "./courses/CoursesNew";
 import Hero from "./hero/Hero";
 import Projects from "./projects/Projects";
 
@@ -12,6 +12,7 @@ const Sections = () => {
       <Hero />
       <About />
       <Certifications />
+      {/* <Courses /> */}
       <Courses />
       <Projects />
       <Contact />
