@@ -134,42 +134,20 @@ const technologies = [
   },
 ];
 
-const coursesInfo = {
-  positions: ["1", "2", "3", "4", "5", "6", "7", "8"],
-  courses: [
-    {
-      image: Course08,
-      alt: "1",
-    },
-    {
-      image: Course07,
-      alt: "2",
-    },
-    {
-      image: Course06,
-      alt: "3",
-    },
-    {
-      image: Course05,
-      alt: "4",
-    },
-    {
-      image: Course04,
-      alt: "5",
-    },
-    {
-      image: Course03,
-      alt: "6",
-    },
-    {
-      image: Course02,
-      alt: "7",
-    },
-    {
-      image: Course01,
-      alt: "8",
-    },
-  ],
-};
+const courses = [
+  Course08,
+  Course07,
+  Course06,
+  Course05,
+  Course04,
+  Course03,
+  Course02,
+  Course01,
+];
 
-export { coursesInfo, technologies, others };
+const coursesPositions = Array.from(
+  { length: courses.length },
+  (_, i) => i + 1
+);
+
+export { courses, coursesPositions, technologies, others };

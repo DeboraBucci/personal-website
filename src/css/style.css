@@ -407,13 +407,16 @@ code {
     align-items: center;
     gap: 1rem; }
     .carousel__shortcuts button {
+      position: relative;
       background-color: #fff;
-      color: transparent;
       border: none;
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 50%;
       transition-property: all 0.2s; }
+    .carousel__shortcuts--hidden {
+      position: absolute;
+      left: -9999px; }
     .carousel__shortcuts--active {
       background-color: #ff53a9 !important;
       height: 2rem !important;
