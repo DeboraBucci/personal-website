@@ -10,7 +10,7 @@ const LanguageProvider = (props) => {
   };
 
   const langCtx = {
-    language: currLang,
+    language: currLang || "english",
     changeLang: changeLangHandler,
   };
 
