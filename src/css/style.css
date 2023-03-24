@@ -363,8 +363,9 @@ code {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    color: #ff53a9;
-    background-color: rgba(35, 35, 35, 0.3); }
+    color: #ff98cb;
+    background-color: rgba(35, 35, 35, 0.8);
+    backdrop-filter: blur(2px); }
     .carousel__arrow--left {
       left: 32%; }
     .carousel__arrow--right {
@@ -1620,3 +1621,35 @@ body .dark {
     color: #fff; }
   .dark .language-btn__opts button:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.dark .carousel__arrow {
+  color: #ff53a9;
+  background-color: rgba(35, 35, 35, 0.3); }
+
+.dark .carousel__img {
+  filter: invert(90%) hue-rotate(180deg); }
+
+.dark .carousel__shortcuts {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+  .dark .carousel__shortcuts button {
+    position: relative;
+    background-color: #fff;
+    border: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transition-property: all 0.2s; }
+  .dark .carousel__shortcuts--hidden {
+    position: absolute;
+    left: -9999px; }
+  .dark .carousel__shortcuts--active {
+    background-color: #ff53a9 !important;
+    height: 2rem !important;
+    width: 2rem !important;
+    box-shadow: 0 0 0 5px rgba(255, 83, 169, 0.3); }

@@ -123,4 +123,49 @@ body .dark {
       }
     }
   }
+
+  .carousel {
+    &__arrow {
+      color: $color-primary;
+      background-color: rgba($color-black, 0.3);
+    }
+
+    &__img {
+      filter: invert(90%) hue-rotate(180deg);
+    }
+
+    &__shortcuts {
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      & button {
+        position: relative;
+        background-color: $color-white;
+        // color: transparent;
+        border: none;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        transition-property: all 0.2s;
+      }
+
+      &--hidden {
+        position: absolute;
+        left: -9999px;
+      }
+
+      &--active {
+        background-color: $color-primary !important;
+        height: 2rem !important;
+        width: 2rem !important;
+        box-shadow: 0 0 0 5px rgba($color-primary, 0.3);
+      }
+    }
+  }
 }
