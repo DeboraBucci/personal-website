@@ -1,11 +1,11 @@
-import Course01 from "../assets/courses/course-01.webp";
-import Course02 from "../assets/courses/course-02.webp";
-import Course03 from "../assets/courses/course-03.webp";
-import Course04 from "../assets/courses/course-04.webp";
-import Course05 from "../assets/courses/course-05.webp";
-import Course06 from "../assets/courses/course-06.webp";
-import Course07 from "../assets/courses/course-07.webp";
-import Course08 from "../assets/courses/course-08.webp";
+import ResponsiveWebsites from "../assets/courses/responsive-websites.webp";
+import JavaScriptC from "../assets/courses/javascript.webp";
+import CleanCode from "../assets/courses/clean-code.webp";
+import WebDeveloper from "../assets/courses/web-developer.webp";
+import Sass from "../assets/courses/sass.webp";
+import Git from "../assets/courses/git.webp";
+import React1 from "../assets/courses/react-1.webp";
+import Typescript from "../assets/courses/typescript.webp";
 
 import React from "../assets/technologies-icons/react.svg";
 import JavaScript from "../assets/technologies-icons/javascript.svg";
@@ -135,14 +135,38 @@ const technologies = [
 ];
 
 const courses = [
-  Course08,
-  Course07,
-  Course06,
-  Course05,
-  Course04,
-  Course03,
-  Course02,
-  Course01,
+  {
+    image: Typescript,
+    link: "https://www.udemy.com/certificate/UC-f4569938-6792-4270-83a7-8551e7f3827b/",
+  },
+  {
+    image: React1,
+    link: "https://www.udemy.com/certificate/UC-f056a60d-b532-46f8-aba3-f16974916340/",
+  },
+  {
+    image: Git,
+    link: "https://www.udemy.com/certificate/UC-2c06134d-7f93-493d-8994-9c1381874420/",
+  },
+  {
+    image: Sass,
+    link: "https://www.udemy.com/certificate/UC-95c59b67-a36c-411d-b016-0dfd8ac86c8b/",
+  },
+  {
+    image: WebDeveloper,
+    link: "https://www.udemy.com/certificate/UC-634c30de-ad42-4aa6-aecd-3ff380fbbaa8/",
+  },
+  {
+    image: CleanCode,
+    link: "https://www.udemy.com/certificate/UC-d8fbca89-769c-41bd-a170-825c859b495f/",
+  },
+  {
+    image: JavaScriptC,
+    link: "https://www.udemy.com/certificate/UC-89af5eb9-8c4f-4d4c-87a8-3d47d0ac9bc5/",
+  },
+  {
+    image: ResponsiveWebsites,
+    link: "https://www.udemy.com/certificate/UC-eb0d3e2b-f5f8-46ec-a71a-b5db101894d8/",
+  },
 ];
 
 const coursesPositions = Array.from(

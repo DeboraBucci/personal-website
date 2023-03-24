@@ -74,7 +74,7 @@ const Courses = () => {
         >
           <i className="fa-solid fa-chevron-left"></i>
         </button>
-        {courses.map((image, i) => {
+        {courses.map(({ link, image }, i) => {
           return (
             <li
               key={`${i + 1}--course-certificate`}
@@ -82,13 +82,15 @@ const Courses = () => {
               onMouseLeave={slideNotHoveredHandler}
               className={`carousel__slide carousel__slide--${curCoursesPositions[i]}`}
             >
-              <img
-                className="carousel__img"
-                width={900}
-                height={669}
-                src={image}
-                alt={`Course's certificate number ${i + 1}`}
-              />
+              <a href={link} target="_blank" rel="nonopener noreferrer">
+                <img
+                  className="carousel__img"
+                  width={900}
+                  height={669}
+                  src={image}
+                  alt={`Course's certificate number ${i + 1}`}
+                />
+              </a>
             </li>
           );
         })}
