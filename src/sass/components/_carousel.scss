@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   gap: 1rem;
-  overflow: hidden;
   height: 40rem;
   width: 95vw;
   margin: 5rem auto;
@@ -48,9 +47,19 @@
     left: 50%;
     transform: translateX(-50%) scale(0.4);
 
-    &--1 {
+    &--7 {
       z-index: 6;
-      transform: translateX(40%) scale(0.6);
+      transform: translateX(-140%) scale(0.6);
+    }
+
+    &--8 {
+      z-index: 8;
+      transform: translateX(-105%) scale(0.8);
+    }
+
+    &--1 {
+      z-index: 10;
+      transform: translateX(-50%) scale(1);
     }
 
     &--2 {
@@ -59,23 +68,41 @@
     }
 
     &--3 {
-      z-index: 10;
-      transform: translateX(-50%) scale(1);
-    }
-
-    &--4 {
-      z-index: 8;
-      transform: translateX(-105%) scale(0.8);
-    }
-
-    &--5 {
       z-index: 6;
-      transform: translateX(-140%) scale(0.6);
+      transform: translateX(40%) scale(0.6);
     }
   }
 
   &__img {
     width: 100%;
     height: auto;
+  }
+
+  &__shortcuts {
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & button {
+      background-color: $color-white;
+      color: transparent;
+      border: none;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      transition-property: all 0.2s;
+    }
+
+    &--active {
+      background-color: $color-primary !important;
+      height: 2rem !important;
+      width: 2rem !important;
+      box-shadow: 0 0 0 5px rgba($color-primary, 0.3);
+    }
   }
 }

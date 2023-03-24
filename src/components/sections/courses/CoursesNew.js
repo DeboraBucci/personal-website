@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import Header from "../../UI/Header";
 import { coursesInfo } from "../../../database/data";
@@ -7,25 +7,61 @@ const Courses = () => {
   const [coursesPositions, setCoursesPositions] = useState(
     coursesInfo.positions
   );
+  const [activeCourse, setActiveCourse] = useState(1);
+  const [slideIsHovered, setSlideIsHovered] = useState(false);
 
-  const sliderHandler = (direction) => {
-    const positions = coursesPositions.slice();
+  const sliderHandler = useCallback(
+    (direction) => {
+      const positions = coursesPositions.slice();
 
-    if (direction === "left") {
-      const shiftedCourse = positions.shift();
-      positions.push(shiftedCourse);
-    }
+      if (direction === "right") {
+        const shiftedCourse = positions.shift();
+        positions.push(shiftedCourse);
+        setActiveCourse((prev) => (prev === 1 ? 8 : prev - 1));
+      }
 
-    if (direction === "right") {
-      const poppedCourse = positions.pop();
-      positions.unshift(poppedCourse);
-    }
+      if (direction === "left") {
+        const poppedCourse = positions.pop();
+        positions.unshift(poppedCourse);
+        setActiveCourse((prev) => (prev === 8 ? 1 : prev + 1));
+      }
 
-    setCoursesPositions(positions);
+      setCoursesPositions(positions);
+    },
+    [coursesPositions]
+  );
+
+  // LEFT AND RIGHT ARROW HANDLER
+  const leftArrowHandler = () => sliderHandler("right");
+  const rightArrowHandler = useCallback(
+    () => sliderHandler("left"),
+    [sliderHandler]
+  );
+
+  // AUTO SLIDING
+  useEffect(() => {
+    const autoSlidingTimer = setTimeout(
+      () => !slideIsHovered && rightArrowHandler(),
+      2000
+    );
+    return () => clearTimeout(autoSlidingTimer);
+  }, [rightArrowHandler, slideIsHovered]);
+
+  // HOVERED SLIDE DETECTION
+  const slideIsHoveredHandler = () => setSlideIsHovered(true);
+  const slideNotHoveredHandler = () => setSlideIsHovered(false);
+
+  // SHORTCUTS HANDLER
+  const shortcutHandler = (e) => {
+    const targetCourse = +e.target.textContent;
+    const originalPositions = coursesInfo.positions.slice();
+
+    const startingPositions = originalPositions.splice(-(targetCourse - 1));
+    const newPositions = startingPositions.concat(originalPositions);
+
+    setCoursesPositions(newPositions);
+    setActiveCourse(targetCourse);
   };
-
-  const leftArrowHandler = () => sliderHandler("left");
-  const rightArrowHandler = () => sliderHandler("right");
 
   return (
     <section className="section-courses" id="courses">
@@ -42,6 +78,8 @@ const Courses = () => {
           return (
             <div
               key={alt}
+              onMouseEnter={slideIsHoveredHandler}
+              onMouseLeave={slideNotHoveredHandler}
               className={`carousel__slide carousel__slide--${coursesPositions[i]}`}
             >
               <img
@@ -61,6 +99,19 @@ const Courses = () => {
         >
           <i className="fa-solid fa-chevron-right"></i>
         </button>
+        <div className="carousel__shortcuts">
+          {coursesInfo.courses.map(({ alt }) => (
+            <button
+              key={alt}
+              onClick={shortcutHandler}
+              className={
+                +alt === activeCourse ? "carousel__shortcuts--active" : ""
+              }
+            >
+              {alt}
+            </button>
+          ))}
+        </div>
       </div>
     </section>
   );

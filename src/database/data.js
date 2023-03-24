@@ -139,35 +139,35 @@ const coursesInfo = {
   courses: [
     {
       image: Course08,
-      alt: "Eighth",
+      alt: "1",
     },
     {
       image: Course07,
-      alt: "Seventh",
+      alt: "2",
     },
     {
       image: Course06,
-      alt: "Sixth",
+      alt: "3",
     },
     {
       image: Course05,
-      alt: "Fifth",
+      alt: "4",
     },
     {
       image: Course04,
-      alt: "Fourth",
+      alt: "5",
     },
     {
       image: Course03,
-      alt: "Third",
+      alt: "6",
     },
     {
       image: Course02,
-      alt: "Second",
+      alt: "7",
     },
     {
       image: Course01,
-      alt: "First",
+      alt: "8",
     },
   ],
 };
