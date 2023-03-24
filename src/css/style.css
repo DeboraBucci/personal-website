@@ -1628,28 +1628,3 @@ body .dark {
 
 .dark .carousel__img {
   filter: invert(90%) hue-rotate(180deg); }
-
-.dark .carousel__shortcuts {
-  position: absolute;
-  bottom: -1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 1rem; }
-  .dark .carousel__shortcuts button {
-    position: relative;
-    background-color: #fff;
-    border: none;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    transition-property: all 0.2s; }
-  .dark .carousel__shortcuts--hidden {
-    position: absolute;
-    left: -9999px; }
-  .dark .carousel__shortcuts--active {
-    background-color: #ff53a9 !important;
-    height: 2rem !important;
-    width: 2rem !important;
-    box-shadow: 0 0 0 5px rgba(255, 83, 169, 0.3); }
