@@ -161,6 +161,10 @@
     cursor: pointer;
     overflow: hidden;
 
+    &--coderhouse {
+      filter: invert(100%) hue-rotate(120deg);
+    }
+
     &::before,
     &::after {
       content: "";

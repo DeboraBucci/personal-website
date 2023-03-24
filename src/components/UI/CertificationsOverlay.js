@@ -24,7 +24,11 @@ const CertificationsModal = ({ closeHandler, info }) => {
 
       <div className="certifications-modal__content">
         <div className="certifications-modal__img">
-          <img src={info.image} alt={info.alt} />
+          <img
+            src={info.image}
+            alt={info.alt}
+            className={`certifications-modal__img--${info.institute}`}
+          />
         </div>
 
         <div className="certifications-modal__info">

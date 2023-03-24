@@ -78,10 +78,13 @@
     @include flexCenter;
     border-radius: 3px;
     padding: 1rem;
-    background-color: rgba($color-black, 0.9);
 
     & img {
       width: 100%;
+    }
+
+    &--coderhouse {
+      filter: invert(100%) hue-rotate(120deg);
     }
   }
 

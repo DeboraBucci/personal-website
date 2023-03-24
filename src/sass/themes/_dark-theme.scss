@@ -97,7 +97,13 @@ body .dark {
     }
 
     &__img {
-      background-color: transparent;
+      & img {
+        filter: invert(100%) hue-rotate(180deg);
+      }
+
+      &--coderhouse {
+        filter: none !important;
+      }
     }
 
     &__text {
@@ -132,6 +138,14 @@ body .dark {
 
     &__img {
       filter: invert(90%) hue-rotate(180deg);
+    }
+  }
+
+  .certifications__image-box {
+    filter: invert(100%) hue-rotate(180deg);
+
+    &--coderhouse {
+      filter: none;
     }
   }
 }

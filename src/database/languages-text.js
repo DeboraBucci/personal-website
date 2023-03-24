@@ -112,6 +112,7 @@ const sectionHeadings = {
 const certifications = [
   {
     image: react,
+    institute: "coderhouse",
     alt: "React JS",
     href: "https://www.coderhouse.com/certificados/637d8946d42cb5000e4fe274",
     text: {
@@ -139,6 +140,7 @@ const certifications = [
 
   {
     image: javascript2,
+    institute: "coderhouse",
     alt: "JavaScript",
     href: "https://www.coderhouse.com/certificados/637d8946d42cb5000e4fe274",
     text: {
@@ -170,6 +172,7 @@ const certifications = [
 
   {
     image: webDesign,
+    institute: "coderhouse",
     alt: "Web Design",
     href: "https://www.coderhouse.com/certificados/637d8946d42cb5000e4fe274",
     text: {
@@ -201,6 +204,7 @@ const certifications = [
 
   {
     image: alkemy,
+    institute: "alkemy",
     alt: "certificate of Skill Up of React, Work Methodologies and Soft Skills from Alkemy",
     href: "",
     text: {
@@ -244,6 +248,7 @@ const certifications = [
 
   {
     image: javascript,
+    institute: "freecodecamp",
     alt: "JavaScript certificate from freeCodeCamp",
     href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/javascript-algorithms-and-data-structures",
     text: {
@@ -271,6 +276,7 @@ const certifications = [
 
   {
     image: responsiveWebDesign,
+    institute: "freecodecamp",
     alt: "Responsive Web Design certificate from freeCodeCamp",
     href: "https://www.freecodecamp.org/certification/fcc0319e92c-1fd6-4354-9f09-dbbf04aba37b/responsive-web-design",
     text: {

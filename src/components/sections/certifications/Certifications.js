@@ -30,7 +30,7 @@ const Certifications = () => {
           <div
             onClick={openModalHandler.bind(null, certificate)}
             key={certificate.alt}
-            className="certifications__image-box"
+            className={`certifications__image-box certifications__image-box--${certificate.institute}`}
           >
             <img
               src={certificate.image}
