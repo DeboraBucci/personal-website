@@ -161,13 +161,14 @@
     cursor: pointer;
     overflow: hidden;
 
-    &--coderhouse {
+    &--coderhouse img {
       filter: invert(100%) hue-rotate(120deg);
     }
 
     &::before,
     &::after {
       content: "";
+      z-index: 10;
       position: absolute;
       height: 100%;
       width: 100%;
@@ -182,7 +183,6 @@
         rgba($color-white, 0.1) 0%,
         rgba($color-white, 0.3) 100%
       );
-
       left: -200%;
     }
 
@@ -211,6 +211,7 @@
   }
 
   &__zoom {
+    z-index: 20;
     position: absolute;
     top: 50%;
     left: 50%;

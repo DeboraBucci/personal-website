@@ -1517,10 +1517,11 @@ code {
     position: relative;
     cursor: pointer;
     overflow: hidden; }
-    .certifications__image-box--coderhouse {
+    .certifications__image-box--coderhouse img {
       filter: invert(100%) hue-rotate(120deg); }
     .certifications__image-box::before, .certifications__image-box::after {
       content: "";
+      z-index: 10;
       position: absolute;
       height: 100%;
       width: 100%;
@@ -1540,6 +1541,7 @@ code {
     .certifications__image-box img {
       max-width: 50rem; }
   .certifications__zoom {
+    z-index: 20;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1634,7 +1636,8 @@ body .dark {
 .dark .carousel__img {
   filter: invert(90%) hue-rotate(180deg); }
 
-.dark .certifications__image-box {
+.dark .certifications__image-box img {
   filter: invert(100%) hue-rotate(180deg); }
-  .dark .certifications__image-box--coderhouse {
-    filter: none; }
+
+.dark .certifications__image-box--coderhouse img {
+  filter: none !important; }
