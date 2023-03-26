@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 
 import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
+import Header from "./components/header/Header";
 import Sections from "./components/sections/Sections";
 
 import ThemeContext from "./context/theme-context";
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className={themeCtx.theme}>
-      <Navbar />
+      <Header />
       <Sections />
       <Footer />
     </div>
