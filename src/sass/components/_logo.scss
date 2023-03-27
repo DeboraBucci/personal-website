@@ -69,20 +69,20 @@
     &__wrapper {
       position: relative;
       padding-bottom: 14rem;
+    }
 
-      &--options {
-        top: 0;
-        right: 50%;
-        transform: translateX(50%);
-        flex-direction: column;
-        width: 8rem;
-        padding: 2rem;
-        padding-top: 10rem;
-        border-radius: 20rem;
-        background-color: rgba($color-black, 0.8);
-        backdrop-filter: blur(1px);
-        -webkit-backdrop-filter: blur(1px);
-      }
+    &__options {
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      flex-direction: column;
+      width: 8rem;
+      padding: 2rem;
+      padding-top: 10rem;
+      border-radius: 20rem;
+      background-color: rgba($color-black, 0.8);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
 
       & button {
         font-size: 3rem;
