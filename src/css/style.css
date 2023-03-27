@@ -390,7 +390,8 @@ code {
     box-shadow: 0 1.5rem 4rem rgba(35, 35, 35, 0.5);
     z-index: 1;
     left: 50%;
-    transform: translateX(-50%) scale(0.4); }
+    transform: translateX(-50%) scale(0.4);
+    pointer-events: none; }
     .carousel__slide--7 {
       z-index: 6;
       transform: translateX(-140%) scale(0.6); }
@@ -399,7 +400,8 @@ code {
       transform: translateX(-105%) scale(0.8); }
     .carousel__slide--1 {
       z-index: 10;
-      transform: translateX(-50%) scale(1); }
+      transform: translateX(-50%) scale(1);
+      pointer-events: initial; }
     .carousel__slide--2 {
       z-index: 8;
       transform: translateX(5%) scale(0.8); }
