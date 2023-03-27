@@ -134,4 +134,9 @@ body .dark {
       filter: invert(90%) hue-rotate(180deg);
     }
   }
+
+  .theme-btn__msg {
+    color: $color-white !important;
+    background-color: $color-black !important;
+  }
 }

@@ -127,6 +127,16 @@ button {
     transform: scale(1);
     color: #b01030; } }
 
+@keyframes fade-in-out {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1;
+    bottom: 0; }
+  100% {
+    opacity: 0;
+    bottom: 10rem; } }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1057,6 +1067,30 @@ code {
       border-left-color: #ff53a9;
       color: #ff53a9; }
 
+.theme-btn__wrapper {
+  position: relative; }
+
+.theme-btn__msg {
+  z-index: 100;
+  position: absolute;
+  bottom: -4rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #232323;
+  background-color: #fff;
+  transition: bottom 0.5s, height 0.1s, opacity 0.3s; }
+  .theme-btn__msg--visible {
+    height: fit-content;
+    padding: 0.15rem 0.5rem;
+    animation-name: fade-in-out;
+    animation-duration: 3s;
+    animation-timing-function: ease; }
+
 .logo {
   z-index: 2;
   position: relative;
@@ -1647,3 +1681,7 @@ body .dark {
 
 .dark .carousel__img {
   filter: invert(90%) hue-rotate(180deg); }
+
+.dark .theme-btn__msg {
+  color: #fff !important;
+  background-color: #232323 !important; }
