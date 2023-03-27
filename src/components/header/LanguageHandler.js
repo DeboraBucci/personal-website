@@ -32,7 +32,7 @@ const LanguageHandler = ({ headerShrinked }) => {
   return (
     <div className="language-btn__wrapper">
       <button
-        className="header__logo-wrapper--btn language-btn"
+        className="language-btn logo__options--btn"
         onClick={toggleLanguagesOptHandler}
       >
         <i className="fa-solid fa-language"></i>

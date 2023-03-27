@@ -45,26 +45,20 @@ const Header = () => {
         isHeaderShrinked && !isWindowSmall ? "header--shrinked" : ""
       } ${isNavbarOpened ? "header--opened-nav" : ""}`}
     >
-      <div className="header__logo-wrapper">
-        <Logo />
-
-        <div className="header__logo-wrapper--options">
-          <ThemeHandler />
-          <LanguageHandler headerShrinked={isHeaderShrinked} />
-        </div>
-      </div>
+      <Logo isHeaderShrinked={isHeaderShrinked} />
 
       {isWindowSmall && (
         <SmallScreenNavbar
-          links={linksList}
+          linksList={linksList}
           isNavbarOpened={isNavbarOpened}
           setIsNavbarOpened={setIsNavbarOpened}
           isWindowSmall={isWindowSmall}
           linkClickHandler={linkClickHandler}
         />
       )}
+
       <Navbar
-        links={linksList}
+        linksList={linksList}
         language={languageCtx.language}
         isNavbarOpened={isNavbarOpened}
         setIsNavbarOpened={setIsNavbarOpened}

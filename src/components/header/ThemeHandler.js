@@ -7,7 +7,7 @@ const ThemeHandler = () => {
   const changeThemeHandler = () => toggleTheme();
 
   return (
-    <button className="header__logo-wrapper--btn" onClick={changeThemeHandler}>
+    <button className="logo__options--btn" onClick={changeThemeHandler}>
       <i className="fa-solid fa-circle-half-stroke"></i>
     </button>
   );

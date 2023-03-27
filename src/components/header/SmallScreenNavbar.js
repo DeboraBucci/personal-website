@@ -3,7 +3,7 @@ const SmallScreenNavbar = ({
   isNavbarOpened,
   setIsNavbarOpened,
   linkClickHandler,
-  links,
+  linksList,
 }) => {
   const headerHandler = () =>
     isWindowSmall && setIsNavbarOpened((prev) => !prev);
@@ -21,7 +21,7 @@ const SmallScreenNavbar = ({
           !isNavbarOpened ? "header__icon-list--overlay" : ""
         }`}
       >
-        {links.map(({ icon, href, key }) => (
+        {linksList.map(({ icon, href, key }) => (
           <li key={key} onClick={linkClickHandler}>
             <a href={href}>
               <i className={`${icon} header__nav--icon`} />
