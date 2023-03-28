@@ -156,7 +156,9 @@
     justify-content: flex-start;
     gap: 1.5rem;
     padding: 2rem 3rem;
-    transition: color 0.2s;
+    width: 15rem;
+    background-color: transparent;
+    transition: color 0.1s width 3s ease;
 
     &__logo {
       width: 8rem;
@@ -164,6 +166,7 @@
     }
 
     &--opened-nav {
+      width: 100vw;
       height: 100vh;
       background-color: rgba($color-black, 0.9);
       backdrop-filter: blur(3px);
@@ -172,7 +175,7 @@
 
     &__nav {
       position: absolute;
-      left: -200%;
+      left: -500%;
       display: flex;
       height: 100vh;
       transition: all 1s;
@@ -216,6 +219,27 @@
           color: $color-secondary;
         }
       }
+    }
+  }
+
+  @media screen and (max-height: 30em) and (max-width: 62.5em) {
+    &__icon-list {
+      display: none;
+    }
+
+    &__nav--list {
+      align-self: baseline;
+      gap: 0;
+      justify-content: space-between;
+      height: 90%;
+      font-size: 3rem;
+    }
+  }
+
+  @media screen and (max-height: 30em) and (max-width: 62.5em) {
+    &__nav--list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
