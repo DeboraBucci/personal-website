@@ -36,8 +36,8 @@
     gap: 1rem;
     width: 100%;
 
-    @include respond(53.5em) {
-      flex-wrap: wrap;
+    @include respond(50em) {
+      flex-direction: column;
     }
   }
 

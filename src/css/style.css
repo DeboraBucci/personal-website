@@ -541,6 +541,50 @@ code {
       gap: 1rem; }
       .card__instructions--text code {
         color: #ff75ba; }
+  @media only screen and (max-width: 50em) {
+    .card {
+      height: 55rem;
+      width: 80vw;
+      margin: 1rem 0;
+      font-size: 1.6rem; }
+      .card__side--back {
+        margin-top: -2rem;
+        padding: 2rem 0 !important;
+        flex-direction: row;
+        gap: 2rem; }
+      .card__btn-source-code:link, .card__btn-source-code:visited {
+        padding: 1rem 4rem;
+        margin-top: 0.5rem; }
+      .card__list {
+        font-size: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+      .card__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.3rem;
+        gap: 1rem; }
+        .card__item:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+        .card__item--first {
+          color: #696969; }
+        .card__item--second {
+          color: #3f3f3f;
+          font-weight: 500;
+          text-transform: capitalize; }
+      .card__instructions {
+        position: absolute;
+        bottom: 4rem; }
+        .card__instructions--text {
+          background-color: #232323;
+          border-radius: 3px;
+          padding: 1rem 2rem;
+          display: flex;
+          align-items: baseline;
+          gap: 1rem; }
+          .card__instructions--text code {
+            color: #ff75ba; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       overflow: hidden;
@@ -567,6 +611,29 @@ code {
         display: none; }
       .card__heading {
         top: 60%; } }
+  @media only screen and (max-width: 90em) {
+    .card {
+      height: fit-content; }
+      .card__picture {
+        height: 8rem; }
+        .card__picture-1 {
+          background-image: linear-gradient(to right bottom, #e34363, #b01030); }
+        .card__picture-2 {
+          background-image: linear-gradient(to right bottom, #993399, #660066); }
+        .card__picture-3 {
+          background-image: linear-gradient(to right bottom, #4c2771, #261439); }
+      .card__heading {
+        text-align: center;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        font-weight: 500;
+        white-space: nowrap;
+        width: fit-content;
+        background-color: transparent; }
+      .card__item {
+        justify-content: flex-start; } }
 
 .btn, .btn:link, .btn:visited {
   position: relative;
@@ -641,6 +708,11 @@ code {
     box-shadow: inset 0 0 0 3px #f59f00, 0 1rem 2rem rgba(35, 35, 35, 0.15); }
   .btn--orange:active {
     box-shadow: inset 0 0 0 3px #f59f00, 0 0.5rem 1rem rgba(35, 35, 35, 0.3); }
+
+@media only screen and (max-width: 53.5em) {
+  .btn, .btn:link, .btn:visited {
+    padding: 0.5rem 4rem;
+    font-size: 1.6rem; } }
 
 .others {
   display: flex;
@@ -1145,19 +1217,19 @@ code {
     .logo__wrapper {
       position: relative;
       padding-bottom: 14rem; }
-      .logo__wrapper--options {
-        top: 0;
-        right: 50%;
-        transform: translateX(50%);
-        flex-direction: column;
-        width: 8rem;
-        padding: 2rem;
-        padding-top: 10rem;
-        border-radius: 20rem;
-        background-color: rgba(35, 35, 35, 0.8);
-        backdrop-filter: blur(1px);
-        -webkit-backdrop-filter: blur(1px); }
-      .logo__wrapper button {
+    .logo__options {
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      flex-direction: column;
+      width: 8rem;
+      padding: 2rem;
+      padding-top: 10rem;
+      border-radius: 20rem;
+      background-color: rgba(35, 35, 35, 0.8);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px); }
+      .logo__options button {
         font-size: 3rem;
         color: #f59f00;
         opacity: 1; } }
@@ -1483,9 +1555,9 @@ code {
     justify-content: space-evenly;
     gap: 1rem;
     width: 100%; }
-    @media only screen and (max-width: 53.5em) {
+    @media only screen and (max-width: 50em) {
       .section-projects__projects {
-        flex-wrap: wrap; } }
+        flex-direction: column; } }
   .section-projects .link {
     display: flex;
     justify-content: center; }
