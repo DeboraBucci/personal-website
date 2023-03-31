@@ -47,12 +47,6 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #929292; }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  transform: scale(3); }
-  @media only screen and (max-width: 62.5em) {
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-      display: none; } }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;

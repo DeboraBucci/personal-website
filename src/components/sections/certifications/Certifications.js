@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Header from "../../UI/Header";
-import CertificationsOverlay from "../../UI/CertificationsOverlay";
+import CertificationDetails from "./CertificationDetails";
 
 import { certifications } from "../../../database/languages-text";
 
@@ -18,7 +18,7 @@ const Certifications = () => {
   return (
     <section className="certifications" id="certifications">
       {modalIsOpened && (
-        <CertificationsOverlay
+        <CertificationDetails
           closeModalHandler={closeModalHandler}
           modalInfo={modalInfo}
         />

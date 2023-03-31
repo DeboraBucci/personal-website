@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
 
-import { Backdrop } from "./Backdrop";
-import Link from "./Link";
+import Backdrop from "../../UI/Backdrop";
+import Link from "../../UI/Link";
 
-import LanguageContext from "../../context/language-context";
+import LanguageContext from "../../../context/language-context";
 
 const CertificationsModal = ({ closeHandler, info }) => {
   const languageCtx = useContext(LanguageContext);
