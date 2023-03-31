@@ -1079,19 +1079,21 @@ code {
   .certifications-modal h4 {
     text-align: center; }
   @media only screen and (max-width: 75em) {
-    .certifications-modal__info {
-      height: 95%;
-      overflow: auto; }
-    .certifications-modal__text {
-      font-size: 1.9rem;
-      margin-bottom: 2rem;
-      height: auto; }
-    .certifications-modal__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-    .certifications-modal__img {
-      display: none; } }
+    .certifications-modal {
+      height: fit-content; }
+      .certifications-modal__info {
+        height: fit-content;
+        overflow: auto; }
+      .certifications-modal__text {
+        font-size: 1.9rem;
+        margin-bottom: 2rem;
+        height: auto; }
+      .certifications-modal__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+      .certifications-modal__img {
+        display: none; } }
 
 .complexity {
   display: flex;
