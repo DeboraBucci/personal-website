@@ -61,4 +61,11 @@
       }
     }
   }
+
+  @include respond(62.5em) {
+    &__opts {
+      top: 0rem;
+      left: 7rem;
+    }
+  }
 }

@@ -67,6 +67,7 @@
     }
 
     &__wrapper {
+      z-index: 1000;
       position: relative;
       padding-bottom: 14rem;
     }
@@ -89,6 +90,29 @@
         color: $color-secondary;
         opacity: 1;
       }
+    }
+  }
+
+  @media (max-width: 37.5em) {
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__options {
+      flex-direction: row;
+      top: 50%;
+      left: 7rem;
+      transform: translateY(-50%);
+      right: -10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem 2rem;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      transition: all 0.2s;
+      width: fit-content;
     }
   }
 }

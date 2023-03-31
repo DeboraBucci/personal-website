@@ -325,4 +325,12 @@
       justify-content: flex-start;
     }
   }
+
+  @media only screen and (max-width: 35em) {
+    &__list {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
