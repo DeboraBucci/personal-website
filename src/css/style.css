@@ -435,6 +435,9 @@ code {
       height: 2rem !important;
       width: 2rem !important;
       box-shadow: 0 0 0 5px rgba(255, 83, 169, 0.3); }
+  @media (hover: none), (-moz-touch-enabled: 1), (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .carousel__arrow {
+      display: none; } }
 
 .card {
   border: none !important;

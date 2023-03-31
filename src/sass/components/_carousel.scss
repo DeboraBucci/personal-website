@@ -113,4 +113,13 @@
       box-shadow: 0 0 0 5px rgba($color-primary, 0.3);
     }
   }
+
+  @media (hover: none),
+    (-moz-touch-enabled: 1),
+    (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+    &__arrow {
+      display: none;
+    }
+  }
 }
