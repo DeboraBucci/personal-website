@@ -30,7 +30,7 @@
   padding: 5rem 10rem;
   margin: 0 auto;
 
-  &__projects {
+  &__list {
     @include flexCenter;
     justify-content: space-evenly;
     gap: 1rem;
@@ -39,11 +39,6 @@
     @include respond(50em) {
       flex-direction: column;
     }
-  }
-
-  .link {
-    display: flex;
-    justify-content: center;
   }
 
   &__cta {
@@ -58,6 +53,13 @@
 
     &--icon {
       font-size: $big-font-size;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
     }
   }
 }

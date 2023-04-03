@@ -424,7 +424,7 @@ code {
     .carousel__arrow {
       display: none; } }
 
-.card {
+.project-card {
   border: none !important;
   position: relative;
   perspective: 150rem;
@@ -435,7 +435,7 @@ code {
   border-radius: 3px;
   font-size: 1.6rem;
   cursor: pointer; }
-  .card__side {
+  .project-card__side {
     position: absolute;
     top: 0;
     left: 0;
@@ -444,7 +444,7 @@ code {
     transition: all 0.8s ease;
     box-shadow: 0 0.5rem 2rem rgba(35, 35, 35, 0.1);
     backface-visibility: hidden; }
-    .card__side--back {
+    .project-card__side--back {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -452,13 +452,13 @@ code {
       gap: 1rem;
       transform: rotateY(180deg);
       color: #eee; }
-      .card__side--back-1 {
+      .project-card__side--back-1 {
         background-image: linear-gradient(to right bottom, #e34363, #b01030); }
-      .card__side--back-2 {
+      .project-card__side--back-2 {
         background-image: linear-gradient(to right bottom, #993399, #660066); }
-      .card__side--back-3 {
+      .project-card__side--back-3 {
         background-image: linear-gradient(to right bottom, #4c2771, #261439); }
-  .card__picture {
+  .project-card__picture {
     height: 50%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -467,26 +467,26 @@ code {
     background-size: cover;
     background-position: center;
     background-blend-mode: screen; }
-    .card__picture-1 {
+    .project-card__picture-1 {
       background-image: linear-gradient(to right bottom, rgba(114, 16, 36, 0.8), rgba(212, 57, 88, 0.3)), url(../assets/projects/lilys-cuisine.webp); }
-    .card__picture-2 {
+    .project-card__picture-2 {
       background-image: linear-gradient(to right bottom, rgba(86, 1, 134, 0.5), rgba(29, 0, 75, 0.5)), url(../assets/projects/mythical-books.webp); }
-    .card__picture-3 {
+    .project-card__picture-3 {
       background-image: linear-gradient(to right bottom, rgba(86, 1, 134, 0.5), rgba(29, 0, 75, 0.5)), url(../assets/projects/go-scrum.webp); }
-  .card__btn-source-code:link, .card__btn-source-code:visited {
+  .project-card__btn-source-code:link, .project-card__btn-source-code:visited {
     background-color: #2e2e2e;
     color: #8587ff;
     padding: 0.5rem 4rem;
     margin-top: 1rem;
     border-radius: 3px;
     transition: all 0.2s; }
-  .card__btn-source-code:hover, .card__btn-source-code:focus {
+  .project-card__btn-source-code:hover, .project-card__btn-source-code:focus {
     transform: translateY(-2px); }
-  .card:hover .card__side--back {
+  .project-card:hover .project-card__side--back {
     transform: rotateY(0); }
-  .card:hover .card__side--front {
+  .project-card:hover .project-card__side--front {
     transform: rotateY(-180deg); }
-  .card__heading {
+  .project-card__heading {
     position: absolute;
     top: 40%;
     right: 5%;
@@ -499,118 +499,118 @@ code {
     width: auto;
     padding: 1rem 2rem;
     border-radius: 3px; }
-  .card__details {
+  .project-card__details {
     padding: 1rem; }
-  .card__list {
+  .project-card__list {
     padding: 0 !important; }
-  .card__item {
+  .project-card__item {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.3rem;
     gap: 1rem; }
-    .card__item:not(:last-child) {
+    .project-card__item:not(:last-child) {
       border-bottom: 1px solid #eee; }
-    .card__item--first {
+    .project-card__item--first {
       color: #696969; }
-    .card__item--second {
+    .project-card__item--second {
       color: #3f3f3f;
       font-weight: 500;
       text-transform: capitalize; }
-  .card__instructions {
+  .project-card__instructions {
     position: absolute;
     bottom: 4rem; }
-    .card__instructions--text {
+    .project-card__instructions--text {
       background-color: #232323;
       border-radius: 3px;
       padding: 1rem 2rem;
       display: flex;
       align-items: baseline;
       gap: 1rem; }
-      .card__instructions--text code {
+      .project-card__instructions--text code {
         color: #ff75ba; }
   @media only screen and (max-width: 50em) {
-    .card {
+    .project-card {
       height: 55rem;
       width: 80vw;
       margin: 1rem 0;
       font-size: 1.6rem; }
-      .card__side--back {
+      .project-card__side--back {
         margin-top: -2rem;
         padding: 2rem 0 !important;
         flex-direction: row;
         gap: 2rem; }
-      .card__btn-source-code:link, .card__btn-source-code:visited {
+      .project-card__btn-source-code:link, .project-card__btn-source-code:visited {
         padding: 1rem 4rem;
         margin-top: 0.5rem; }
-      .card__list {
+      .project-card__list {
         font-size: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr); }
-      .card__item {
+      .project-card__item {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 1.3rem;
         gap: 1rem; }
-        .card__item:not(:last-child) {
+        .project-card__item:not(:last-child) {
           border-bottom: 1px solid #eee; }
-        .card__item--first {
+        .project-card__item--first {
           color: #696969; }
-        .card__item--second {
+        .project-card__item--second {
           color: #3f3f3f;
           font-weight: 500;
           text-transform: capitalize; }
-      .card__instructions {
+      .project-card__instructions {
         position: absolute;
         bottom: 4rem; }
-        .card__instructions--text {
+        .project-card__instructions--text {
           background-color: #232323;
           border-radius: 3px;
           padding: 1rem 2rem;
           display: flex;
           align-items: baseline;
           gap: 1rem; }
-          .card__instructions--text code {
+          .project-card__instructions--text code {
             color: #ff75ba; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .card {
+    .project-card {
       overflow: hidden;
       height: 70rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       box-shadow: 0 0.5rem 2rem rgba(35, 35, 35, 0.1); }
-      .card__picture {
+      .project-card__picture {
         height: 80%; }
-      .card__side {
+      .project-card__side {
         height: auto;
         position: relative;
         box-shadow: none; }
-        .card__side--back {
+        .project-card__side--back {
           padding: 4rem 0;
           transform: rotateY(0);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-          .card__side--back h3 {
+          .project-card__side--back h3 {
             display: none; }
-      .card:hover .card__side--front {
+      .project-card:hover .project-card__side--front {
         transform: rotateY(0); }
-      .card__instructions {
+      .project-card__instructions {
         display: none; }
-      .card__heading {
+      .project-card__heading {
         top: 60%; } }
   @media only screen and (max-width: 90em) {
-    .card {
+    .project-card {
       height: fit-content; }
-      .card__picture {
+      .project-card__picture {
         height: 8rem; }
-        .card__picture-1 {
+        .project-card__picture-1 {
           background-image: linear-gradient(to right bottom, #e34363, #b01030); }
-        .card__picture-2 {
+        .project-card__picture-2 {
           background-image: linear-gradient(to right bottom, #993399, #660066); }
-        .card__picture-3 {
+        .project-card__picture-3 {
           background-image: linear-gradient(to right bottom, #4c2771, #261439); }
-      .card__heading {
+      .project-card__heading {
         text-align: center;
         top: 1rem;
         left: 50%;
@@ -620,10 +620,10 @@ code {
         white-space: nowrap;
         width: fit-content;
         background-color: transparent; }
-      .card__item {
+      .project-card__item {
         justify-content: flex-start; } }
   @media only screen and (max-width: 35em) {
-    .card__list {
+    .project-card__list {
       font-size: 2rem;
       display: flex;
       flex-direction: column; } }
@@ -1593,7 +1593,7 @@ code {
   flex-direction: column;
   padding: 5rem 10rem;
   margin: 0 auto; }
-  .section-projects__projects {
+  .section-projects__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1601,11 +1601,8 @@ code {
     gap: 1rem;
     width: 100%; }
     @media only screen and (max-width: 50em) {
-      .section-projects__projects {
+      .section-projects__list {
         flex-direction: column; } }
-  .section-projects .link {
-    display: flex;
-    justify-content: center; }
   .section-projects__cta {
     font-size: 2.5rem; }
     .section-projects__cta--btn {
@@ -1617,6 +1614,11 @@ code {
       box-shadow: 0 1rem 2rem rgba(35, 35, 35, 0.2); }
     .section-projects__cta--icon {
       font-size: 2.5rem; }
+    .section-projects__cta button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem; }
 
 .section-contact {
   min-height: 100vh;
@@ -1731,18 +1733,18 @@ body .dark {
 .dark .section-about {
   border: 1px solid rgba(255, 255, 255, 0.1); }
 
-.dark .card {
+.dark .project-card {
   background-color: #232323; }
-  .dark .card__side--front {
+  .dark .project-card__side--front {
     background-color: #262641; }
-  .dark .card__item--first {
+  .dark .project-card__item--first {
     color: rgba(255, 255, 255, 0.6); }
-  .dark .card__item--second {
+  .dark .project-card__item--second {
     color: #fff; }
-  .dark .card__item:not(:last-child) {
+  .dark .project-card__item:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .dark .card {
+    .dark .project-card {
       background-color: #262641; } }
 
 .dark .thin-line {
