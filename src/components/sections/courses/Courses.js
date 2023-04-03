@@ -8,6 +8,7 @@ const Courses = () => {
     useState(coursesPositions);
   const [activeCourse, setActiveCourse] = useState(1);
   const [slideIsHovered, setSlideIsHovered] = useState(false);
+  const [touchPosition, setTouchPosition] = useState(null);
 
   // SLIDER HANDLER
   const sliderHandler = useCallback(
@@ -63,11 +64,33 @@ const Courses = () => {
     setActiveCourse(targetCourse);
   };
 
+  const handleTouchStart = (e) => {
+    const touchDown = e.touches[0].clientX;
+
+    setTouchPosition(touchDown);
+  };
+
+  const handleTouchMove = (e) => {
+    if (touchPosition === null) return;
+
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchPosition - currentTouch;
+
+    if (diff > 5) rightArrowHandler();
+    if (diff < -5) leftArrowHandler();
+
+    setTouchPosition(null);
+  };
+
   return (
     <section className="section-courses" id="courses">
       <Header section="courses" />
 
-      <ul className="carousel">
+      <ul
+        className="carousel"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+      >
         <button
           className="carousel__arrow carousel__arrow--left"
           onClick={leftArrowHandler}

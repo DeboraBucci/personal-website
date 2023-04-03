@@ -1,20 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 
-import { Backdrop } from "./Backdrop";
-import Link from "./Link";
+import Backdrop from "../../UI/Backdrop";
+import Link from "../../UI/Link";
 
-import LanguageContext from "../../context/language-context";
+import LanguageContext from "../../../context/language-context";
+import LevelDisplay from "../../UI/LevelDisplay";
 
 const CertificationsModal = ({ closeHandler, info }) => {
   const languageCtx = useContext(LanguageContext);
-
-  useEffect(() => {
-    const complexityPoints = document.querySelectorAll(".complexity__point");
-    complexityPoints.forEach((point) => {
-      const number = point.classList[1].slice(point.classList[1].length - 1);
-      if (number <= info.complexity) point.style.backgroundColor = "#ff916a";
-    });
-  }, [info.complexity]);
 
   return (
     <div className="certifications-modal">
@@ -45,14 +38,7 @@ const CertificationsModal = ({ closeHandler, info }) => {
             ))}
           </div>
 
-          <h4>Complexity</h4>
-          <div className="complexity">
-            <div className="complexity__point complexity__point--1"></div>
-            <div className="complexity__point complexity__point--2"></div>
-            <div className="complexity__point complexity__point--3"></div>
-            <div className="complexity__point complexity__point--4"></div>
-            <div className="complexity__point complexity__point--5"></div>
-          </div>
+          <LevelDisplay level={info.complexity} title={"Complexity"} />
 
           <div className="thin-line cthin-line--big"></div>
         </div>

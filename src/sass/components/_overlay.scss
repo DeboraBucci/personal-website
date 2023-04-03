@@ -151,8 +151,10 @@
   }
 
   @include respond(75em) {
+    height: fit-content;
+
     &__info {
-      height: 95%;
+      height: fit-content;
       overflow: auto;
     }
 

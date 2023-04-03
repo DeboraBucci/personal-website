@@ -1,0 +1,33 @@
+.theme-btn {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__msg {
+    z-index: 100;
+    position: absolute;
+    bottom: -4rem;
+
+    font-size: 1.2rem;
+    border-radius: 3px;
+    white-space: nowrap;
+
+    // INVISIBLE
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+
+    color: $color-black;
+    background-color: $color-white;
+    transition: bottom 0.5s, height 0.1s, opacity 0.3s;
+
+    &--visible {
+      height: fit-content;
+      padding: 0.15rem 0.5rem;
+      animation-name: fade-in-out;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+    }
+  }
+}

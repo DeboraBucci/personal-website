@@ -27,23 +27,18 @@
 .section-projects {
   @include flexCenter;
   flex-direction: column;
-  padding: 5rem 2rem;
+  padding: 5rem 10rem;
   margin: 0 auto;
 
-  &__projects {
+  &__list {
     @include flexCenter;
     justify-content: space-evenly;
     gap: 1rem;
     width: 100%;
 
-    @include respond(53.5em) {
-      flex-wrap: wrap;
+    @include respond(50em) {
+      flex-direction: column;
     }
-  }
-
-  .link {
-    display: flex;
-    justify-content: center;
   }
 
   &__cta {
@@ -58,6 +53,13 @@
 
     &--icon {
       font-size: $big-font-size;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
     }
   }
 }

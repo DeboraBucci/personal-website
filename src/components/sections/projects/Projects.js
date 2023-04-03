@@ -15,7 +15,7 @@ const Projects = () => {
     <section className="section-projects" id="projects">
       <Header section="projects" className="projects-heading" />
 
-      <div className="section-projects__projects ">
+      <div className="section-projects__list">
         {projects.arr.map((project) => {
           return (
             <Project
@@ -30,7 +30,7 @@ const Projects = () => {
 
       <div className="u-margin-top-medium section-projects__cta">
         <Link href="https://github.com/DeboraBucci?tab=repositories">
-          <button className="btn btn--orange section-projects__cta--btn">
+          <button className="btn btn--orange section-projects--btn">
             {options.btn.all}
             <i className="fas fa-angle-right section-projects__cta--icon" />
           </button>

@@ -32,6 +32,11 @@ import Docker from "../assets/technologies-icons/docker.svg";
 import Figma from "../assets/technologies-icons/figma.svg";
 import Redux from "../assets/technologies-icons/redux.svg";
 
+import Italy from "../assets/languages/italy.png";
+import Japan from "../assets/languages/japan.png";
+import Spain from "../assets/languages/spain.png";
+import UnitedStates from "../assets/languages/united-states.png";
+
 const others = [
   {
     icon: ReactRouterDom,
@@ -174,4 +179,31 @@ const coursesPositions = Array.from(
   (_, i) => i + 1
 );
 
-export { courses, coursesPositions, technologies, others };
+const languages = [
+  {
+    language: "Español",
+    title: "Native",
+    level: 5,
+    img: Spain,
+  },
+  {
+    language: "English",
+    title: "Proficient",
+    level: 4,
+    img: UnitedStates,
+  },
+  {
+    language: "Italiano",
+    title: "Beginner",
+    level: 1,
+    img: Italy,
+  },
+  {
+    language: "日本語",
+    title: "Beginner",
+    level: 1,
+    img: Japan,
+  },
+];
+
+export { courses, coursesPositions, technologies, others, languages };
