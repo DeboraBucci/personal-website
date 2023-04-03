@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "../../UI/Header";
 import CertificationDetails from "./CertificationDetails";
 
-import { certifications } from "../../../database/languages-text";
+import { certifications } from "../../../database/languages-text.ts";
 
 const Certifications = () => {
   const [modalIsOpened, setModalIsOpened] = useState(false);

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Typing from "../../UI/Typing";
 
 import LanguageContext from "../../../context/language-context";
-import { hero } from "../../../database/languages-text";
+import { hero } from "../../../database/languages-text.ts";
 
 const Hero = () => {
   const { language } = useContext(LanguageContext);

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import LanguageContext from "../../context/language-context";
-import { sectionHeadings } from "../../database/languages-text";
+import { sectionHeadings } from "../../database/languages-text.ts";
 
 const Header = ({ section }) => {
   const { language } = useContext(LanguageContext);

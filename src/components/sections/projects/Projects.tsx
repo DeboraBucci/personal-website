@@ -5,7 +5,7 @@ import Link from "../../UI/Link";
 import Project from "./Project";
 
 import LanguageContext from "../../../context/language-context";
-import { projects } from "../../../database/languages-text";
+import { projects } from "../../../database/languages-text.ts";
 
 const Projects = () => {
   const { language } = useContext(LanguageContext);

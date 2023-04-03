@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import LanguageContext from "../../../context/language-context";
 import { others } from "../../../database/data";
-import { about } from "../../../database/languages-text";
+import { about } from "../../../database/languages-text.ts";
 
 const Others = () => {
   const { language } = useContext(LanguageContext);

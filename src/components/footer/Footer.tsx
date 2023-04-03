@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import Link from "../UI/Link";
 import LanguageContext from "../../context/language-context";
 
-import { footer } from "../../database/languages-text";
+import { footer } from "../../database/languages-text.ts";
 import icons8 from "../../assets/icons8.svg";
 
 const Footer = () => {

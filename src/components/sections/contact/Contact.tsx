@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Link from "../../UI/Link";
 
 import LanguageContext from "../../../context/language-context";
-import { contact } from "../../../database/languages-text";
+import { contact } from "../../../database/languages-text.ts";
 
 const Contact = () => {
   const { language } = useContext(LanguageContext);

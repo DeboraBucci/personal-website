@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import LanguageContext from "../../../context/language-context.js";
-import { about } from "../../../database/languages-text";
+import { about } from "../../../database/languages-text.js";
 
 const Vignettes = () => {
   const { language } = useContext(LanguageContext);
