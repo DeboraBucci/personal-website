@@ -1,0 +1,136 @@
+.languages {
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    position: relative;
+    border-radius: 3px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    height: 40rem;
+    width: 140rem;
+    pointer-events: none;
+
+    &:hover > * {
+      filter: blur(1px) grayscale(100%);
+    }
+  }
+
+  &__item {
+    position: absolute;
+    border: 1px solid ridge;
+    padding: 5rem 20rem;
+    transition: all 0.4s;
+    pointer-events: auto;
+
+    &--flag {
+      position: relative;
+      font-size: 2rem;
+      margin-bottom: -1rem;
+      padding-left: 2rem;
+
+      span {
+        position: absolute;
+        bottom: 0;
+        left: 8rem;
+        color: tint($color-white, 20%);
+        font-size: 3rem;
+        text-shadow: 2px 2px 7px $color-black;
+      }
+    }
+
+    &--level {
+      p {
+        text-align: end;
+        padding-right: 2rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: -1rem;
+        color: tint($color-white, 20%);
+      }
+    }
+
+    &--1 {
+      background: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.8)
+        ),
+        url("../assets/backgrounds/spain-background.webp");
+
+      clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+      border-top-left-radius: 20rem;
+
+      top: 0.5rem;
+      left: 2.5rem;
+    }
+
+    &--2 {
+      background: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.6)
+        ),
+        url("../assets/backgrounds/usa-background.webp");
+
+      clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+      border-top-right-radius: 20rem;
+
+      top: 0.5rem;
+      right: 2.5rem;
+    }
+
+    &--3 {
+      background: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.7)
+        ),
+        url("../assets/backgrounds/italy-background.webp");
+
+      clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 0% 100%);
+      border-bottom-left-radius: 20rem;
+
+      left: 2.5rem;
+      bottom: 0.5rem;
+    }
+
+    &--4 {
+      background: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.9)
+        ),
+        url("../assets/backgrounds/japan-background.webp");
+
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+      border-bottom-right-radius: 20rem;
+
+      right: 2.5rem;
+      bottom: 0.5rem;
+    }
+
+    &--1,
+    &--2,
+    &--3,
+    &--4 {
+      background-size: 100%;
+      background-position: center;
+    }
+
+    & img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    &:hover {
+      filter: none;
+      background-size: 110%;
+    }
+  }
+}
