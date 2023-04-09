@@ -599,9 +599,14 @@ code {
         display: none; }
       .project-card__heading {
         top: 60%; } }
-  @media only screen and (max-width: 90em) {
+  @media only screen and (max-width: 70em) {
     .project-card {
       height: fit-content; }
+      .project-card__instructions {
+        display: none; }
+      .project-card__side--front {
+        position: relative;
+        height: fit-content; }
       .project-card__picture {
         height: 8rem; }
         .project-card__picture-1 {

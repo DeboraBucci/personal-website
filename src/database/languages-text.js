@@ -444,23 +444,23 @@ const projects = {
       ],
       extraInfo: {
         english: (
-          <div className="card__instructions">
-            <p className="card__instructions--text">
+          <div className="project-card__instructions">
+            <p className="project-card__instructions--text">
               Email: <code>challenge@alkemy.org</code>
             </p>
 
-            <p className="card__instructions--text">
+            <p className="project-card__instructions--text">
               Password: <code>react</code>
             </p>
           </div>
         ),
         spanish: (
-          <div className="card__instructions">
-            <p className="card__instructions--text">
+          <div className="project-card__instructions">
+            <p className="project-card__instructions--text">
               Correo: <code>challenge@alkemy.org</code>
             </p>
 
-            <p className="card__instructions--text">
+            <p className="project-card__instructions--text">
               Contraseña: <code>react</code>
             </p>
           </div>
