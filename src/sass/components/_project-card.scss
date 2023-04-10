@@ -289,8 +289,17 @@
     }
   }
 
-  @media only screen and (max-width: 90em) {
+  @media only screen and (max-width: 70em) {
     height: fit-content;
+
+    &__instructions {
+      display: none;
+    }
+
+    &__side--front {
+      position: relative;
+      height: fit-content;
+    }
 
     &__picture {
       height: 8rem;
