@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import About from "./about/About";
 import Certifications from "./certifications/Certifications";
 import Contact from "./contact/Contact";

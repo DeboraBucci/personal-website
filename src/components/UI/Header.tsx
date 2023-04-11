@@ -1,9 +1,14 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import LanguageContext from "../../context/language-context";
-import { sectionHeadings } from "../../database/languages-text.ts";
+import { sectionHeadings } from "../../database/languages-text";
 
-const Header = ({ section }) => {
+type HeaderProps = {
+  section: string;
+  className?: string;
+};
+
+const Header: React.FC<HeaderProps> = ({ section }) => {
   const { language } = useContext(LanguageContext);
   const { title, subtitle } = sectionHeadings[section][language];
 

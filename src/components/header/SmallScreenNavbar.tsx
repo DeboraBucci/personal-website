@@ -1,4 +1,14 @@
-const SmallScreenNavbar = ({
+import { NavLink } from "../../database/data-types";
+
+type SmallScreenNavbarProps = {
+  isWindowSmall: boolean;
+  isNavbarOpened: boolean;
+  setIsNavbarOpened: React.Dispatch<React.SetStateAction<boolean>>;
+  linkClickHandler: () => void;
+  linksList: NavLink[];
+};
+
+const SmallScreenNavbar: React.FC<SmallScreenNavbarProps> = ({
   isWindowSmall,
   isNavbarOpened,
   setIsNavbarOpened,

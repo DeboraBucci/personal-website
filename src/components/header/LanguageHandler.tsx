@@ -1,25 +1,32 @@
 import { useContext, useEffect, useState } from "react";
 import LanguageContext from "../../context/language-context";
 
-const LanguageHandler = ({ headerShrinked }) => {
+type LanguageHander = {
+  headerShrinked: boolean;
+};
+
+const LanguageHandler: React.FC<LanguageHander> = ({ headerShrinked }) => {
   const [areLangOptsVisible, setAreLangOptsVisible] = useState(false);
   const { language, changeLang } = useContext(LanguageContext);
 
   // CLICKS OUTSIDE LANGUAGE OPTIONS
   useEffect(() => {
-    const clickOutsideLanguageOptions = (e) =>
-      !e.target.closest(".language-btn__wrapper") &&
-      closeLanguagesOptsHandler();
+    const clickOutsideLanguageOptions = (e: Event) => {
+      const target = e?.target as Element;
+      !target.closest(".language-btn__wrapper") && closeLanguagesOptsHandler();
+    };
 
     window.addEventListener("click", clickOutsideLanguageOptions);
     return () =>
       window.removeEventListener("click", clickOutsideLanguageOptions);
   }, [headerShrinked]);
 
-  const chosenLangHandler = (e) => {
-    const selectedLanguage = e.target.textContent;
+  const chosenLangHandler = (e: React.MouseEvent) => {
+    const target = e?.target as Element;
 
-    if (selectedLanguage !== language) {
+    const selectedLanguage = target.textContent;
+
+    if (selectedLanguage !== language && selectedLanguage) {
       changeLang(selectedLanguage);
       closeLanguagesOptsHandler();
     }

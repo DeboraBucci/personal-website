@@ -2,12 +2,10 @@ import { useContext, useEffect, useState } from "react";
 
 import LanguageContext from "../../context/language-context";
 
-import { linksList } from "../../database/languages-text.ts";
-import LanguageHandler from "./LanguageHandler";
+import { linksList } from "../../database/languages-text";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import SmallScreenNavbar from "./SmallScreenNavbar";
-import ThemeHandler from "./ThemeHandler";
 
 const Header = () => {
   const [isHeaderShrinked, setIsHeaderShrinked] = useState(false);
@@ -61,7 +59,6 @@ const Header = () => {
         linksList={linksList}
         language={languageCtx.language}
         isNavbarOpened={isNavbarOpened}
-        setIsNavbarOpened={setIsNavbarOpened}
         linkClickHandler={linkClickHandler}
       />
     </header>

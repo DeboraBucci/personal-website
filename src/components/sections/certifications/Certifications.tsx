@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import Header from "../../UI/Header";
 import CertificationDetails from "./CertificationDetails";
 
-import { certifications } from "../../../database/languages-text.ts";
+import { certifications } from "../../../database/languages-text";
+import { Certification } from "../../../database/data-types";
 
 const Certifications = () => {
   const [modalIsOpened, setModalIsOpened] = useState(false);
-  const [modalInfo, setModalInfo] = useState({});
+  const [modalInfo, setModalInfo] = useState(certifications[0]);
 
   const closeModalHandler = () => setModalIsOpened(false);
-  const openModalHandler = (certificate) => {
+  const openModalHandler = (certificate: Certification) => {
     setModalIsOpened(true);
     setModalInfo(certificate);
   };

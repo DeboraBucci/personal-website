@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-const Typing = ({ words, cursorType }) => {
+type TypingProps = {
+  words: string[];
+  cursorType: string;
+};
+
+const Typing: React.FC<TypingProps> = ({ words, cursorType }) => {
   const [isPageLoaded, setIsPageLoaded] = useState(false);
 
   useEffect(() => {

@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Link from "../../UI/Link";
 
 import LanguageContext from "../../../context/language-context";
-import { contact } from "../../../database/languages-text.ts";
+import { contact } from "../../../database/languages-text";
 
 const Contact = () => {
   const { language } = useContext(LanguageContext);
-  const info = contact[language];
+  const info = contact.languages[language];
 
   return (
     <section className="section-contact" id="contact">
@@ -19,7 +19,10 @@ const Contact = () => {
       </div>
       <ul className="section-contact__list">
         {contact.links.map(({ href, icon, text }) => {
-          const finalText = text[language] || text;
+          const finalText =
+            typeof text === "object" && language in text
+              ? text[language]
+              : text;
 
           return (
             <li key={`${text} contact link`} className="section-contact__item">

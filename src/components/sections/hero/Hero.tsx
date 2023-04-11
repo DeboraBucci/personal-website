@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Typing from "../../UI/Typing";
 
 import LanguageContext from "../../../context/language-context";
-import { hero } from "../../../database/languages-text.ts";
+import { hero } from "../../../database/languages-text";
 
 const Hero = () => {
   const { language } = useContext(LanguageContext);

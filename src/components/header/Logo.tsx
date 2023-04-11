@@ -3,7 +3,11 @@ import ThemeHandler from "./ThemeHandler";
 
 import logo from "../../assets/logo.webp";
 
-const Logo = ({ isHeaderShrinked }) => (
+interface LogoProps {
+  isHeaderShrinked: boolean;
+}
+
+const Logo: React.FC<LogoProps> = ({ isHeaderShrinked }) => (
   <div className="logo__wrapper">
     <div className="logo">
       <a

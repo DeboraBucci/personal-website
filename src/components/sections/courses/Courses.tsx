@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import Header from "../../UI/Header";
 import { courses, coursesPositions } from "../../../database/data";
@@ -8,7 +8,7 @@ const Courses = () => {
     useState(coursesPositions);
   const [activeCourse, setActiveCourse] = useState(1);
   const [slideIsHovered, setSlideIsHovered] = useState(false);
-  const [touchPosition, setTouchPosition] = useState(null);
+  const [touchPosition, setTouchPosition] = useState<number | null>(null);
 
   // SLIDER HANDLER
   const sliderHandler = useCallback(
@@ -16,13 +16,13 @@ const Courses = () => {
       const positions = curCoursesPositions.slice();
 
       if (direction === "right") {
-        const shiftedCourse = positions.shift();
+        const shiftedCourse = positions.shift() || 1;
         positions.push(shiftedCourse);
         setActiveCourse((prev) => (prev === 1 ? 8 : prev - 1));
       }
 
       if (direction === "left") {
-        const poppedCourse = positions.pop();
+        const poppedCourse = positions.pop() || 1;
         positions.unshift(poppedCourse);
         setActiveCourse((prev) => (prev === 8 ? 1 : prev + 1));
       }
@@ -53,24 +53,29 @@ const Courses = () => {
   const slideNotHoveredHandler = () => setSlideIsHovered(false);
 
   // SHORTCUTS HANDLER
-  const shortcutHandler = (e) => {
-    const targetCourse = +e.target.textContent.slice(-1);
-    const oriPositionsCopy = coursesPositions.slice();
+  const shortcutHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const textContent = e.currentTarget.textContent;
+    console.log(textContent);
 
-    const startingPositions = oriPositionsCopy.splice(-(targetCourse - 1));
-    const newPositions = startingPositions.concat(oriPositionsCopy);
+    if (textContent) {
+      const targetCourse = +textContent.slice(-1);
+      const oriPositionsCopy = coursesPositions.slice();
 
-    setCurCoursesPositions(newPositions);
-    setActiveCourse(targetCourse);
+      const startingPositions = oriPositionsCopy.splice(-(targetCourse - 1));
+      const newPositions = startingPositions.concat(oriPositionsCopy);
+
+      setCurCoursesPositions(newPositions);
+      setActiveCourse(targetCourse);
+    }
   };
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: React.TouchEvent) => {
     const touchDown = e.touches[0].clientX;
 
     setTouchPosition(touchDown);
   };
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: React.TouchEvent) => {
     if (touchPosition === null) return;
 
     const currentTouch = e.touches[0].clientX;

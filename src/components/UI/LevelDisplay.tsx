@@ -1,4 +1,9 @@
-const LevelDisplay = ({ title, level }) => (
+interface LevelDisplayProps {
+  title?: string;
+  level: number;
+}
+
+const LevelDisplay: React.FC<LevelDisplayProps> = ({ title, level }) => (
   <div>
     {title && <h4>{title}</h4>}
     <div className="complexity">

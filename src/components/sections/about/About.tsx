@@ -1,6 +1,4 @@
-import React from "react";
-
-import Heading from "../../UI/Header";
+import Header from "../../UI/Header";
 import Vignettes from "./Vignettes";
 import Traits from "./Traits";
 import Others from "./Others";
@@ -11,7 +9,7 @@ import Languages from "./Languages";
 const About = () => {
   return (
     <section className="section-about" id="about">
-      <Heading section="about" className="portfolio-heading" />
+      <Header section="about" className="portfolio-heading" />
       <Vignettes />
       <Traits />
       <div className="thin-line thin-line--small"></div>

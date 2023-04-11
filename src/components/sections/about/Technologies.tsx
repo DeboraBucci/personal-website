@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import LanguageContext from "../../../context/language-context";
 import { technologies } from "../../../database/data";
-import { about } from "../../../database/languages-text.ts";
+import { about } from "../../../database/languages-text";
 
 const Technologies = () => {
   const { language } = useContext(LanguageContext);

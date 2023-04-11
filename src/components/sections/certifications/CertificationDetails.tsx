@@ -1,12 +1,21 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import Backdrop from "../../UI/Backdrop";
 import Link from "../../UI/Link";
 
 import LanguageContext from "../../../context/language-context";
 import LevelDisplay from "../../UI/LevelDisplay";
+import { Certification } from "../../../database/data-types";
 
-const CertificationsModal = ({ closeHandler, info }) => {
+type CertificationsModalProps = {
+  closeHandler: () => void;
+  info: Certification;
+};
+
+const CertificationsModal: React.FC<CertificationsModalProps> = ({
+  closeHandler,
+  info,
+}) => {
   const languageCtx = useContext(LanguageContext);
 
   return (
@@ -58,7 +67,15 @@ const CertificationsModal = ({ closeHandler, info }) => {
   );
 };
 
-const CertificationsOverlay = ({ closeModalHandler, modalInfo }) => (
+type CertificationsOverlayProps = {
+  closeModalHandler: () => void;
+  modalInfo: Certification;
+};
+
+const CertificationsOverlay: React.FC<CertificationsOverlayProps> = ({
+  closeModalHandler,
+  modalInfo,
+}) => (
   <div className="overlay">
     <Backdrop onClick={closeModalHandler} />
     <CertificationsModal closeHandler={closeModalHandler} info={modalInfo} />

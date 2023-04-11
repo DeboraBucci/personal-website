@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import Header from "../../UI/Header";
 import Link from "../../UI/Link";
 import Project from "./Project";
 
 import LanguageContext from "../../../context/language-context";
-import { projects } from "../../../database/languages-text.ts";
+import { projects } from "../../../database/languages-text";
 
 const Projects = () => {
   const { language } = useContext(LanguageContext);

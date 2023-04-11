@@ -4,8 +4,19 @@ import responsiveWebDesign from "../assets/certifications/responsive-web-design.
 import alkemy from "../assets/certifications/alkemy.webp";
 import react from "../assets/certifications/react-coder.webp";
 import webDesign from "../assets/certifications/web-design-coder.webp";
+import {
+  About,
+  Certification,
+  Contact,
+  Footer,
+  Headings,
+  Hero,
+  NavLink,
+  Projects,
+  Trait,
+} from "./data-types";
 
-const linksList = [
+const linksList: NavLink[] = [
   {
     text: {
       english: "Home",
@@ -63,7 +74,7 @@ const linksList = [
   },
 ];
 
-const sectionHeadings = {
+const sectionHeadings: Headings = {
   about: {
     english: {
       title: "A Little About me",
@@ -109,7 +120,7 @@ const sectionHeadings = {
   },
 };
 
-const certifications = [
+const certifications: Certification[] = [
   {
     image: react,
     institute: "coderhouse",
@@ -299,7 +310,7 @@ const certifications = [
   },
 ];
 
-const traits = [
+const traits: Trait[] = [
   {
     title: {
       english: "Coding Enthusiast",
@@ -348,7 +359,7 @@ const traits = [
   },
 ];
 
-const hero = {
+const hero: Hero = {
   english: {
     greeting: "Hello!",
     firstPart: "I'm",
@@ -375,7 +386,7 @@ const hero = {
   },
 };
 
-const about = {
+const about: About = {
   vignettes: {
     english: [
       "I'm a Fronend Developer who specializes in React, and is passionate about learning, coding and developing.",
@@ -407,7 +418,7 @@ const about = {
   },
 };
 
-const projects = {
+const projects: Projects = {
   opts: {
     english: {
       list: ["Type", "Framework", "Technologies", "Commits", "Design by"],
@@ -499,16 +510,18 @@ const projects = {
   ],
 };
 
-const contact = {
-  english: {
-    title: "Contact info",
-    subtitle: "want to talk?",
-    comment: "A penny for your thoughts!",
-  },
-  spanish: {
-    title: "Contacto",
-    subtitle: "¿querés hablar?",
-    comment: "Un centavo por tus pensamientos!",
+const contact: Contact = {
+  languages: {
+    english: {
+      title: "Contact info",
+      subtitle: "want to talk?",
+      comment: "A penny for your thoughts!",
+    },
+    spanish: {
+      title: "Contacto",
+      subtitle: "¿querés hablar?",
+      comment: "Un centavo por tus pensamientos!",
+    },
   },
   links: [
     {
@@ -532,7 +545,7 @@ const contact = {
   ],
 };
 
-const footer = {
+const footer: Footer = {
   english: {
     icons8: "Made using icons from ",
     otherText: ["Created with", "and", "Copyright"],

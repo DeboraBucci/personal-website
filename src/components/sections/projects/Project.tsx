@@ -1,7 +1,13 @@
-import React from "react";
+import { ProjectObj, ProjectOpts } from "../../../database/data-types";
 import Link from "../../UI/Link";
 
-const Project = ({
+type ProjectProps = {
+  opts: ProjectOpts;
+  project: ProjectObj;
+  language: string;
+};
+
+const Project: React.FC<ProjectProps> = ({
   project: { num, title, link, info, extraInfo },
   language,
   opts,
@@ -22,7 +28,9 @@ const Project = ({
                   {opts.list[i]}:
                 </span>
                 <span className="project-card__item--second">
-                  {item[language] || item}
+                  {typeof item === "object" && language in item
+                    ? item[language]
+                    : item}
                 </span>
               </li>
             ))}

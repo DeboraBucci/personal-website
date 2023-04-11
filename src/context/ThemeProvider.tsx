@@ -1,7 +1,11 @@
 import { useState } from "react";
-import ThemeContext from "./theme-context";
+import ThemeContext, { ThemeContextType } from "./theme-context";
 
-const ThemeProvider = (props) => {
+type ThemeProviderProps = {
+  children: React.ReactNode;
+};
+
+const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [newTheme, setNewTheme] = useState(localStorage.getItem("theme"));
 
   const toggleThemeHandler = () => {
@@ -12,15 +16,13 @@ const ThemeProvider = (props) => {
     localStorage.setItem("theme", newTheme);
   };
 
-  const themeCtx = {
-    theme: newTheme,
+  const themeCtx: ThemeContextType = {
+    theme: newTheme || "",
     toggleTheme: toggleThemeHandler,
   };
 
   return (
-    <ThemeContext.Provider value={themeCtx}>
-      {props.children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={themeCtx}>{children}</ThemeContext.Provider>
   );
 };
 export default ThemeProvider;

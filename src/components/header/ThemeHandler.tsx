@@ -3,7 +3,7 @@ import ThemeContext from "../../context/theme-context";
 
 const ThemeHandler = () => {
   const [isMessageVisible, setIsMessageVisible] = useState(false);
-  const timeoutRef = useRef(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const { toggleTheme } = useContext(ThemeContext);
 
