@@ -104,7 +104,21 @@
     }
   }
 
+  @include respond(31em) {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+
   @include respond(28.5em) {
     clip-path: none;
+
+    &__card {
+      width: 110%;
+    }
   }
 }

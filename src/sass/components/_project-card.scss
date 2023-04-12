@@ -335,11 +335,23 @@
     }
   }
 
-  @media only screen and (max-width: 35em) {
+  @include respond(35em) {
     &__list {
       font-size: 2rem;
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  @include respond(28em) {
+    width: 90vw;
+  }
+
+  @include respond(23em) {
+    &__side--back {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 4rem !important;
     }
   }
 }

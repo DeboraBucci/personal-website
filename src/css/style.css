@@ -272,9 +272,18 @@ code {
       .traits__card--text {
         letter-spacing: inherit;
         line-height: inherit; } }
+  @media only screen and (max-width: 31em) {
+    .traits__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem; } }
   @media only screen and (max-width: 28.5em) {
     .traits {
-      clip-path: none; } }
+      clip-path: none; }
+      .traits__card {
+        width: 110%; } }
 
 .vignettes {
   position: relative;
@@ -632,6 +641,14 @@ code {
       font-size: 2rem;
       display: flex;
       flex-direction: column; } }
+  @media only screen and (max-width: 28em) {
+    .project-card {
+      width: 90vw; } }
+  @media only screen and (max-width: 23em) {
+    .project-card__side--back {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 4rem !important; } }
 
 .btn, .btn:link, .btn:visited {
   position: relative;
