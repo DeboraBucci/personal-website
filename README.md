@@ -1,7 +1,5 @@
 # Personal website's code
 
-This is the code I've worked on for many hours for my personal website. It uses React, Bootstrap components, and more.
+Visit on: [deborabucci.com](https://deborabucci.com/)
 
-_work in progress..._
-
-I'm planning on changing many aspects of this project.
+Source code of my personal website. Uses technologies such as React, JavaScript, Typescript, SASS, and more.
