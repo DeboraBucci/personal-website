@@ -12,11 +12,11 @@ const About = () => {
       <Header section="about" className="portfolio-heading" />
       <Vignettes />
       <Traits />
-      <div className="thin-line thin-line--small"></div>
+      <div className="thin-line thin-line--small" data-aos="fade-up"></div>
       <ProgrammingLanguages />
-      <div className="thin-line thin-line--small"></div>
+      <div className="thin-line thin-line--small" data-aos="fade-up"></div>
       <Others />
-      <div className="thin-line thin-line--small"></div>
+      <div className="thin-line thin-line--small" data-aos="fade-up"></div>
       <Languages />
     </section>
   );

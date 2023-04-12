@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ section }) => {
   const { title, subtitle } = sectionHeadings[section][language];
 
   return (
-    <header className="heading">
+    <header className="heading" data-aos="fade-up">
       <span className="heading__subtitle">#{subtitle}</span>
       <h2 className="heading-secondary">{title}</h2>
     </header>

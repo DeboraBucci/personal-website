@@ -8,7 +8,7 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ isHeaderShrinked }) => (
-  <div className="logo__wrapper">
+  <div className="logo__wrapper" data-aos="fade-right">
     <div className="logo">
       <a
         href="https://github.com/DeboraBucci"

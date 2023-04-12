@@ -26,7 +26,7 @@ const Certifications = () => {
       )}
       <Header section="certifications" />
 
-      <div className="certifications__container">
+      <div className="certifications__container" data-aos="fade-up">
         {certifications.map((certificate) => (
           <div
             onClick={openModalHandler.bind(null, certificate)}

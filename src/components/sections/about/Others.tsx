@@ -8,7 +8,7 @@ const Others = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="others u-center-text">
+    <div className="others u-center-text" data-aos="fade-up">
       <h3 className="heading-tertiary u-margin-bottom-medium ">
         {about.titles.others[language]}
       </h3>

@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({
   <nav
     className={`header__nav ${isNavbarOpened ? `header__nav--overlay` : ""}`}
   >
-    <ul className="header__nav--list">
+    <ul className="header__nav--list" data-aos="fade-left">
       {linksList.map(({ text, icon, href, key }) => {
         return (
           <li

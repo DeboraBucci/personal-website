@@ -95,6 +95,7 @@ const Courses = () => {
         className="carousel"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
+        data-aos="fade-up"
       >
         <button
           className="carousel__arrow carousel__arrow--left"

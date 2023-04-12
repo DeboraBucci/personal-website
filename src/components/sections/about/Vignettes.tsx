@@ -7,7 +7,7 @@ const Vignettes = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="vignettes u-margin-bottom-medium">
+    <div className="vignettes u-margin-bottom-medium" data-aos="fade-up">
       <div className="vignettes__line"></div>
       {about.vignettes[language].map((text, i) => (
         <p className={`vignettes--${i + 1}`} key={`vignette ${i + 1}`}>

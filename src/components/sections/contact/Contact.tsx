@@ -10,14 +10,14 @@ const Contact = () => {
 
   return (
     <section className="section-contact" id="contact">
-      <div className="section-contact__text">
+      <div className="section-contact__text" data-aos="fade-up">
         <p className="section-contact__text--subtitle">{info.subtitle}</p>
         <h2 className="heading-secondary section-contact__text--title">
           {info.title}
         </h2>
         <p className="section-contact__text--comment">{info.comment}</p>
       </div>
-      <ul className="section-contact__list">
+      <ul className="section-contact__list" data-aos="fade-up">
         {contact.links.map(({ href, icon, text }) => {
           const finalText = typeof text === "object" ? text[language] : text;
 
