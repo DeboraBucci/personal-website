@@ -19,10 +19,7 @@ const Contact = () => {
       </div>
       <ul className="section-contact__list">
         {contact.links.map(({ href, icon, text }) => {
-          const finalText =
-            typeof text === "object" && language in text
-              ? text[language]
-              : text;
+          const finalText = typeof text === "object" ? text[language] : text;
 
           return (
             <li key={`${text} contact link`} className="section-contact__item">

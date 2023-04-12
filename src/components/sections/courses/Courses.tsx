@@ -12,7 +12,7 @@ const Courses = () => {
 
   // SLIDER HANDLER
   const sliderHandler = useCallback(
-    (direction) => {
+    (direction: string) => {
       const positions = curCoursesPositions.slice();
 
       if (direction === "right") {

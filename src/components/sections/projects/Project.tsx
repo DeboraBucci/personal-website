@@ -28,9 +28,7 @@ const Project: React.FC<ProjectProps> = ({
                   {opts.list[i]}:
                 </span>
                 <span className="project-card__item--second">
-                  {typeof item === "object" && language in item
-                    ? item[language]
-                    : item}
+                  {typeof item === "object" ? item[language] : item}
                 </span>
               </li>
             ))}
