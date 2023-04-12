@@ -1763,16 +1763,18 @@ code {
   flex-direction: column;
   padding: 6rem; }
   .certifications__container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 6rem;
     padding: 2rem; }
   .certifications__image-box {
     position: relative;
     cursor: pointer;
     overflow: hidden; }
+    .certifications__image-box img {
+      width: 100%; }
     .certifications__image-box--coderhouse img {
       filter: invert(100%) hue-rotate(120deg); }
     .certifications__image-box::before, .certifications__image-box::after {
@@ -1808,10 +1810,17 @@ code {
     transition: opacity 0.5s ease-out 0s; }
   .certifications__image-box:hover .certifications__zoom {
     opacity: 1; }
+  @media only screen and (max-width: 75em) {
+    .certifications__container {
+      gap: 2rem; } }
   @media only screen and (max-width: 50em) {
-    .certifications img {
-      width: 100%;
-      max-width: 100%; } }
+    .certifications {
+      padding: 2rem; }
+      .certifications__container {
+        grid-template-columns: repeat(2, 1fr); }
+      .certifications img {
+        width: 100%;
+        max-width: 100%; } }
 
 body .dark {
   background-color: #232323;

@@ -152,8 +152,10 @@
   padding: 6rem;
 
   &__container {
-    @include flexCenter;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
     gap: 6rem;
     padding: 2rem;
   }
@@ -162,6 +164,10 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
+
+    & img {
+      width: 100%;
+    }
 
     &--coderhouse img {
       filter: invert(100%) hue-rotate(120deg);
@@ -228,7 +234,19 @@
     opacity: 1;
   }
 
+  @include respond(75em) {
+    &__container {
+      gap: 2rem;
+    }
+  }
+
   @include respond(50em) {
+    padding: 2rem;
+
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     & img {
       width: 100%;
       max-width: 100%;
