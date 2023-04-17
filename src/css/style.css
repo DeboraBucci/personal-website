@@ -1297,7 +1297,6 @@ code {
     .languages__list:hover > * {
       filter: blur(1px) grayscale(100%); }
   .languages__item {
-    border: 1px solid ridge;
     padding: 5rem 18rem;
     transition: all 0.4s;
     pointer-events: auto; }
