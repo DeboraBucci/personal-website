@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%; /* 10px */
+  scroll-behavior: smooth;
 
   @include respond(85.5em) {
     font-size: 50%;
@@ -37,6 +38,7 @@ a {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 ::selection {

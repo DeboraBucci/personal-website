@@ -1,17 +1,15 @@
 .footer {
+  @include flexCenter;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
   border-top: 2px solid #e69500;
   background-color: $color-black;
   color: $color-white;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 
   &__text {
-    font-size: $default-font-size;
-
     @include flexCenter;
+    font-size: $default-font-size;
     gap: 1rem;
   }
 

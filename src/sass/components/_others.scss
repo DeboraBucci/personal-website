@@ -30,7 +30,6 @@
 
   &__item {
     pointer-events: auto;
-
     position: relative;
     transition: all 0.3s;
     cursor: pointer;
@@ -90,7 +89,6 @@
   @include respond(112.5em) {
     &__list {
       gap: 1rem;
-      padding: 0 !important;
     }
 
     &__item {

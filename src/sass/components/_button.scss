@@ -44,6 +44,7 @@
 
   &--white {
     background-color: $color-white;
+    color: tint($color-black, 20%);
 
     &::after {
       background-color: $color-white;

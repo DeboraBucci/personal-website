@@ -7,7 +7,8 @@
 
 html {
   font-size: 62.5%;
-  /* 10px */ }
+  /* 10px */
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 85.5em) {
     html {
       font-size: 50%; } }
@@ -29,7 +30,8 @@ a {
   text-decoration: none; }
 
 button {
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 ::selection {
   background-color: #cc4287;
@@ -215,7 +217,6 @@ code {
     .traits {
       padding: 4rem 5rem; } }
   .traits__list {
-    padding: 0 !important;
     display: flex;
     justify-content: center;
     gap: 3rem; }
@@ -510,8 +511,6 @@ code {
     border-radius: 3px; }
   .project-card__details {
     padding: 1rem; }
-  .project-card__list {
-    padding: 0 !important; }
   .project-card__item {
     display: flex;
     justify-content: center;
@@ -527,6 +526,9 @@ code {
       font-weight: 500;
       text-transform: capitalize; }
   .project-card__instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     position: absolute;
     bottom: 4rem; }
     .project-card__instructions--text {
@@ -684,7 +686,8 @@ code {
   transition: 0.4s; }
 
 .btn--white {
-  background-color: #fff; }
+  background-color: #fff;
+  color: #4f4f4f; }
   .btn--white::after {
     background-color: #fff; }
   .btn--white:hover {
@@ -800,8 +803,7 @@ code {
         display: none !important; }
   @media only screen and (max-width: 112.5em) {
     .others__list {
-      gap: 1rem;
-      padding: 0 !important; }
+      gap: 1rem; }
     .others__item--img {
       width: 4rem !important;
       height: 4rem !important; }
@@ -857,13 +859,13 @@ code {
     .technologies {
       padding: 4rem 5rem; } }
   .technologies__list {
-    pointer-events: none;
-    padding: 0 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem; }
+    gap: 3rem;
+    pointer-events: none;
+    padding: 0 5rem; }
     .technologies__list:hover > * {
       filter: blur(3px) grayscale(100%); }
   .technologies__item {
@@ -910,7 +912,7 @@ code {
   @media only screen and (max-width: 112.5em) {
     .technologies__list {
       gap: 1rem;
-      padding: 0 !important; }
+      padding: 0; }
     .technologies__item--img {
       width: 4rem !important;
       height: 4rem !important; }
@@ -1002,6 +1004,7 @@ code {
     .certifications-modal {
       height: 90%; } }
   .certifications-modal__date {
+    margin-bottom: 2rem;
     font-size: 2.3rem;
     text-align: center;
     color: #b3664a; }
@@ -1141,7 +1144,6 @@ code {
     color: #919191 !important;
     border-left-color: transparent !important; }
   .language-btn__opts button {
-    cursor: pointer;
     padding: 1rem;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
@@ -1222,6 +1224,10 @@ code {
     background-color: rgba(245, 159, 0, 0.5);
     transition: all 0.2s; }
     .logo__options--btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
       font-size: 2.5rem;
       border: none;
       background-color: transparent;
@@ -1292,8 +1298,7 @@ code {
     border-radius: 3px;
     pointer-events: none;
     column-gap: 2rem;
-    row-gap: 1rem;
-    padding: 0; }
+    row-gap: 1rem; }
     .languages__list:hover > * {
       filter: blur(1px) grayscale(100%); }
   .languages__item {
@@ -1424,8 +1429,7 @@ code {
       width: 5rem;
       height: 5rem; }
     .header--shrinked .header__nav {
-      font-size: 1.6rem;
-      align-self: flex-end; }
+      font-size: 1.6rem; }
   .header__logo {
     width: 8rem;
     height: 8rem;
@@ -1455,7 +1459,7 @@ code {
       .header__nav--item:before {
         content: "";
         position: absolute;
-        bottom: -5px;
+        bottom: -8px;
         background-color: #f59f00;
         opacity: 0;
         width: 0;
@@ -1657,19 +1661,20 @@ code {
       color: #ff53a9; }
 
 .footer {
-  border-top: 2px solid #e69500;
-  background-color: #232323;
-  color: #fff;
-  padding: 2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: center; }
+  gap: 1rem;
+  padding: 2rem;
+  border-top: 2px solid #e69500;
+  background-color: #232323;
+  color: #fff; }
   .footer__text {
-    font-size: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.6rem;
     gap: 1rem; }
   .footer__link:link, .footer__link:visited {
     position: relative;

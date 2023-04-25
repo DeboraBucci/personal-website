@@ -23,7 +23,6 @@
 
       &__nav {
         font-size: 1.6rem;
-        align-self: flex-end;
       }
     }
   }
@@ -66,7 +65,7 @@
       &:before {
         content: "";
         position: absolute;
-        bottom: -5px;
+        bottom: -8px;
 
         background-color: $color-secondary;
 
