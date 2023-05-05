@@ -320,7 +320,7 @@ const traits: Trait[] = [
       english:
         "I've been coding for quite a while now, and it has grown to be one of my strongest passions. Love learning new things, and being able to apply them to my projects.",
       spanish:
-        "He estado programando desde hace un buen tiempo ya, y ha crecido hasta convertirse en una de mis grandes pasiones.",
+        "He estado programando desde hace unos años ya, y se ha convertido en una de mis grandes pasiones.",
     },
     icon: "fa-solid fa-code",
   },
