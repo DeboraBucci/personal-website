@@ -31,6 +31,12 @@ import Mui from "../assets/technologies-icons/mui.svg";
 import Docker from "../assets/technologies-icons/docker.svg";
 import Figma from "../assets/technologies-icons/figma.svg";
 import Redux from "../assets/technologies-icons/redux.svg";
+import Java from "../assets/technologies-icons/java.svg";
+import SQL from "../assets/technologies-icons/sql.svg";
+import MongoDB from "../assets/technologies-icons/mongodb.svg";
+import MySQL from "../assets/technologies-icons/mysql.svg";
+import Eclipse from "../assets/technologies-icons/eclipse.svg";
+import SassLogo from "../assets/technologies-icons/sass.svg";
 
 import Italy from "../assets/languages/italy.png";
 import Japan from "../assets/languages/japan.png";
@@ -102,6 +108,30 @@ const others = [
     icon: StackOverflow,
     text: "Stack Overflow",
   },
+  {
+    icon: Jest,
+    text: "Jest",
+  },
+  {
+    icon: Redux,
+    text: "Redux",
+  },
+  {
+    icon: MongoDB,
+    text: "MongoDB",
+  },
+  {
+    icon: MySQL,
+    text: "MySQL",
+  },
+  {
+    icon: Eclipse,
+    text: "Eclipse",
+  },
+  {
+    icon: SassLogo,
+    text: "Sass",
+  },
 ];
 
 const technologies = [
@@ -130,12 +160,12 @@ const technologies = [
     text: "CSS3",
   },
   {
-    icon: Redux,
-    text: "Redux",
+    icon: Java,
+    text: "Java",
   },
   {
-    icon: Jest,
-    text: "Jest",
+    icon: SQL,
+    text: "SQL",
   },
 ];
 
