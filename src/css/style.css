@@ -387,10 +387,10 @@ code {
     left: 50%;
     transform: translateX(-50%) scale(0.4);
     pointer-events: none; }
-    .carousel__slide--7 {
+    .carousel__slide--12 {
       z-index: 6;
       transform: translateX(-140%) scale(0.6); }
-    .carousel__slide--8 {
+    .carousel__slide--13 {
       z-index: 8;
       transform: translateX(-105%) scale(0.8); }
     .carousel__slide--1 {
@@ -408,7 +408,7 @@ code {
     height: auto; }
   .carousel__shortcuts {
     position: absolute;
-    bottom: -1rem;
+    bottom: -2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -732,114 +732,6 @@ code {
     padding: 0.5rem 4rem;
     font-size: 1.6rem; } }
 
-.others {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 10rem;
-  width: 70vw;
-  min-height: 40rem;
-  flex-direction: column;
-  background: linear-gradient(to right, rgba(18, 37, 54, 0.5), rgba(36, 46, 26, 0.6)), url("/src/assets/backgrounds/technologies-background.webp");
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%); }
-  @media only screen and (max-width: 87.5em) {
-    .others {
-      width: 90vw; } }
-  @media only screen and (max-width: 28.5em) {
-    .others {
-      padding: 4rem 5rem; } }
-  .others__list {
-    pointer-events: none;
-    padding: 0 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem; }
-    .others__list:hover > * {
-      filter: blur(3px) grayscale(100%); }
-  .others__item {
-    pointer-events: auto;
-    position: relative;
-    transition: all 0.3s;
-    cursor: pointer; }
-    .others__item:hover {
-      filter: blur(0) grayscale(0%) !important;
-      z-index: 100;
-      transform: scale(1.2); }
-    .others__item:hover .others__item--text {
-      width: max-content;
-      padding-left: 3rem;
-      color: #fff;
-      opacity: 1; }
-    .others__item--img-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      z-index: 10;
-      padding: 2rem;
-      border-radius: 50%;
-      background-color: #232323; }
-    .others__item--text {
-      position: absolute;
-      top: 50%;
-      left: 70%;
-      z-index: 1;
-      font-weight: 600;
-      text-transform: uppercase;
-      transform: translateY(-50%);
-      transition: all 0.4s;
-      background-color: rgba(255, 83, 169, 0.8);
-      color: transparent;
-      opacity: 0;
-      display: inline-block;
-      width: 0;
-      padding: 0.5rem;
-      border-radius: 3px; }
-      .others__item--text:hover {
-        display: none !important; }
-  @media only screen and (max-width: 112.5em) {
-    .others__list {
-      gap: 1rem; }
-    .others__item--img {
-      width: 4rem !important;
-      height: 4rem !important; }
-    .others__item--text {
-      position: absolute;
-      top: 50%;
-      left: 70%;
-      z-index: 1;
-      font-weight: 600;
-      text-transform: uppercase;
-      transform: translateY(-50%);
-      transition: all 0.4s 0.2s;
-      background-color: #ff53a9;
-      color: transparent;
-      opacity: 0;
-      display: inline-block;
-      width: 0;
-      padding: 0.5rem;
-      border-radius: 3px; }
-      .others__item--text:hover {
-        display: none !important; } }
-  @media only screen and (max-width: 28.5em) {
-    .others {
-      clip-path: none; } }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .others__filter-on {
-      filter: none !important; }
-    .others__item {
-      position: relative;
-      transition: all 0.3s;
-      cursor: pointer; }
-      .others__item:hover {
-        transform: none !important; }
-      .others__item:hover .others__item--text {
-        display: none !important; } }
-
 .technologies {
   display: flex;
   justify-content: center;
@@ -848,16 +740,26 @@ code {
   width: 70vw;
   min-height: 40rem;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(44, 18, 54, 0.5), rgba(36, 46, 26, 0.6)), url("/src/assets/backgrounds/languages-background.webp");
-  background-size: cover;
-  background-position: bottom;
-  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); }
+  background-size: cover !important; }
   @media only screen and (max-width: 87.5em) {
     .technologies {
       width: 90vw; } }
   @media only screen and (max-width: 28.5em) {
     .technologies {
       padding: 4rem 5rem; } }
+  .technologies--shape-left {
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); }
+  .technologies--shape-right {
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%); }
+  .technologies--image-one {
+    background: linear-gradient(to right, rgba(44, 18, 54, 0.5), rgba(36, 46, 26, 0.6)), url("/src/assets/backgrounds/technologies-background-one.webp");
+    background-position: bottom; }
+  .technologies--image-two {
+    background: linear-gradient(to right, rgba(18, 37, 54, 0.5), rgba(36, 46, 26, 0.6)), url("/src/assets/backgrounds/technologies-background-two.webp");
+    background-position: center; }
+  .technologies--image-three {
+    background: linear-gradient(to bottom, rgba(10, 19, 48, 0.6), rgba(196, 137, 28, 0.2)), url("/src/assets/backgrounds/technologies-background-three.webp");
+    background-position: center; }
   .technologies__list {
     display: flex;
     justify-content: center;

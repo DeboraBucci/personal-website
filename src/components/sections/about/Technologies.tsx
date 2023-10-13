@@ -1,20 +1,24 @@
 import { useContext } from "react";
 
 import LanguageContext from "../../../context/language-context";
-import { technologies } from "../../../database/data";
-import { about } from "../../../database/languages-text";
 
-const Technologies = () => {
+interface TechnologiesProps {
+  title: {[key: string]: string},
+  technologiesList: { icon: any; text: string }[],
+  className: string;
+}
+
+const Technologies: React.FC<TechnologiesProps> = ({ title, technologiesList, className }) => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="technologies u-center-text" data-aos="fade-up">
+    <div className={`u-center-text ${className}`} data-aos="fade-up">
       <h3 className="heading-tertiary u-margin-bottom-big ">
-        {about.titles.technologies[language]}
+        {title[language]}
       </h3>
 
       <ul className="technologies__list">
-        {technologies.map(({ text, icon }) => (
+        {technologiesList.map(({ text, icon }) => (
           <li className="technologies__item" key={Math.random().toString()}>
             <div className="technologies__item--img-container">
               <img

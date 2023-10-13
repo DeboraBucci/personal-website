@@ -406,14 +406,19 @@ const about: About = {
       spanish: "Rasgos",
     },
 
-    technologies: {
+    programmingLanguages: {
+      english: "Programming Languages",
+      spanish: "Lenguajes de Programación",
+    },
+
+    mainTechnologies: {
       english: "Main Technologies",
       spanish: "Tecnologías Principales",
     },
 
-    others: {
-      english: "Others",
-      spanish: "Otros",
+    otherTechnologies: {
+      english: "Other Technologies",
+      spanish: "Otras Tecnologías",
     },
   },
 };

@@ -18,13 +18,13 @@ const Courses = () => {
       if (direction === "right") {
         const shiftedCourse = positions.shift() || 1;
         positions.push(shiftedCourse);
-        setActiveCourse((prev) => (prev === 1 ? 8 : prev - 1));
+        setActiveCourse((prev) => (prev === 1 ? courses.length : prev - 1));
       }
 
       if (direction === "left") {
         const poppedCourse = positions.pop() || 1;
         positions.unshift(poppedCourse);
-        setActiveCourse((prev) => (prev === 8 ? 1 : prev + 1));
+        setActiveCourse((prev) => (prev === courses.length ? 1 : prev + 1));
       }
 
       setCurCoursesPositions(positions);
@@ -55,10 +55,9 @@ const Courses = () => {
   // SHORTCUTS HANDLER
   const shortcutHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     const textContent = e.currentTarget.textContent;
-    console.log(textContent);
 
     if (textContent) {
-      const targetCourse = +textContent.slice(-1);
+      const targetCourse = +textContent.slice(-2);
       const oriPositionsCopy = coursesPositions.slice();
 
       const startingPositions = oriPositionsCopy.splice(-(targetCourse - 1));

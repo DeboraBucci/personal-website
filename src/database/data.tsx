@@ -6,28 +6,24 @@ import Sass from "../assets/courses/sass.webp";
 import Git from "../assets/courses/git.webp";
 import React1 from "../assets/courses/react-1.webp";
 import Typescript from "../assets/courses/typescript.webp";
+import Android from "../assets/courses/android-udemy.webp";
+import AndroidIntroduction from "../assets/courses/introduccion-android-educacionit.webp";
+import ObjectParadigm from "../assets/courses/paradigma-objetos-educacionit.webp";
+import JavaNotProgrammers from "../assets/courses/java-educacionit.webp";
+import DatabasesAndSQL from "../assets/courses/sql-educacionit.webp";
 
+import Kotlin from "../assets/technologies-icons/kotlin.svg";
 import React from "../assets/technologies-icons/react.svg";
 import JavaScript from "../assets/technologies-icons/javascript.svg";
 import HTML5 from "../assets/technologies-icons/html5.svg";
 import CSS3 from "../assets/technologies-icons/css3.svg";
 import GIT from "../assets/technologies-icons/git.svg";
-import GitHub from "../assets/technologies-icons/github.svg";
-import Bootstrap from "../assets/technologies-icons/bootstrap.svg";
 import NodeJS from "../assets/technologies-icons/nodejs.svg";
-import NPM from "../assets/technologies-icons/npm.svg";
 import TypeScript from "../assets/technologies-icons/typescript.svg";
 import Postman from "../assets/technologies-icons/postman.png";
 import Jest from "../assets/technologies-icons/jest.svg";
 import Express from "../assets/technologies-icons/express.png";
-import VSCode from "../assets/technologies-icons/vscode.svg";
-import StyledComponents from "../assets/technologies-icons/styledcomponents.svg";
-import Lighthouse from "../assets/technologies-icons/lighthouse.png";
-import StackOverflow from "../assets/technologies-icons/stackoverflow.svg";
-import ReactBootstrap from "../assets/technologies-icons/reactbootstrap.png";
-import Formik from "../assets/technologies-icons/formik.svg";
 import ReactRouterDom from "../assets/technologies-icons/react-router-dom.svg";
-import Mui from "../assets/technologies-icons/mui.svg";
 import Docker from "../assets/technologies-icons/docker.svg";
 import Figma from "../assets/technologies-icons/figma.svg";
 import Redux from "../assets/technologies-icons/redux.svg";
@@ -35,15 +31,16 @@ import Java from "../assets/technologies-icons/java.svg";
 import SQL from "../assets/technologies-icons/sql.svg";
 import MongoDB from "../assets/technologies-icons/mongodb.svg";
 import MySQL from "../assets/technologies-icons/mysql.svg";
-import Eclipse from "../assets/technologies-icons/eclipse.svg";
 import SassLogo from "../assets/technologies-icons/sass.svg";
+import AndroidStudio from "../assets/technologies-icons/android-studio.svg";
+import GithubActions from "../assets/technologies-icons/github-actions.svg";
 
 import Italy from "../assets/languages/italy.png";
 import Japan from "../assets/languages/japan.png";
 import Spain from "../assets/languages/spain.png";
 import UnitedStates from "../assets/languages/united-states.png";
 
-const others = [
+const otherTechnologies = [
   {
     icon: ReactRouterDom,
     text: "React Router DOM",
@@ -57,56 +54,24 @@ const others = [
     text: "Docker",
   },
   {
-    icon: Mui,
-    text: "Material UI",
-  },
-  {
-    icon: Bootstrap,
-    text: "Bootstrap",
-  },
-  {
-    icon: ReactBootstrap,
-    text: "React Bootstrap",
-  },
-  {
-    icon: StyledComponents,
-    text: "Styled Components",
-  },
-  {
-    icon: Formik,
-    text: "Formik",
-  },
-  {
     icon: GIT,
     text: "GIT",
   },
   {
-    icon: GitHub,
-    text: "GitHub",
+    icon: GithubActions,
+    text: "Github Actions",
   },
   {
     icon: Express,
     text: "Express",
   },
   {
-    icon: NPM,
-    text: "NPM",
-  },
-  {
     icon: Postman,
     text: "Postman",
   },
   {
-    icon: VSCode,
-    text: "VS Code",
-  },
-  {
-    icon: Lighthouse,
-    text: "Lighthouse",
-  },
-  {
-    icon: StackOverflow,
-    text: "Stack Overflow",
+    icon: AndroidStudio,
+    text: "Android Studio",
   },
   {
     icon: Jest,
@@ -125,23 +90,15 @@ const others = [
     text: "MySQL",
   },
   {
-    icon: Eclipse,
-    text: "Eclipse",
-  },
-  {
     icon: SassLogo,
     text: "Sass",
   },
 ];
 
-const technologies = [
+const mainTechnologies = [
   {
     icon: React,
     text: "React",
-  },
-  {
-    icon: JavaScript,
-    text: "JavaScript",
   },
   {
     icon: TypeScript,
@@ -159,6 +116,17 @@ const technologies = [
     icon: CSS3,
     text: "CSS3",
   },
+];
+
+const programmingLanguages = [
+  {
+    icon: JavaScript,
+    text: "JavaScript",
+  },
+  {
+    icon: Kotlin,
+    text: "Kotlin",
+  },
   {
     icon: Java,
     text: "Java",
@@ -170,6 +138,26 @@ const technologies = [
 ];
 
 const courses = [
+  {
+    image: ObjectParadigm,
+    link: "https://www.educacionit.com/perfil/debora-bucci-911339/certificado/67949",
+  },
+  {
+    image: AndroidIntroduction,
+    link: "https://www.educacionit.com/perfil/debora-bucci-911339/certificado/62744",
+  },
+  {
+    image: Android,
+    link: "https://www.udemy.com/certificate/UC-30c582ef-04d0-42bb-bd94-8a43dbd219d9/",
+  },
+  {
+    image: DatabasesAndSQL,
+    link: "https://www.educacionit.com/perfil/debora-bucci-911339/certificado/64166",
+  },
+  {
+    image: JavaNotProgrammers,
+    link: "https://www.educacionit.com/perfil/debora-bucci-911339/certificado/62963",
+  },
   {
     image: Typescript,
     link: "https://www.udemy.com/certificate/UC-f4569938-6792-4270-83a7-8551e7f3827b/",
@@ -236,4 +224,11 @@ const languages = [
   },
 ];
 
-export { courses, coursesPositions, technologies, others, languages };
+export {
+  courses,
+  coursesPositions,
+  programmingLanguages,
+  mainTechnologies,
+  otherTechnologies,
+  languages,
+};
