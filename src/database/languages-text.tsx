@@ -402,11 +402,6 @@ const about: About = {
       english: "Main Technologies",
       spanish: "Tecnologías Principales",
     },
-
-    otherTechnologies: {
-      english: "Other Technologies",
-      spanish: "Otras Tecnologías",
-    },
   },
 };
 

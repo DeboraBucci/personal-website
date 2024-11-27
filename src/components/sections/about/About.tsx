@@ -1,5 +1,4 @@
 import Header from "../../UI/Header";
-import Vignettes from "./Vignettes";
 import Traits from "./Traits";
 import Technologies from "./Technologies";
 import Languages from "./Languages";
@@ -20,8 +19,6 @@ const About = () => {
       <Technologies title={about.titles.programmingLanguages} technologiesList={programmingLanguages} className="technologies technologies--shape-left technologies--image-one"/>
       <div className="thin-line thin-line--small" data-aos="fade-up"></div>
       <Technologies title={about.titles.mainTechnologies} technologiesList={mainTechnologies} className="technologies technologies--shape-right technologies--image-two"/>
-      <div className="thin-line thin-line--small" data-aos="fade-up"></div>
-      <Technologies title={about.titles.otherTechnologies} technologiesList={otherTechnologies} className="technologies technologies--shape-left technologies--image-three"/>
       <div className="thin-line thin-line--small" data-aos="fade-up"></div>
       <Languages />
     </section>
