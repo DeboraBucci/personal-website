@@ -387,19 +387,6 @@ const hero: Hero = {
 };
 
 const about: About = {
-  vignettes: {
-    english: [
-      "I'm a Fronend Developer who specializes in React, and is passionate about learning, coding and developing.",
-
-      "I'm also a Backend Developer, using technologies such as NodeJS, Express, MongoDB, and more.",
-    ],
-
-    spanish: [
-      "Soy una Desarrolladora Web especializada en React, y apasionada en aprender, programmar y desarrollar.",
-
-      "También me manejo como Backend Developer, utilizando teconologías como NodeJS, Express, MongoDB, Java, SQL y más.",
-    ],
-  },
   titles: {
     traits: {
       english: "Traits",

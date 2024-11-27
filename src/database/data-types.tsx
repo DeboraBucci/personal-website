@@ -32,7 +32,6 @@ export type Headings = {
 
 // ABOUT SECTION
 export type About = {
-  vignettes: { [key: string]: string[] };
   titles: { [key: string]: { [key: string]: string } };
 };
 

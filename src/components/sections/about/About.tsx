@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section className="section-about" id="about">
       <Header section="about" className="portfolio-heading" />
-      <Vignettes />
+      
       <Traits />
       <div className="thin-line thin-line--small" data-aos="fade-up"></div>
       <Technologies title={about.titles.programmingLanguages} technologiesList={programmingLanguages} className="technologies technologies--shape-left technologies--image-one"/>
