@@ -48,5 +48,9 @@
     "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "typescript": "^5.0.4"
-  }
+  },
+  "engines": {
+  "node": ">=14"
+}
+
 }
