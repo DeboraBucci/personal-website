@@ -3,12 +3,16 @@ import { useContext } from "react";
 import LanguageContext from "../../../context/language-context";
 
 interface TechnologiesProps {
-  title: {[key: string]: string},
-  technologiesList: { icon: any; text: string }[],
+  title: { [key: string]: string };
+  technologiesList: { icon: any; text: string }[];
   className: string;
 }
 
-const Technologies: React.FC<TechnologiesProps> = ({ title, technologiesList, className }) => {
+const Technologies: React.FC<TechnologiesProps> = ({
+  title,
+  technologiesList,
+  className,
+}) => {
   const { language } = useContext(LanguageContext);
 
   return (
