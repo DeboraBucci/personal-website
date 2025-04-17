@@ -59,6 +59,7 @@ const Root = styled.div`
   overflow: hidden;
   background-color: #2b2b2b;
   border-radius: 1.1rem;
+  max-width: 70rem;
 
   &:hover {
     .image-container img {

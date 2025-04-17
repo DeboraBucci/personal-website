@@ -57,10 +57,18 @@ const Projects = () => {
 export default Projects;
 
 const ProjectList = styled.ul`
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   max-width: 120rem;
+
+  @media (max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const ProjectNavbar = styled.li`
