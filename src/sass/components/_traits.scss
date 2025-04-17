@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center;
 
-  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+  // clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
 
   &__list {
     display: flex;
@@ -75,7 +75,7 @@
     }
   }
 
-  @include respond(112.5em) {
+  @include respond(80em) {
     &__list {
       display: grid;
       gap: 2rem;

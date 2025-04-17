@@ -1,0 +1,49 @@
+.projects-card {
+  position: relative;
+  height: 25rem;
+  width: 40rem;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.95),
+      rgba(61, 23, 83, 0.2)
+    ),
+    url("/src/assets/projects/mythical-books.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8%;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 5.5rem;
+    left: 1.5rem;
+  }
+
+  &__btns {
+    position: absolute;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+
+    & * {
+      color: $color-white;
+    }
+
+    &--visit-project,
+    &--source-code {
+        background-color: orangered;
+        border-radius: 4px;
+        padding: .1rem 1rem;
+    }
+
+    &--visit-project {
+    }
+
+    &--source-code {
+    }
+  }
+}

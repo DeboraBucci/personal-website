@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 5rem;
 
   &__title {
     text-align: center;
@@ -64,8 +65,8 @@
         ),
         url("../assets/backgrounds/spain-background.webp");
 
-      clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
-      border-top-left-radius: 20rem;
+      clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 5% 100%);
+      // border-top-left-radius: 20rem;
       margin-right: -5.5rem;
     }
 
@@ -77,8 +78,8 @@
         ),
         url("../assets/backgrounds/usa-background.webp");
 
-      clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
-      border-top-right-radius: 20rem;
+      clip-path: polygon(15% 0%, 100% 0%, 95% 100%, 0% 100%);
+      // border-top-right-radius: 20rem;
       margin-left: -5.5rem;
     }
 
@@ -90,8 +91,8 @@
         ),
         url("../assets/backgrounds/italy-background.webp");
 
-      clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 0% 100%);
-      border-bottom-left-radius: 20rem;
+      clip-path: polygon(5% 0%, 85% 0%, 100% 100%, 0% 100%);
+      // border-bottom-left-radius: 20rem;
       margin-right: -5.5rem;
     }
 
@@ -103,8 +104,8 @@
         ),
         url("../assets/backgrounds/japan-background.webp");
 
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
-      border-bottom-right-radius: 20rem;
+      clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 15% 100%);
+      // border-bottom-right-radius: 20rem;
       margin-left: -5.5rem;
     }
 
