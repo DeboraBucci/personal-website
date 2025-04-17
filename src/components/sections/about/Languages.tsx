@@ -4,7 +4,6 @@ import LevelDisplay from "../../UI/LevelDisplay";
 const Languages = () => {
   return (
     <div className="languages" data-aos="fade-up">
-      <h3 className="languages__title">Languages</h3>
       <ul className="languages__list">
         {languages.map(({ title, level, language, img }, i) => (
           <li
