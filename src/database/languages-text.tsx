@@ -221,49 +221,40 @@ const certifications: Certification[] = [
 const traits: Trait[] = [
   {
     title: {
-      english: "Coding Enthusiast",
-      spanish: "Entusiasta de Código",
+      english: "University Student",
+      spanish: "Estudiante Universitaria",
     },
     content: {
       english:
-        "I've been coding for quite a while now, and it has grown to be one of my strongest passions. Love learning new things, and being able to apply them to my projects.",
+        "Currently a second-year Systems Engineering student at UAI, passionate about technology and problem-solving.",
       spanish:
-        "He estado programando desde hace unos años ya, y se ha convertido en una de mis grandes pasiones.",
+
+        "Estoy actualmente en segundo año de la carrera de Ingeniería en Sistemas en la UAI.",
+    },
+    icon: "fa-solid fa-graduation-cap",
+  },
+  {
+    title: { english: "Programming Enthusiast", spanish: "Programadora Entusiasta" },
+    content: {
+      english:
+        "I enjoy building meaningful and practical solutions through code, constantly exploring new technologies and ideas.",
+      spanish:
+        "Disfruto de crear soliciones importates y prácticas a través de código, explorando constantemente nuevas tecnologías e ideas.",
     },
     icon: "fa-solid fa-code",
   },
   {
-    title: { english: "Drawing Artist", spanish: "Artista" },
-    content: {
-      english:
-        "Maybe not as diligent as I once was, but still enjoying drawing and painting from time to time.",
-      spanish:
-        "Tal vez no tan diligente como alguna vez lo fui, pero aun disfruto de dibujar y pintar en ciertos momentos.",
+    title: {
+      english: "English Tutor",
+      spanish: "Tutora de Inglés",
     },
-    icon: "fa-solid fa-palette",
-  },
-  {
-    title: { english: "Bibliomane", spanish: "Lectora Empedernida" },
     content: {
       english:
-        "Reading a book while drinking a coffee in a bright cozy ambient while enjoying the company of my cats is one of my favorite things to do.",
+        "Experienced in helping students strengthen their English skills through personalized guidance and support.",
       spanish:
-        "Leer un libro en un ambiente luminoso y cómodo, con la compañía de mis gatos, es una de las actividades que más disfruto hacer.",
+        "He ayudado a estudiantes a mejorar sus habilidades de Inglés a través de guía y apoyo personalizado.",
     },
     icon: "fa-solid fa-book",
-  },
-  {
-    title: {
-      english: "Resilient",
-      spanish: "Resiliente",
-    },
-    content: {
-      english:
-        "I've come to realize that the pace in which you trace your journey doesn't matter, as long as you keep moving forward.",
-      spanish:
-        "Me he dado cuenta que la velocidad en la que uno traza su camino no es relevante, sino que el seguir avanzando lo es.",
-    },
-    icon: "fa-solid fa-star",
   },
 ];
 

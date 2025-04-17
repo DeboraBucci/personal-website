@@ -11,9 +11,9 @@ const Sections = () => {
     <Fragment>
       <Hero />
       <About />
+      <Projects />
       <Certifications />
       <Courses />
-      <Projects />
       <Contact />
     </Fragment>
   );
