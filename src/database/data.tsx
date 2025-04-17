@@ -22,48 +22,54 @@ import NodeJS from "../assets/technologies-icons/nodejs.svg";
 import TypeScript from "../assets/technologies-icons/typescript.svg";
 import Postman from "../assets/technologies-icons/postman.png";
 import Jest from "../assets/technologies-icons/jest.svg";
-import Express from "../assets/technologies-icons/express.png";
 import ReactRouterDom from "../assets/technologies-icons/react-router-dom.svg";
-import Docker from "../assets/technologies-icons/docker.svg";
 import Figma from "../assets/technologies-icons/figma.svg";
 import Redux from "../assets/technologies-icons/redux.svg";
-import Java from "../assets/technologies-icons/java.svg";
 import SQL from "../assets/technologies-icons/sql.svg";
-import MongoDB from "../assets/technologies-icons/mongodb.svg";
 import MySQL from "../assets/technologies-icons/mysql.svg";
 import SassLogo from "../assets/technologies-icons/sass.svg";
 import AndroidStudio from "../assets/technologies-icons/android-studio.svg";
 import GithubActions from "../assets/technologies-icons/github-actions.svg";
+import CSharp from "../assets/technologies-icons/c-sharp.svg";
+import ReactNative from "../assets/technologies-icons/react-native.svg";
+import SQLServer from "../assets/technologies-icons/sql-server.svg";
+import Illustrator from "../assets/technologies-icons/adobe-illustrator.svg";
+import Photoshop from "../assets/technologies-icons/adobe-photoshop.svg";
+import StyledComponents from "../assets/technologies-icons/styled-components.svg";
 
 import Italy from "../assets/languages/italy.png";
 import Japan from "../assets/languages/japan.png";
 import Spain from "../assets/languages/spain.png";
 import UnitedStates from "../assets/languages/united-states.png";
 
-const otherTechnologies = [
+const mainTechnologies = [
   {
-    icon: ReactRouterDom,
-    text: "React Router DOM",
+    icon: React,
+    text: "React",
+  },
+  {
+    icon: ReactNative,
+    text: "React Native",
+  },
+  {
+    icon: HTML5,
+    text: "HTML5",
+  },
+  {
+    icon: CSS3,
+    text: "CSS3",
+  },
+  {
+    icon: SQLServer,
+    text: "SQL Server Management Studio",
   },
   {
     icon: Figma,
     text: "Figma",
   },
   {
-    icon: Docker,
-    text: "Docker",
-  },
-  {
     icon: GIT,
     text: "GIT",
-  },
-  {
-    icon: GithubActions,
-    text: "Github Actions",
-  },
-  {
-    icon: Express,
-    text: "Express",
   },
   {
     icon: Postman,
@@ -74,47 +80,24 @@ const otherTechnologies = [
     text: "Android Studio",
   },
   {
-    icon: Jest,
-    text: "Jest",
-  },
-  {
     icon: Redux,
     text: "Redux",
-  },
-  {
-    icon: MongoDB,
-    text: "MongoDB",
-  },
-  {
-    icon: MySQL,
-    text: "MySQL",
   },
   {
     icon: SassLogo,
     text: "Sass",
   },
-];
-
-const mainTechnologies = [
   {
-    icon: React,
-    text: "React",
+    icon: StyledComponents,
+    text: "Styled Components",
   },
   {
-    icon: TypeScript,
-    text: "TypeScript",
+    icon: Illustrator,
+    text: "Adobe Illustrator",
   },
   {
-    icon: NodeJS,
-    text: "NodeJS",
-  },
-  {
-    icon: HTML5,
-    text: "HTML5",
-  },
-  {
-    icon: CSS3,
-    text: "CSS3",
+    icon: Photoshop,
+    text: "Adobe Photoshop",
   },
 ];
 
@@ -124,16 +107,20 @@ const programmingLanguages = [
     text: "JavaScript",
   },
   {
-    icon: Kotlin,
-    text: "Kotlin",
+    icon: TypeScript,
+    text: "TypeScript",
   },
   {
-    icon: Java,
-    text: "Java",
+    icon: CSharp,
+    text: "C#",
   },
   {
     icon: SQL,
     text: "SQL",
+  },
+  {
+    icon: Kotlin,
+    text: "Kotlin",
   },
 ];
 
@@ -229,6 +216,5 @@ export {
   coursesPositions,
   programmingLanguages,
   mainTechnologies,
-  otherTechnologies,
   languages,
 };
